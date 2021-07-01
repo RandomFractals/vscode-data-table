@@ -6,9 +6,38 @@
   "engines": {
     "vscode": "^1.57.0"
   },
+  "icon": "resources/images/data-table.png",
+  "publisher": "RandomFractalsInc",
+  "author": "Taras Novak",
+  "contributors": [
+    "Taras Novak"
+  ],
+  "license": "Apache-2.0",
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RandomFractals/vscode-data-table"
+  },
+  "bugs": "https://github.com/RandomFractals/vscode-data-table/issues",
+  "homepage": "https://github.com/RandomFractals/vscode-data-table/README.md",
+  "galleryBanner": {
+    "color": "#333",
+    "theme": "dark"
+  },
   "categories": [
     "Data Science",
-    "Notebooks"
+    "Formatters",
+    "Machine Learning",
+    "Notebooks",
+    "Visualization"
+  ],
+  "keywords": [
+    "data",
+    "table",
+    "view",
+    "notebook",
+    "cell",
+    "renderer"
   ],
   "activationEvents": [],
   "main": "./out/extension/extension.js",
