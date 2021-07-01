@@ -1,12 +1,13 @@
 {
-  "name": "vscode-tabulator",
-  "displayName": "Tabulator",
-  "description": "Tabulator",
+  "name": "vscode-data-table",
+  "displayName": "Data Table",
+  "description": "Data Table View",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.57.0"
   },
   "categories": [
+    "Data Science",
     "Notebooks"
   ],
   "activationEvents": [],
@@ -14,9 +15,9 @@
   "contributes": {
     "notebookRenderer": [
       {
-        "id": "vscode-tabulator",
+        "id": "vscode-data-table",
         "entrypoint": "./out/client/index.js",
-        "displayName": "Tabulator",
+        "displayName": "Data Table",
         "mimeTypes": ["application/json"]
       }
     ]
