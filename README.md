@@ -6,8 +6,10 @@
   vscode Data Table View
 </h1>
 
-<h4 align="center">Data Table View 🈸  vscode extension for native Notebook 📓 cell ⌗ data outputs</h4>
+<h2 align="center">Data Table View 🈸  vscode extension for native Notebook 📓 cell ⌗ data outputs</h2>
 
-<hr />
+---
 
-See our [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 vscode extension for a generic [Grid Data Viewer](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-preview) with many common data formats support, pivot tables, filters, aggregates, and basic charts 📊
+See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 vscode extension for a generic [Grid Data Viewer](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-preview) with many common data formats support, search, sort, filters, grouping, splits, pivot tables, aggregates, and basic charts 📊
+
+---
