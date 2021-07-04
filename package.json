@@ -4,6 +4,7 @@
   "description": "Data Table View",
   "version": "1.0.0",
   "engines": {
+    "node": ">14.5.0",
     "vscode": "^1.57.0"
   },
   "icon": "resources/images/data-table.png",
@@ -73,6 +74,7 @@
     "@typescript-eslint/parser": "^4.26.0",
     "@types/vscode-notebook-renderer": "^1.57.8",
     "@types/vscode": "^1.57.0",
+    "@observablehq/inputs": "^0.8.0",
     "concurrently": "^5.3.0",
     "css-loader": "^4.2.0",
     "eslint": "^7.27.0",
