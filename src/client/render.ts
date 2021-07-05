@@ -10,7 +10,11 @@ interface IRenderInfo {
 
 export function render({container, mime, value}: IRenderInfo) {
   const data = value.data ? value.data: value;
-  const table = inputs.table(data);
+  const table = inputs.table(data, {
+    layout: 'auto',
+    width: 'auto',
+    height: 360
+  });
   console.log(`data.table: mime-type=${mime}`);
   container.appendChild(table);
 }
