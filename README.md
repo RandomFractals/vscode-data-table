@@ -11,7 +11,7 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 ## Notebook 📓 Data Table 🈸 Renderer View
 
 ![Notebook 📓 Data Table Renderer View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-renderer.png?raw=true 
- "Chicago Transportation Notebooks 📚 Collection")
+ "Notebook 📓 Data Table Renderer View")
 
 ## Notebook 📓 Data Table 🈸 Renderer Features
 
