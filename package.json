@@ -1,7 +1,7 @@
 {
   "name": "vscode-data-table",
   "displayName": "Data Table",
-  "description": "Data Table View",
+  "description": "Data Table 🈸 renderer for Notebook 📓 cell ⌗ data outputs.",
   "version": "1.1.0",
   "engines": {
     "node": ">14.5.0",
