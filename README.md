@@ -8,10 +8,10 @@
 
 See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 vscode extension for a generic [Grid Data Viewer](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-preview) with many common data formats support, search, sort, filters, grouping, splits, pivot tables, aggregates, and basic charts 📊
 
-## Notebook 📓 Data Table 🈸 Renderer View
+## Data Table 🈸 Renderer View
 
-![Notebook 📓 Data Table Renderer View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-renderer.png?raw=true 
- "Notebook 📓 Data Table Renderer View")
+![Data Table 🈸 Renderer View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-renderer.png?raw=true 
+ "Data Table 🈸 Renderer View")
 
 ## 🈸 Features
 
@@ -21,7 +21,7 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 
 ## REST Book 📓 Example
 
-- Install [REST Book](https://marketplace.visualstudio.com/items?itemName=tanhakabir.rest-book) vscode extension.
+- Install [REST Book](https://marketplace.visualstudio.com/items?itemName=tanhakabir.rest-book) 📓 vscode extension.
 
 - Load [Chicago Traffic Tracker](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/chicago-traffic-tracker.restbook) REST Book 📓
 
