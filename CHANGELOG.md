@@ -2,6 +2,22 @@
 
 See [releases](https://github.com/RandomFractals/vscode-data-table/releases) for source code and `vscode-data-table.vsix` extension package download.
 
+## v1.1.0 - [2021-07-06]
+- [#19](https://github.com/RandomFractals/vscode-data-table/issues/19)
+Add CSV data loading notebook cell example
+- [#20](https://github.com/RandomFractals/vscode-data-table/issues/20)
+Add CSV Data Table rendering
+- [#21](https://github.com/RandomFractals/vscode-data-table/issues/21)
+Move data table renderer code to src/renderer
+- [#22](https://github.com/RandomFractals/vscode-data-table/issues/22)
+Refactor renderer setup for multi mime types support
+- [#23](https://github.com/RandomFractals/vscode-data-table/issues/23)
+Add Chicago traffic tracker rest notebook for testing
+- [#24](https://github.com/RandomFractals/vscode-data-table/issues/24)
+Add usage scenarios to docs
+- [#25](https://github.com/RandomFractals/vscode-data-table/issues/25)
+Package and publish docs update release
+
 ## v1.0.0 - [2021-07-05]
 - [#1](https://github.com/RandomFractals/vscode-data-table/issues/1)
 Reach out to Tabulator library author
