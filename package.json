@@ -46,7 +46,7 @@
     "notebookRenderer": [
       {
         "id": "vscode-data-table",
-        "entrypoint": "./out/client/index.js",
+        "entrypoint": "./out/renderer/index.js",
         "displayName": "Data Table",
         "mimeTypes": ["application/json"]
       }
@@ -54,14 +54,14 @@
   },
   "scripts": {
     "vscode:prepublish": "npm run compile && node out/test/checkNoTestProvider.js",
-    "compile": "npm run compile:extension && npm run compile:client",
+    "compile": "npm run compile:extension && npm run compile:renderer",
     "compile:extension": "tsc -b",
-    "compile:client": "webpack --mode production",
+    "compile:renderer": "webpack --mode production",
     "lint": "eslint src --ext ts",
     "watch": "concurrently -r \"npm:watch:*\"",
     "watch:extension": "tsc -b --watch",
     "watch:client": "webpack --mode development --watch",
-    "dev": "concurrently -r npm:watch:extension npm:watch:client",
+    "dev": "concurrently -r npm:watch:extension npm:watch:renderer",
     "pretest": "npm run compile && npm run lint",
     "test": "node ./out/test/runTest.js"
   },
