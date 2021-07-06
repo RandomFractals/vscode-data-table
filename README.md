@@ -15,7 +15,7 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 
 ## 🈸 Features
 
-- View `JSON` array data cell output in a simple html table with column sort, number, and date formatting
+- View `CSV` and `JSON` array data cell output in a simple html table with column sort, number, and date formatting.
 
 ...
 
