@@ -50,7 +50,8 @@
         "displayName": "Data Table",
         "mimeTypes": [
           "application/json",
-          "text/csv"
+          "text/csv",
+          "text/plain"
         ]
       }
     ]
