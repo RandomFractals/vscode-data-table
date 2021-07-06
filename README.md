@@ -13,6 +13,10 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 ![Notebook 📓 Data Table Renderer View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-renderer.png?raw=true 
  "Chicago Transportation Notebooks 📚 Collection")
 
+## Notebook 📓 Data Table 🈸 Renderer Features
+
+- View `JSON` array data cell output in a simple html table with column sort and number and date formatting
+
 ...
 
 # Dev Log
