@@ -1,6 +1,9 @@
 import { render } from './render';
 import errorOverlay from 'vscode-notebook-error-overlay';
-import type { ActivationFunction } from 'vscode-notebook-renderer';
+import type {
+  ActivationFunction, 
+  OutputItem 
+} from 'vscode-notebook-renderer';
 
 // Fix the public path so that any async import()'s work as expected.
 // eslint-disable-next-line @typescript-eslint/naming-convention
@@ -12,10 +15,10 @@ __webpack_public_path__ = new URL(scriptUrl.replace(/[^/]+$/, '') +
 
 export const activate: ActivationFunction = context => {
   return {
-    renderOutputItem(outputItem, element) {
+    renderOutputItem(outputItem: OutputItem, element: HTMLElement) {
       let shadow = element.shadowRoot;
       if (!shadow) {
-        shadow = element.attachShadow({ mode: 'open' });
+        shadow = element.attachShadow({mode: 'open'});
         const root = document.createElement('div');
         root.id = 'root';
         shadow.append(root);
@@ -23,10 +26,14 @@ export const activate: ActivationFunction = context => {
       const root = shadow.querySelector<HTMLElement>('#root')!;
       errorOverlay.wrap(root, () => {
         root.innerHTML = '';
-        const node = document.createElement('div');
-        root.appendChild(node);
-
-        render({ container: node, mime: outputItem.mime, value: outputItem.json(), context });
+        const dataContainer: HTMLDivElement = document.createElement('div');
+        root.appendChild(dataContainer);
+        render({
+          container: dataContainer,
+          mimeType: outputItem.mime,
+          value: outputItem, //outputItem.json(), 
+          context 
+        });
       });
     },
     disposeOutputItem(outputId) {
