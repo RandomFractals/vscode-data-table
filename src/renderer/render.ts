@@ -14,20 +14,15 @@ export function render({container, mimeType, value}: IRenderInfo) {
   console.log(`data.table: mime-type=${mimeType}`);
   switch (mimeType) {
     case 'application/json':
-      // get json data
       const jsonData = value.json();
       data = jsonData.data ? jsonData.data: jsonData;
+      if (typeof data === 'string') {
+        data = csvParse(data);
+      }
       break;
     case 'text/csv':
     case 'text/plain':
-      // parse csv data
-      let csvData = value.json();
-      if (csvData.data) {
-        csvData = csvData.data;
-      }
-      else {
-        csvData = value.string();
-      }
+      let csvData = value.text();
       data = csvParse(csvData);
       break;
   }
