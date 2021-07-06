@@ -13,11 +13,24 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 ![Notebook 📓 Data Table Renderer View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-renderer.png?raw=true 
  "Notebook 📓 Data Table Renderer View")
 
-## Notebook 📓 Data Table 🈸 Renderer Features
+## 🈸 Features
 
-- View `JSON` array data cell output in a simple html table with column sort and number and date formatting
+- View `JSON` array data cell output in a simple html table with column sort, number, and date formatting
 
 ...
+
+## REST Book 📓 Example
+
+- Install [REST Book](https://marketplace.visualstudio.com/items?itemName=tanhakabir.rest-book) vscode extension.
+
+- Load [Chicago Traffic Tracker](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/chicago-traffic-tracker.restbook) REST Book 📓
+
+- Run All cells ⌗
+
+- Click on `...` in the gutter of `GET` traffic data output to change it to Data Table 🈸 renderer:
+
+![Chicago Traffic Data Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-chicago-traffic.png?raw=true 
+ "Chicago Traffic Data Notebook 📓")
 
 # Dev Log
 
