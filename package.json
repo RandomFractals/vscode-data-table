@@ -96,6 +96,7 @@
   },
   "dependencies": {
     "@observablehq/inputs": "^0.8.0",
+    "apache-arrow": "^4.0.1",
     "d3-dsv": "^3.0.1"
   }
 }
