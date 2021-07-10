@@ -2,7 +2,7 @@
   "name": "vscode-data-table",
   "displayName": "Data Table",
   "description": "Data Table 🈸 renderer for Notebook 📓 cell ⌗ data outputs.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "engines": {
     "node": ">14.5.0",
     "vscode": "^1.57.0"
@@ -49,6 +49,7 @@
         "entrypoint": "./out/renderer/index.js",
         "displayName": "Data Table",
         "mimeTypes": [
+          "application/vnd.code.notebook.stdout",
           "application/json",
           "text/csv",
           "text/plain"

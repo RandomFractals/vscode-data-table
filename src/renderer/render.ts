@@ -25,6 +25,9 @@ export function render({container, mimeType, value}: IRenderInfo) {
       let csvData = value.text();
       data = csvParse(csvData);
       break;
+    default:
+      console.log(value.blob());
+      break;
   }
 
   // create table view
