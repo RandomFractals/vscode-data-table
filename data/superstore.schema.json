@@ -1,0 +1,254 @@
+{
+  "fields": [
+    {
+      "name": "Row ID",
+      "type": {
+        "isSigned": true,
+        "bitWidth": 32
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "Order ID",
+      "type": {
+        "indices": {
+          "isSigned": true,
+          "bitWidth": 32
+        },
+        "dictionary": {},
+        "isOrdered": false,
+        "id": 0
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "Order Date",
+      "type": {
+        "unit": 0
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "Ship Date",
+      "type": {
+        "unit": 0
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "Ship Mode",
+      "type": {
+        "indices": {
+          "isSigned": true,
+          "bitWidth": 32
+        },
+        "dictionary": {},
+        "isOrdered": false,
+        "id": 1
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "Customer ID",
+      "type": {
+        "indices": {
+          "isSigned": true,
+          "bitWidth": 32
+        },
+        "dictionary": {},
+        "isOrdered": false,
+        "id": 2
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "Customer Name",
+      "type": {
+        "indices": {
+          "isSigned": true,
+          "bitWidth": 32
+        },
+        "dictionary": {},
+        "isOrdered": false,
+        "id": 3
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "Segment",
+      "type": {
+        "indices": {
+          "isSigned": true,
+          "bitWidth": 32
+        },
+        "dictionary": {},
+        "isOrdered": false,
+        "id": 4
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "Country",
+      "type": {
+        "indices": {
+          "isSigned": true,
+          "bitWidth": 32
+        },
+        "dictionary": {},
+        "isOrdered": false,
+        "id": 5
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "City",
+      "type": {
+        "indices": {
+          "isSigned": true,
+          "bitWidth": 32
+        },
+        "dictionary": {},
+        "isOrdered": false,
+        "id": 6
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "State",
+      "type": {
+        "indices": {
+          "isSigned": true,
+          "bitWidth": 32
+        },
+        "dictionary": {},
+        "isOrdered": false,
+        "id": 7
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "Postal Code",
+      "type": {
+        "precision": 2
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "Region",
+      "type": {
+        "indices": {
+          "isSigned": true,
+          "bitWidth": 32
+        },
+        "dictionary": {},
+        "isOrdered": false,
+        "id": 8
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "Product ID",
+      "type": {
+        "indices": {
+          "isSigned": true,
+          "bitWidth": 32
+        },
+        "dictionary": {},
+        "isOrdered": false,
+        "id": 9
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "Category",
+      "type": {
+        "indices": {
+          "isSigned": true,
+          "bitWidth": 32
+        },
+        "dictionary": {},
+        "isOrdered": false,
+        "id": 10
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "Sub-Category",
+      "type": {
+        "indices": {
+          "isSigned": true,
+          "bitWidth": 32
+        },
+        "dictionary": {},
+        "isOrdered": false,
+        "id": 11
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "Product Name",
+      "type": {
+        "indices": {
+          "isSigned": true,
+          "bitWidth": 32
+        },
+        "dictionary": {},
+        "isOrdered": false,
+        "id": 12
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "Sales",
+      "type": {
+        "precision": 2
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "Quantity",
+      "type": {
+        "isSigned": true,
+        "bitWidth": 32
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "Discount",
+      "type": {
+        "precision": 2
+      },
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "Profit",
+      "type": {
+        "precision": 2
+      },
+      "nullable": true,
+      "metadata": {}
+    }
+  ],
+  "metadata": {},
+  "dictionaries": {}
+}
