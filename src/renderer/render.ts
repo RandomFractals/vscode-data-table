@@ -1,36 +1,51 @@
-import type {RendererContext} from 'vscode-notebook-renderer';
+import type {
+  RendererContext,
+  OutputItem 
+} 
+from 'vscode-notebook-renderer';
 import {csvParse} from 'd3-dsv';
+const aq = require('arquero');
 const inputs = require('@observablehq/inputs');
 
+/**
+ * Notebook cell output render info.
+ */
 interface IRenderInfo {
   container: HTMLElement;
   mimeType: string;
-  value: any;
+  value: OutputItem;
   context: RendererContext<unknown>;
 }
 
-export function render({container, mimeType, value}: IRenderInfo) {
+/**
+ * Renders notebook cell output.
+ * @param output Notebook cell output info to render.
+ */
+export function render(output: IRenderInfo) {
   let data = [];
-  console.log(`data.table: mime-type=${mimeType}`);
-  switch (mimeType) {
+  console.log(`data.table: mime-type=${output.mimeType}`);
+  switch (output.mimeType) {
     case 'application/json':
-      const jsonData = value.json();
+      const jsonData = output.value.json();
       data = jsonData.data ? jsonData.data: jsonData;
       if (typeof data === 'string') {
+        console.log('data.table: data-type=Text');
         data = csvParse(data);
       }
       break;
     case 'text/csv':
     case 'text/plain':
-      let csvData = value.text();
+      // assume CSV data for now
+      // TODO: add TSV data prasing later
+      const csvData = output.value.text();
       data = csvParse(csvData);
       break;
-    default:
-      console.log(value.blob());
+    case 'application/vnd.code.notebook.stdout':
+      data = getData(output.value);
       break;
   }
 
-  // create table view
+  // create data table view
   const table = inputs.table(data, {
     layout: 'auto',
     width: 'auto',
@@ -39,7 +54,7 @@ export function render({container, mimeType, value}: IRenderInfo) {
   });
 
   // add table to cell data output container
-  container.appendChild(table);
+  output.container.appendChild(table);
 }
 
 if (module.hot) {
@@ -48,6 +63,55 @@ if (module.hot) {
   });
 }
 
+/**
+ * Gets data output.
+ * @param output Output data.
+ */
+function getData(outputData: any): any {
+  // try getting JSON data first
+  const objectData = getJsonData(outputData);
+  if (objectData && Array.isArray(objectData)) {
+    console.log('data.table: data-type=JSON');
+    return objectData;
+  }
+
+  // try parsing CSV data
+  const textData: string = outputData.text();
+  if (textData.length > 0) {
+    console.log('data.table: data-type=Text');
+    return csvParse(textData);
+  }
+        
+  // try loading Apache Arrow data
+  const dataArray = outputData.data();
+  if (dataArray.size() > 0 ) {
+    console.log(`data.table: data-type=${dataArray.constructor}`);
+    return aq.fromArrow(dataArray);
+  }
+  
+  return outputData;
+}
+
+/**
+ * Gets output data JSON object or undefined 
+ * for string and binary data types.
+ * @param data Notebook output data value.
+ */
+function getJsonData(data: any): any {
+  try {
+    // try getting json data object
+    let objectData: any = data.json();
+    if (typeof objectData === 'string') {
+      // try to parse json data
+      objectData = JSON.parse(objectData);
+    }
+    return objectData;
+  }
+  catch (error) {
+    // console.log('data.table: JSON.parse error:\n', error.message);
+  }
+  return undefined;
+}
 
 /**
  * Gets data length.

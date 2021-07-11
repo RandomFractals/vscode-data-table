@@ -1,7 +1,7 @@
 import { render } from './render';
 import errorOverlay from 'vscode-notebook-error-overlay';
 import type {
-  ActivationFunction, 
+  ActivationFunction,
   OutputItem 
 } from 'vscode-notebook-renderer';
 
@@ -26,12 +26,12 @@ export const activate: ActivationFunction = context => {
       const root = shadow.querySelector<HTMLElement>('#root')!;
       errorOverlay.wrap(root, () => {
         root.innerHTML = '';
-        const dataContainer: HTMLDivElement = document.createElement('div');
-        root.appendChild(dataContainer);
+        const cellOutputContainer: HTMLDivElement = document.createElement('div');
+        root.appendChild(cellOutputContainer);
         render({
-          container: dataContainer,
+          container: cellOutputContainer,
           mimeType: outputItem.mime,
-          value: outputItem, //outputItem.json(), 
+          value: outputItem,
           context 
         });
       });
