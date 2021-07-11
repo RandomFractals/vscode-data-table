@@ -49,8 +49,9 @@
         "entrypoint": "./out/renderer/index.js",
         "displayName": "Data Table",
         "mimeTypes": [
-          "application/vnd.code.notebook.stdout",
           "application/json",
+          "application/octet-stream",
+          "application/vnd.code.notebook.stdout",
           "text/csv",
           "text/plain"
         ]
@@ -97,6 +98,7 @@
   "dependencies": {
     "@observablehq/inputs": "^0.8.0",
     "apache-arrow": "^4.0.1",
+    "arquero": "^4.8.4",
     "d3-dsv": "^3.0.1"
   }
 }
