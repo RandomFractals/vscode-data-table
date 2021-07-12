@@ -19,18 +19,31 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 
 ...
 
-## REST Book 📓 Example
+## 🈸 Examples
 
-- Install [REST Book](https://marketplace.visualstudio.com/items?itemName=tanhakabir.rest-book) 📓 vscode extension.
+### REST Book Example
 
-- Load [Chicago Traffic Tracker](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/chicago-traffic-tracker.restbook) REST Book 📓
+1. Install [REST Book](https://marketplace.visualstudio.com/items?itemName=tanhakabir.rest-book) 📓 vscode extension
 
-- Run All cells ⌗
+2. Load [Chicago Traffic Tracker](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/chicago-traffic-tracker.restbook) REST Book 📓
 
-- Click on `...` in the gutter of `GET` traffic data output to change it to Data Table 🈸 renderer:
+3. Run All cells ⌗
+
+4. Click on `...` in the gutter of `GET` data output and change it to Data Table 🈸 renderer:
 
 ![Chicago Traffic Data Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-chicago-traffic.png?raw=true 
  "Chicago Traffic Data Notebook 📓")
+
+## TypeScript Notebook Example
+
+1. Install [TypeScript Notebooks](https://marketplace.visualstudio.com/items?itemName=donjayamanne.typescript-notebook) 📚 vscode extension
+
+2. Download [USA Airports data files](https://github.com/RandomFractals/vscode-data-table/tree/main/data)
+
+3. Load [USA Airports](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/usa-airports.ipynb) TypeScript Notebook 📓
+
+4. Run All cells ⌗ to view local `CSV` and `JSON` data outputs with Data Table 🈸:
+
 
 # Recommended Extensions
 
