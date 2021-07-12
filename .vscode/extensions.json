@@ -3,6 +3,8 @@
   // for the documentation about the extensions.json format
   "recommendations": [
     "dbaeumer.vscode-eslint",
-    "eamodio.tsl-problem-matcher"
+    "eamodio.tsl-problem-matcher",
+    "tanhakabir.rest-book",
+    "donjayamanne.typescript-notebook"
   ]
 }
