@@ -2,6 +2,24 @@
 
 See [releases](https://github.com/RandomFractals/vscode-data-table/releases) for source code and `vscode-data-table.vsix` extension package download.
 
+## v1.2.0 - [2021-07-12]
+- [#27](https://github.com/RandomFractals/vscode-data-table/issues/27)
+Add TypeScript .ipynb example
+- [#28](https://github.com/RandomFractals/vscode-data-table/issues/28)
+Add Arrow data notebook examples
+- [#29](https://github.com/RandomFractals/vscode-data-table/issues/29)
+Add alternative data table cell output renderer for vscode notebook stdout
+- [#31](https://github.com/RandomFractals/vscode-data-table/issues/31)
+Add TypeScript .ipynb CSV and JSON data output Table renderer examples to docs
+- [#32](https://github.com/RandomFractals/vscode-data-table/issues/32)
+Trim Data Table vscode extension package
+- [#33](https://github.com/RandomFractals/vscode-data-table/issues/33)
+Add REST Book and TypeScript Notebooks to recommended extensions
+- [#34](https://github.com/RandomFractals/vscode-data-table/issues/34)
+Add Recommand Extensions section to docs
+- [#36](https://github.com/RandomFractals/vscode-data-table/issues/36)
+Update changelog for Data Table v1.2.0 release
+
 ## v1.1.0 - [2021-07-06]
 - [#19](https://github.com/RandomFractals/vscode-data-table/issues/19)
 Add CSV data loading notebook cell example

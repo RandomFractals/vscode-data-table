@@ -31,8 +31,8 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 
 4. Click on `...` in the gutter of `GET` data output and change it to Data Table 🈸 renderer:
 
-![Chicago Traffic Data Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-chicago-traffic.png?raw=true 
- "Chicago Traffic Data Notebook 📓")
+![Chicago Traffic Data REST Book 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-chicago-traffic.png?raw=true 
+ "Chicago Traffic Data REST Book 📓")
 
 ## TypeScript Notebook Example
 
@@ -45,7 +45,7 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 4. Run All cells ⌗ to view local `CSV` and `JSON` data outputs with Data Table 🈸:
 
 ![USA Airports Data TypeScript Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-usa-airports.png?raw=true 
- "USA Airports Data TypeScript Data Notebook 📓")
+ "USA Airports Data TypeScript Notebook 📓")
 
 # Recommended Extensions
 
