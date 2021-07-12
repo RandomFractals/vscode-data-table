@@ -44,6 +44,8 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 
 4. Run All cells ⌗ to view local `CSV` and `JSON` data outputs with Data Table 🈸:
 
+![USA Airports Data TypeScript Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-usa-airports.png?raw=true 
+ "USA Airports Data TypeScript Data Notebook 📓")
 
 # Recommended Extensions
 
