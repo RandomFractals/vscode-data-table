@@ -3,6 +3,7 @@ import type {
   OutputItem 
 } 
 from 'vscode-notebook-renderer';
+import * as style from './style.css';
 import {csvParse} from 'd3-dsv';
 const aq = require('arquero');
 const inputs = require('@observablehq/inputs');
@@ -22,7 +23,7 @@ interface IRenderInfo {
  * @param output Notebook cell output info to render.
  */
 export function render(output: IRenderInfo) {
-  let data = [];
+  let data: any;
   console.log(`data.table: mime-type=${output.mimeType}`);
   switch (output.mimeType) {
     case 'application/json':
@@ -45,16 +46,27 @@ export function render(output: IRenderInfo) {
       break;
   }
 
-  // create data table view
-  const table = inputs.table(data, {
-    layout: 'auto',
-    width: 'auto',
-    height: 360,
-    rows: lengthOf(data)
-  });
+  if (Array.isArray(data)) {
+    // create data table view
+    const table = inputs.table(data, {
+      layout: 'auto',
+      width: 'auto',
+      height: 360,
+      rows: lengthOf(data)
+    });
 
-  // add table to cell data output container
-  output.container.appendChild(table);
+    // add table to cell data output container
+    output.container.appendChild(table);
+  }
+  else {
+    // output text in pre/code tags
+    const pre = document.createElement('pre');
+    pre.classList.add(style.json);
+    const code = document.createElement('code');
+    code.textContent = data;
+    pre.appendChild(code);
+    output.container.appendChild(pre);
+  }
 }
 
 if (module.hot) {
@@ -79,12 +91,15 @@ function getData(outputData: any): any {
   const textData: string = outputData.text();
   if (textData.length > 0) {
     console.log('data.table: data-type=Text');
-    return csvParse(textData);
+    if (isCsv(textData)) {
+      return csvParse(textData);
+    }
+    return textData;
   }
         
-  // try loading Apache Arrow data
+  // TODO: try loading Apache Arrow data
   const dataArray = outputData.data();
-  if (dataArray.size() > 0 ) {
+  if (dataArray.length() > 0 ) {
     console.log(`data.table: data-type=${dataArray.constructor}`);
     return aq.fromArrow(dataArray);
   }
@@ -135,4 +150,33 @@ function lengthOf(data: any) {
   }
 
   return 0;
+}
+
+/**
+ * Checks if text content is in CSV format.
+ * @param text The text content to check.
+ */
+function isCsv(text: string): boolean {
+  if (!text || text.length <= 0) {
+    return false;
+  }
+
+  // get text lines
+  const lines: string[] = text.split('\n');
+  if (lines.length > 0) {
+    const columns: string[] = lines[0].split(',');
+    const columnCount = columns.length;
+    if (columnCount > 0) {
+      // do naive check for some commas in the first 10 rows
+      for (let i = 1; i < 10; i++) {
+        const columnValues: string[] = lines[i].split(',');
+        if (columnValues.length !== columnCount) {
+          return false;
+        }
+      }
+      return true;
+    }
+  }
+
+  return false;
 }
