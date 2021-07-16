@@ -24,23 +24,18 @@ interface IRenderInfo {
  */
 export function render(output: IRenderInfo) {
   let data: any;
-  console.log(`data.table: mime-type=${output.mimeType}`);
+  console.log(`data.table:mimeType: ${output.mimeType}`);
+  console.log(output.value);
   switch (output.mimeType) {
     case 'application/json':
       const jsonData = output.value.json();
       data = jsonData.data ? jsonData.data: jsonData;
       if (typeof data === 'string') {
-        console.log('data.table: data-type=Text');
-        data = csvParse(data);
+        data = getData(output.value);
       }
       break;
     case 'text/csv':
     case 'text/plain':
-      // assume CSV data for now
-      // TODO: add TSV data prasing later
-      const csvData = output.value.text();
-      data = csvParse(csvData);
-      break;
     case 'application/vnd.code.notebook.stdout':
       data = getData(output.value);
       break;
@@ -82,25 +77,29 @@ if (module.hot) {
 function getData(outputData: any): any {
   // try getting JSON data first
   const objectData = getJsonData(outputData);
-  if (objectData && Array.isArray(objectData)) {
-    console.log('data.table: data-type=JSON');
+  if (objectData !== undefined) {
     return objectData;
   }
 
-  // try parsing CSV data
+  // try parsing text data
   const textData: string = outputData.text();
+  // console.log('data.table:text:', textData);
   if (textData.length > 0) {
-    console.log('data.table: data-type=Text');
-    if (isCsv(textData)) {
+    // see if text data is in json data format
+    const jsonData = getJsonData(textData);
+    if (jsonData !== undefined) {
+      return jsonData;
+    }
+    else if (isCsv(textData)) {
+      // parse CSV data
       return csvParse(textData);
     }
-    return textData;
   }
-        
-  // TODO: try loading Apache Arrow data
+
+  // TODO: try loading binary Apache Arrow data
   const dataArray = outputData.data();
   if (dataArray.length() > 0 ) {
-    console.log(`data.table: data-type=${dataArray.constructor}`);
+    console.log(`data.table:dataType: ${dataArray.constructor}`);
     return aq.fromArrow(dataArray);
   }
   
@@ -108,19 +107,42 @@ function getData(outputData: any): any {
 }
 
 /**
- * Gets output data JSON object or undefined 
- * for string and binary data types.
+ * Gets JSON data array, JSON object string, 
+ * CSV rows data array, or undefined 
+ * for plain text and binary data types.
  * @param data Notebook output data value.
  */
 function getJsonData(data: any): any {
+  // console.log('data.table:json:', data);
   try {
-    // try getting json data object
-    let objectData: any = data.json();
-    if (typeof objectData === 'string') {
-      // try to parse json data
-      objectData = JSON.parse(objectData);
+    let objectData: any;
+    if (typeof data === 'string') {
+      objectData = JSON.parse(data);
     }
-    return objectData;
+    else {
+      // try getting json data object
+      objectData = data.json();
+    }
+
+    let jsonData: any = objectData;
+    if (objectData.data) {
+      // use data object from REST response
+      jsonData = objectData.data;
+    }
+
+    console.log('data.table:format: JSON');
+    if (Array.isArray(jsonData)) {
+      return jsonData;
+    }
+    else if (typeof jsonData === 'string' && isCsv(jsonData)) {
+      // parse CSV data for JSON response from REST Book
+      // see: https://github.com/tanhakabir/rest-book/issues/114
+      return csvParse(jsonData);
+    }
+    else if (jsonData !== undefined) {
+      // stringiy for raw json object display
+      return JSON.stringify(jsonData, null, 2);
+    }
   }
   catch (error) {
     // console.log('data.table: JSON.parse error:\n', error.message);
@@ -157,7 +179,7 @@ function lengthOf(data: any) {
  * @param text The text content to check.
  */
 function isCsv(text: string): boolean {
-  if (!text || text.length <= 0) {
+  if (text === undefined || text.length === 0) {
     return false;
   }
 
@@ -170,10 +192,11 @@ function isCsv(text: string): boolean {
       // do naive check for some commas in the first 10 rows
       for (let i = 1; i < 10; i++) {
         const columnValues: string[] = lines[i].split(',');
-        if (columnValues.length !== columnCount) {
+        if (columnValues.length < columnCount) {
           return false;
         }
       }
+      console.log('data.table:format: CSV');
       return true;
     }
   }
