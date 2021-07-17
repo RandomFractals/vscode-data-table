@@ -47,6 +47,17 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 ![USA Airports Data TypeScript Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-usa-airports.png?raw=true 
  "USA Airports Data TypeScript Notebook 📓")
 
+## Pyolite Notebook Example
+
+1. Install [Pyolite Notebooks](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyolite) 📚 vscode extension
+
+2. Load [Chicago Red Light Cameras](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/chicago-red-light-cameras.ipynb) Pyolite Notebook 📓
+
+3. Run All cells ⌗:
+
+![Chicago Red Light Cameras Pyolite Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-pyolite-notebook.png?raw=true 
+ "Chicago Red Light Cameras Pyolite Notebook 📓")
+
 # Recommended Extensions
 
 Other recommended extensions for working with Interactive Notebooks 📚, data 🈸, charts 📈, and geo data formats 🗺️ in [VSCode](https://code.visualstudio.com/):
