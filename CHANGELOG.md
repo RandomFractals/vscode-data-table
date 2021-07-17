@@ -14,13 +14,15 @@ Add TypeScript .ipynb CSV and JSON data output Table renderer examples to docs
 - [#32](https://github.com/RandomFractals/vscode-data-table/issues/32)
 Trim Data Table vscode extension package
 - [#33](https://github.com/RandomFractals/vscode-data-table/issues/33)
-Add REST Book and TypeScript Notebooks to recommended extensions
+Add REST Book, TypeScript Notebooks, and Pyolite to recommended extensions
 - [#34](https://github.com/RandomFractals/vscode-data-table/issues/34)
 Add Recommand Extensions section to docs
 - [#36](https://github.com/RandomFractals/vscode-data-table/issues/36)
 Update changelog for Data Table v1.2.0 release
 - [#38](https://github.com/RandomFractals/vscode-data-table/issues/38)
 Add extra CSV and JSON array data checks
+- [#39](https://github.com/RandomFractals/vscode-data-table/issues/39)
+Move output data parsing to new outputLoader.ts
 
 ## v1.1.0 - [2021-07-06]
 - [#19](https://github.com/RandomFractals/vscode-data-table/issues/19)
