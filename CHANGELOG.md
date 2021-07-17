@@ -2,7 +2,7 @@
 
 See [releases](https://github.com/RandomFractals/vscode-data-table/releases) for source code and `vscode-data-table.vsix` extension package download.
 
-## v1.2.0 - [2021-07-12]
+## v1.2.0 - [2021-07-18]
 - [#27](https://github.com/RandomFractals/vscode-data-table/issues/27)
 Add TypeScript .ipynb example
 - [#28](https://github.com/RandomFractals/vscode-data-table/issues/28)
@@ -19,6 +19,8 @@ Add REST Book and TypeScript Notebooks to recommended extensions
 Add Recommand Extensions section to docs
 - [#36](https://github.com/RandomFractals/vscode-data-table/issues/36)
 Update changelog for Data Table v1.2.0 release
+- [#38](https://github.com/RandomFractals/vscode-data-table/issues/38)
+Add extra CSV and JSON array data checks
 
 ## v1.1.0 - [2021-07-06]
 - [#19](https://github.com/RandomFractals/vscode-data-table/issues/19)
