@@ -25,15 +25,8 @@ interface IRenderInfo {
 export function render(output: IRenderInfo) {
   let data: any;
   console.log(`data.table:mimeType: ${output.mimeType}`);
-  console.log(output.value);
   switch (output.mimeType) {
     case 'application/json':
-      const jsonData = output.value.json();
-      data = jsonData.data ? jsonData.data: jsonData;
-      if (typeof data === 'string') {
-        data = getData(output.value);
-      }
-      break;
     case 'text/csv':
     case 'text/plain':
     case 'application/vnd.code.notebook.stdout':
@@ -75,6 +68,8 @@ if (module.hot) {
  * @param output Output data.
  */
 function getData(outputData: any): any {
+  console.log('data.table:output', outputData);
+  
   // try getting JSON data first
   const objectData = getJsonData(outputData);
   if (objectData !== undefined) {
@@ -82,9 +77,14 @@ function getData(outputData: any): any {
   }
 
   // try parsing text data
-  const textData: string = outputData.text();
-  // console.log('data.table:text:', textData);
+  let textData: string = outputData.text();
   if (textData.length > 0) {
+    console.log('data.table:text:', textData.substring(0, Math.min(300, textData.length)), '...');
+    if (textData.startsWith("'") && textData.endsWith("'")) {
+      // strip out start/end single quotes from notebook cell output
+      textData = textData.substr(1, textData.length-2);
+    }
+
     // see if text data is in json data format
     const jsonData = getJsonData(textData);
     if (jsonData !== undefined) {
@@ -93,6 +93,9 @@ function getData(outputData: any): any {
     else if (isCsv(textData)) {
       // parse CSV data
       return csvParse(textData);
+    }
+    else {
+      return textData;
     }
   }
 
@@ -115,37 +118,36 @@ function getData(outputData: any): any {
 function getJsonData(data: any): any {
   // console.log('data.table:json:', data);
   try {
-    let objectData: any;
     if (typeof data === 'string') {
-      objectData = JSON.parse(data);
-    }
-    else {
-      // try getting json data object
-      objectData = data.json();
+      // try parsing JSON string
+      const objectData: any = JSON.parse(data);
+      if (Array.isArray(objectData)) {
+        console.log('data.table:format: JSON');
+        return objectData;
+      }
     }
 
-    let jsonData: any = objectData;
-    if (objectData.data) {
+    // try getting json data object
+    console.log('data.table:json:', data);
+    let jsonData: any = data.json();
+    if (jsonData.data) {
       // use data object from REST response
-      jsonData = objectData.data;
+      jsonData = jsonData.data;
     }
 
-    console.log('data.table:format: JSON');
     if (Array.isArray(jsonData)) {
+      console.log('data.table:format: JSON');
       return jsonData;
     }
-    else if (typeof jsonData === 'string' && isCsv(jsonData)) {
+    
+    if (typeof jsonData === 'string' && isCsv(jsonData)) {
       // parse CSV data for JSON response from REST Book
       // see: https://github.com/tanhakabir/rest-book/issues/114
       return csvParse(jsonData);
     }
-    else if (jsonData !== undefined) {
-      // stringiy for raw json object display
-      return JSON.stringify(jsonData, null, 2);
-    }
   }
   catch (error) {
-    // console.log('data.table: JSON.parse error:\n', error.message);
+    console.log('data.table: JSON.parse error:\n', error.message);
   }
   return undefined;
 }
@@ -187,19 +189,26 @@ function isCsv(text: string): boolean {
   const maxLines: number = 10;
   const lines: string[] = text.trimEnd().split('\n', maxLines);
   const minRows: number = Math.min(lines.length, maxLines);
-  console.log('data.table:lines:', lines);
 
   if (lines.length > 0) {
+    console.log('data.table:lines:', lines);
     const columns: string[] = lines[0].split(',');
     const columnCount = columns.length;
-    console.log('data.table:columns:', columns);
 
-    if (columnCount > 0) {
+    if (columnCount > 1) {
+      console.log('data.table:columns:', columns);
+      // check columns for garbled json
+      for (let k =0; k < columnCount; k++) {
+        let columnName: string = columns[k];
+        if (columnName.startsWith('[') || columnName.startsWith('{')) {
+          return false;
+        }
+      }
+
       // do naive check for some commas in the first 9 rows
       for (let i = 1; i < minRows; i++) {
         const columnValues: string[] = lines[i].split(',');
         console.log(`data.table:row[${i}]`, columnValues);
-
         if (columnValues.length < columnCount) {
           return false;
         }
@@ -208,6 +217,5 @@ function isCsv(text: string): boolean {
       return true;
     }
   }
-
   return false;
 }
