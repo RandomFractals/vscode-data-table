@@ -68,7 +68,7 @@ if (module.hot) {
  * @param output Output data.
  */
 function getData(outputData: any): any {
-  console.log('data.table:output', outputData);
+  // console.log('data.table:output', outputData);
   
   // try getting JSON data first
   const objectData = getJsonData(outputData);
@@ -129,7 +129,7 @@ function getJsonData(data: any): any {
     }
 
     // try getting json data object
-    console.log('data.table:json:', data);
+    // console.log('data.table:json:', data);
     let jsonData: any = data.json();
     if (jsonData.data) {
       // use data object from REST response
@@ -148,7 +148,7 @@ function getJsonData(data: any): any {
     }
   }
   catch (error) {
-    console.log('data.table: JSON.parse error:\n', error.message);
+    // console.log('data.table: JSON.parse error:\n', error.message);
   }
   return undefined;
 }
@@ -170,7 +170,7 @@ function patchJson(data: string): string {
   textData = textData.replace(objectEndRegEx, '}');
   textData = textData.replace(xRegEx, ' ');
   textData = textData.replace(newLineRegEx, '');
-  console.log('data.table:text:', textData.substring(0, Math.min(500, textData.length)), '...');
+  // console.log('data.table:text:', textData.substring(0, Math.min(500, textData.length)), '...');
   return textData;
 }
 
@@ -230,7 +230,7 @@ function isCsv(text: string): boolean {
       // do naive check for some commas in the first 9 rows
       for (let i = 1; i < minRows; i++) {
         const columnValues: string[] = lines[i].split(',');
-        console.log(`data.table:row[${i}]`, columnValues);
+        // console.log(`data.table:row[${i}]`, columnValues);
         if (columnValues.length < columnCount) {
           return false;
         }
