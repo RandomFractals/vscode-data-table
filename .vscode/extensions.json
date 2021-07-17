@@ -5,6 +5,7 @@
     "dbaeumer.vscode-eslint",
     "eamodio.tsl-problem-matcher",
     "tanhakabir.rest-book",
-    "donjayamanne.typescript-notebook"
+    "donjayamanne.typescript-notebook",
+    "joyceerhl.vscode-pyolite"
   ]
 }
