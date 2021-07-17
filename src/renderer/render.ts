@@ -182,16 +182,24 @@ function isCsv(text: string): boolean {
   if (text === undefined || text.length === 0) {
     return false;
   }
-
+  
   // get text lines
-  const lines: string[] = text.split('\n');
+  const maxLines: number = 10;
+  const lines: string[] = text.trimEnd().split('\n', maxLines);
+  const minRows: number = Math.min(lines.length, maxLines);
+  console.log('data.table:lines:', lines);
+
   if (lines.length > 0) {
     const columns: string[] = lines[0].split(',');
     const columnCount = columns.length;
+    console.log('data.table:columns:', columns);
+
     if (columnCount > 0) {
-      // do naive check for some commas in the first 10 rows
-      for (let i = 1; i < 10; i++) {
+      // do naive check for some commas in the first 9 rows
+      for (let i = 1; i < minRows; i++) {
         const columnValues: string[] = lines[i].split(',');
+        console.log(`data.table:row[${i}]`, columnValues);
+
         if (columnValues.length < columnCount) {
           return false;
         }
