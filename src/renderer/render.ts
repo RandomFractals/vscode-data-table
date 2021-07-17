@@ -79,11 +79,11 @@ function getData(outputData: any): any {
   // try parsing text data
   let textData: string = outputData.text();
   if (textData.length > 0) {
-    console.log('data.table:text:', textData.substring(0, Math.min(300, textData.length)), '...');
     if (textData.startsWith("'") && textData.endsWith("'")) {
       // strip out start/end single quotes from notebook cell output
       textData = textData.substr(1, textData.length-2);
     }
+    console.log('data.table:text:', textData.substring(0, Math.min(300, textData.length)), '...');
 
     // see if text data is in json data format
     const jsonData = getJsonData(textData);
@@ -120,7 +120,8 @@ function getJsonData(data: any): any {
   try {
     if (typeof data === 'string') {
       // try parsing JSON string
-      const objectData: any = JSON.parse(data);
+      const textData: string = patchJson(data);
+      const objectData: any = JSON.parse(textData);
       if (Array.isArray(objectData)) {
         console.log('data.table:format: JSON');
         return objectData;
@@ -150,6 +151,27 @@ function getJsonData(data: any): any {
     console.log('data.table: JSON.parse error:\n', error.message);
   }
   return undefined;
+}
+
+/**
+ * Patches garbled JSON string.
+ * @param data JSON data string.
+ * @returns patched up JSON string.
+ */
+function patchJson(data: string): string {
+  // patch garbled json string
+  const escapedQuoteRegEx = /\\\\"/g;
+  const objectStartRegEx = /"{/g; 
+  const objectEndRegEx = /}"/g;
+  const xRegEx = /\\xa0/g;
+  const newLineRegEx = /\\n/g;
+  let textData: string = data.replace(escapedQuoteRegEx, '"');
+  textData = textData.replace(objectStartRegEx, '{');
+  textData = textData.replace(objectEndRegEx, '}');
+  textData = textData.replace(xRegEx, ' ');
+  textData = textData.replace(newLineRegEx, '');
+  console.log('data.table:text:', textData.substring(0, Math.min(500, textData.length)), '...');
+  return textData;
 }
 
 /**
