@@ -15,9 +15,9 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 
 ## 🈸 Features
 
-- View `CSV` and `JSON` array data cell output in a simple html table with column sort, number, and date formatting.
-
-...
+- View `CSV` and `JSON` array data notebook cell output in HTML table with column sort, number, and date formatting
+- View notebook cell text output in a scrollable container with [`pre-wrap`](https://www.w3docs.com/snippets/css/how-to-wrap-text-in-a-pre-tag-with-css.html)
+- [REST Book](https://marketplace.visualstudio.com/items?itemName=tanhakabir.rest-book) 📓, [TypeScript Notebooks](https://marketplace.visualstudio.com/items?itemName=donjayamanne.typescript-notebook) 📚, and [Pyolite](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyolite) 🐍 examples 
 
 ## 🈸 Examples
 
@@ -49,7 +49,7 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 
 ## Pyolite Notebook Example
 
-1. Install [Pyolite Notebooks](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyolite) 📚 vscode extension
+1. Install [Pyolite](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyolite) 🐍 vscode extension
 
 2. Load [Chicago Red Light Cameras](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/chicago-red-light-cameras.ipynb) Pyolite Notebook 📓
 
