@@ -3,7 +3,6 @@ import type {
   OutputItem 
 } 
 from 'vscode-notebook-renderer';
-import * as style from './style.css';
 import {OutputLoader} from './outputLoader';
 const aq = require('arquero');
 const inputs = require('@observablehq/inputs');
@@ -49,12 +48,10 @@ export function render(output: IRenderInfo) {
   }
   else {
     // output text in pre/code tags
-    const pre = document.createElement('pre');
-    pre.classList.add(style.json);
-    const code = document.createElement('code');
-    code.textContent = data;
-    pre.appendChild(code);
-    output.container.appendChild(pre);
+   output.container.innerHTML = `<pre 
+    style="max-height: 300px; white-space: pre-wrap; tab-size: 2; overflow: auto;">
+      <code style="display: block; white-space: pre-wrap;">${data}</code>
+    </pre>`;
   }
 }
 
