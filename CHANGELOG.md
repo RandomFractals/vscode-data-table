@@ -17,6 +17,8 @@ Trim Data Table vscode extension package
 Add REST Book, TypeScript Notebooks, and Pyolite to recommended extensions
 - [#34](https://github.com/RandomFractals/vscode-data-table/issues/34)
 Add Recommand Extensions section to docs
+- [#35](https://github.com/RandomFractals/vscode-data-table/issues/35)
+Add Pyolite notebook example
 - [#36](https://github.com/RandomFractals/vscode-data-table/issues/36)
 Update changelog for Data Table v1.2.0 release
 - [#38](https://github.com/RandomFractals/vscode-data-table/issues/38)
