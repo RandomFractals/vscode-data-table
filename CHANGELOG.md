@@ -25,6 +25,12 @@ Update changelog for Data Table v1.2.0 release
 Add extra CSV and JSON array data checks
 - [#39](https://github.com/RandomFractals/vscode-data-table/issues/39)
 Move output data parsing to new outputLoader.ts
+- [#40](https://github.com/RandomFractals/vscode-data-table/issues/40)
+Set pre/code display container height for text outputs
+- [#41](https://github.com/RandomFractals/vscode-data-table/issues/41)
+Package and publish stdout CSV/JSON array data display release v1.2.0
+- [#42](https://github.com/RandomFractals/vscode-data-table/issues/42)
+Update Features section in docs for v1.2.0 release
 
 ## v1.1.0 - [2021-07-06]
 - [#19](https://github.com/RandomFractals/vscode-data-table/issues/19)
