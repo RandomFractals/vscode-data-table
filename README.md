@@ -15,9 +15,10 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 
 ## 🈸 Features
 
-- View `CSV` and `JSON` array data notebook cell output in HTML table with column sort, number, and date formatting
+- View `CSV`, [`GeoJSON`](https://www.rfc-editor.org/rfc/rfc7946.html) and `JSON` array data notebook cell output in HTML table with column sort, number, and date formatting
 - View notebook cell text output in a scrollable container with [`pre-wrap`](https://www.w3docs.com/snippets/css/how-to-wrap-text-in-a-pre-tag-with-css.html)
-- [REST Book](https://marketplace.visualstudio.com/items?itemName=tanhakabir.rest-book) 📓, [TypeScript Notebooks](https://marketplace.visualstudio.com/items?itemName=donjayamanne.typescript-notebook) 📚, and [Pyolite](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyolite) 🐍 examples 
+- [REST Book](https://marketplace.visualstudio.com/items?itemName=tanhakabir.rest-book) 📓 [TypeScript Notebooks](https://marketplace.visualstudio.com/items?itemName=donjayamanne.typescript-notebook) 📚 and [Pyolite](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyolite) 🐍 examples
+- [Geo 🌐 Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#geo-data-table-view)
 
 ## 🈸 Examples
 
@@ -57,6 +58,19 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 
 ![Chicago Red Light Cameras Pyolite Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-pyolite-notebook.png?raw=true 
  "Chicago Red Light Cameras Pyolite Notebook 📓")
+
+## Geo Data Table View
+
+1. Install [REST Book](https://marketplace.visualstudio.com/items?itemName=tanhakabir.rest-book) 📓 vscode extension
+
+2. Load [World 🌐 Rivers](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/world-rivers.restbook) REST Book 📓
+
+3. Run All cells ⌗
+
+4. Click on `...` in the gutter of `GET` data output and change it to Data Table 🈸 for geo table view:
+
+![World 🌐 Rivers Geo Data REST Book 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-geo-view.png?raw=true 
+ "World 🌐 Rivers Geo Data REST Book 📓")
 
 # Recommended Extensions
 
