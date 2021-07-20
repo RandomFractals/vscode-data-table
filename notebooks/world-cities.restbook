@@ -1,0 +1,1 @@
+[{"kind":1,"language":"markdown","value":"# World Cities REST Book 📓","outputs":[]},{"kind":2,"language":"rest-book","value":"GET https://raw.githubusercontent.com/RandomFractals/vscode-data-table/main/data/world-cities.geojson\r\nContent-Type: application/geo+json","outputs":[]}]
