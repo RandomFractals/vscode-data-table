@@ -6,7 +6,7 @@
   Data Table for Notebook 📓 cell ⌗ data outputs
 </h1>
 
-See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 vscode extension for a generic [Grid Data Viewer](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-preview) with many common data formats support, search, sort, filters, grouping, splits, pivot tables, aggregates, and basic charts 📊
+See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 vscode extension for a generic [Grid Data Viewer](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-preview) with many common data formats support, search, sort, filters, grouping, splits, pivot tables, aggregates and basic charts 📊
 
 ## Data Table 🈸 Renderer View
 
@@ -15,10 +15,10 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 
 ## 🈸 Features
 
-- View `CSV`, [`GeoJSON`](https://www.rfc-editor.org/rfc/rfc7946.html) and `JSON` array data notebook cell output in HTML table with column sort, number, and date formatting
+- View `CSV`, [`GeoJSON`](https://www.rfc-editor.org/rfc/rfc7946.html) and `JSON` array data notebook cell output in HTML table with column sort, number and date formatting
 - View notebook cell text output in a scrollable container with [`pre-wrap`](https://www.w3docs.com/snippets/css/how-to-wrap-text-in-a-pre-tag-with-css.html)
 - [REST Book](https://marketplace.visualstudio.com/items?itemName=tanhakabir.rest-book) 📓 [TypeScript Notebooks](https://marketplace.visualstudio.com/items?itemName=donjayamanne.typescript-notebook) 📚 and [Pyolite](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyolite) 🐍 examples
-- [Geo 🌐 Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#geo-data-table-view)
+- [Geo 🌐 Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#geo--data-table--view)
 
 ## 🈸 Examples
 
@@ -59,7 +59,7 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 ![Chicago Red Light Cameras Pyolite Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-pyolite-notebook.png?raw=true 
  "Chicago Red Light Cameras Pyolite Notebook 📓")
 
-## Geo Data Table View
+## Geo 🌐 Data Table 🈸 View
 
 1. Install [REST Book](https://marketplace.visualstudio.com/items?itemName=tanhakabir.rest-book) 📓 vscode extension
 
@@ -74,7 +74,7 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 
 # Recommended Extensions
 
-Other recommended extensions for working with Interactive Notebooks 📚, data 🈸, charts 📈, and geo data formats 🗺️ in [VSCode](https://code.visualstudio.com/):
+Other recommended extensions for working with Interactive Notebooks 📚 data 🈸 charts 📈 and geo 🗺️ data formats in [VSCode](https://code.visualstudio.com/):
 
 | Extension | Description |
 | --- | --- |
