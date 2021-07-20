@@ -141,7 +141,7 @@ export class OutputLoader {
           properties[`properties.${key}`] = feature.properties[key];
         });
         const {geometry: g, properties: p, ...restOfKeys} = feature;
-        return {...restOfKeys, ...geometry, ...properties};
+        return {...restOfKeys, ...properties, ...geometry};
       });
 
       // make features the first key of the object
