@@ -69,7 +69,7 @@ export class OutputLoader {
         const textData: string = this.patchJson(data);
         const objectData: any = JSON.parse(textData);
         if (Array.isArray(objectData)) {
-          console.log('data.table:format: JSON');
+          console.log('data.table:format: JSON array');
           return objectData;
         }
       }
@@ -82,11 +82,16 @@ export class OutputLoader {
         jsonData = jsonData.data;
       }
 
+      if (jsonData.features) {
+        console.log('data.table:format: GeoJSON');
+        jsonData = this.flattenGeoData(jsonData);
+      }
+
       if (Array.isArray(jsonData)) {
-        console.log('data.table:format: JSON');
+        console.log('data.table:format: JSON array');
         return jsonData;
       }
-      
+
       if (typeof jsonData === 'string' && this.isCsv(jsonData)) {
         // parse CSV data for JSON response from REST Book
         // see: https://github.com/tanhakabir/rest-book/issues/114
@@ -94,7 +99,7 @@ export class OutputLoader {
       }
     }
     catch (error) {
-      // console.log('data.table: JSON.parse error:\n', error.message);
+      console.log('data.table: JSON.parse error:\n', error.message);
     }
     return undefined;
   }
@@ -120,6 +125,33 @@ export class OutputLoader {
     return textData;
   }
 
+  /**
+   * Flattens geo data for tabular data display.
+   * @param data Geojson or topojson data object.
+   */
+  flattenGeoData(data: any): any {
+    if (data.features) {
+      const features = data.features.map((feature: any) => {
+        let geometry = {} as Record<string, any>;
+        Object.keys(feature?.geometry).forEach(key => {
+          geometry[`geometry.${key}`] = feature.geometry[key];
+        });
+        let properties = {} as Record<string, any>;
+        Object.keys(feature?.properties).forEach(key => {
+          properties[`properties.${key}`] = feature.properties[key];
+        });
+        const {geometry: g, properties: p, ...restOfKeys} = feature;
+        return {...restOfKeys, ...geometry, ...properties};
+      });
+
+      // make features the first key of the object
+      const {features: f, ...restOfData } = data;
+      data = {features, ...restOfData };
+      // console.log('data.table:geoData:', JSON.stringify(data, null, 2));
+      return data.features;
+    }
+    return data;
+  }
 
   /**
    * Checks if text content is in CSV format.
