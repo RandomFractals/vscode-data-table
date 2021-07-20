@@ -2,6 +2,10 @@
 
 See [releases](https://github.com/RandomFractals/vscode-data-table/releases) for source code and `vscode-data-table.vsix` extension package download.
 
+## v1.3.0 - [2021-07-20]
+- [#37](https://github.com/RandomFractals/vscode-data-table/issues/37)
+Add flat geojson display
+
 ## v1.2.0 - [2021-07-18]
 - [#27](https://github.com/RandomFractals/vscode-data-table/issues/27)
 Add TypeScript .ipynb example
