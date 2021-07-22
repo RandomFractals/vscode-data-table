@@ -138,17 +138,13 @@ export class OutputLoader {
         });
         let properties = {} as Record<string, any>;
         Object.keys(feature?.properties).forEach(key => {
-          properties[`properties.${key}`] = feature.properties[key];
+          properties[`${key}`] = feature.properties[key];
         });
         const {geometry: g, properties: p, ...restOfKeys} = feature;
         return {...restOfKeys, ...properties, ...geometry};
       });
-
-      // make features the first key of the object
-      const {features: f, ...restOfData } = data;
-      data = {features, ...restOfData };
-      // console.log('data.table:geoData:', JSON.stringify(data, null, 2));
-      return data.features;
+      // console.log('data.table:geoData:', JSON.stringify(features, null, 2));
+      return features;
     }
     return data;
   }
