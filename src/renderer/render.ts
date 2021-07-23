@@ -34,6 +34,9 @@ export function render(output: IRenderInfo) {
       break;
   }
 
+  // add data table view styles
+  addStyles(document);
+
   if (Array.isArray(data)) {
     // create data table view
     const table = inputs.table(data, {
@@ -83,4 +86,25 @@ if (module.hot) {
   }
 
   return 0;
+}
+
+function addStyles(document: HTMLDocument): HTMLStyleElement {
+  const styles: HTMLStyleElement = document.createElement('style');
+  document.head.appendChild(styles);
+  styles.textContent = `
+  .data-table {
+    max-width: 100%;
+    background-color: var(--vscode-editor-background);
+    border: 1px solid var(--vscode-panel-border);
+  }
+
+  .data-table form {
+    margin: 0px !important;
+  }
+
+  .data-table form table thead th {
+    background-color: var(--vscode-editor-background) !important;
+  }
+  `;
+  return styles;
 }

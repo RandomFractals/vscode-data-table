@@ -4,7 +4,7 @@ import type {
 } 
 from 'vscode-notebook-renderer';
 import errorOverlay from 'vscode-notebook-error-overlay';
-import { render } from './render';
+import {render} from './render';
 
 // eslint-disable-next-line @typescript-eslint/naming-convention
 declare const __webpack_relative_entrypoint_to_root__: string;
@@ -19,6 +19,7 @@ export const activate: ActivationFunction = context => {
     renderOutputItem(outputItem: OutputItem, element: HTMLElement) {
       errorOverlay.wrap(element, () => {
         const cellOutputContainer: HTMLDivElement = document.createElement('div');
+        cellOutputContainer.className = 'data-table';
         element.appendChild(cellOutputContainer);
         render({
           container: cellOutputContainer,
