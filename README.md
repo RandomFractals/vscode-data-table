@@ -1,7 +1,7 @@
 # vscode-data-table
 
-[![Apache-2.0 License](https://img.shields.io/badge/license-Apache2-orange.svg?color=green)](http://opensource.org/licenses/Apache-2.0)
-[![Version](https://vsmarketplacebadge.apphb.com/version/RandomFractalsInc.vscode-data-table.svg?color=orange&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-table)
+[![Apache-2.0 License](https://img.shields.io/badge/license-Apache2-brightgreen.svg)](http://opensource.org/licenses/Apache-2.0)
+[![Version](https://vsmarketplacebadge.apphb.com/version-short/RandomFractalsInc.vscode-data-table.svg?color=orange)](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-table)
 [![Installs](https://vsmarketplacebadge.apphb.com/installs/RandomFractalsInc.vscode-data-table.svg?color=orange)](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-table)
 [![Downloads](https://vsmarketplacebadge.apphb.com/downloads/RandomFractalsInc.vscode-data-table.svg?color=orange)](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-table)
 <a href='https://ko-fi.com/dataPixy' target='_blank' title='support: https://ko-fi.com/dataPixy'>
