@@ -2,6 +2,20 @@
 
 See [releases](https://github.com/RandomFractals/vscode-data-table/releases) for source code and `vscode-data-table.vsix` extension package download.
 
+## v1.4.0 - [2021-07-23]
+- [#43](https://github.com/RandomFractals/vscode-data-table/issues/43)
+Apply vscode editor scrollbar styles to plain text display
+- [#45](https://github.com/RandomFractals/vscode-data-table/issues/45)
+Drop properties. prefix in geo data table column names
+- [#46](https://github.com/RandomFractals/vscode-data-table/issues/46)
+Add data table styles
+- [#47](https://github.com/RandomFractals/vscode-data-table/issues/47)
+Get rid of renderer output shadow root to fix data table display
+- [#49](https://github.com/RandomFractals/vscode-data-table/issues/49)
+Add VS Marketplace badge, installs and downloads counters to docs
+- [#50](https://github.com/RandomFractals/vscode-data-table/issues/50)
+Package and publish data table styles and geo data display enhancements release
+
 ## v1.3.0 - [2021-07-20]
 - [#37](https://github.com/RandomFractals/vscode-data-table/issues/37)
 Add flat geojson display
