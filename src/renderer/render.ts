@@ -105,6 +105,10 @@ function addStyles(document: HTMLDocument): HTMLStyleElement {
   .data-table form table thead th {
     background-color: var(--vscode-editor-background) !important;
   }
+
+  th {
+    text-align: left !important;
+  }
   `;
   return styles;
 }
