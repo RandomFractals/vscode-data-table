@@ -119,6 +119,7 @@ function addStyles(document: HTMLDocument): HTMLStyleElement {
 
   th {
     border-top: none !important;
+    text-align: left !important;
   }
   `;
 

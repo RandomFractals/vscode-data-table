@@ -16,10 +16,6 @@ thead th {
   box-shadow: 0 1px 0 var(--vscode-panel-border) !important;
 }
 
-th {
-  text-align: left !important;
-}
-
 th, td {
   border: 1px solid var(--vscode-panel-border) !important;
 }
@@ -28,6 +24,8 @@ th:first-child,
 td:first-child {
   border-left: none !important;
 }
+
 th {
   border-top: none !important;
+  text-align: left !important;
 }
