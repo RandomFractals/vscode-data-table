@@ -19,3 +19,15 @@ thead th {
 th {
   text-align: left !important;
 }
+
+th, td {
+  border: 1px solid var(--vscode-panel-border) !important;
+}
+
+th:first-child,
+td:first-child {
+  border-left: none !important;
+}
+th {
+  border-top: none !important;
+}

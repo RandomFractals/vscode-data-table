@@ -1,9 +1,7 @@
 import type {
-  RendererContext,
-  OutputItem 
-} 
-from 'vscode-notebook-renderer';
-import {OutputLoader} from './outputLoader';
+  OutputItem, RendererContext
+} from 'vscode-notebook-renderer';
+import { OutputLoader } from './outputLoader';
 const aq = require('arquero');
 const inputs = require('@observablehq/inputs');
 
@@ -51,7 +49,7 @@ export function render(output: IRenderInfo) {
   }
   else {
     // output text in pre/code tags
-   output.container.innerHTML = `<pre 
+   output.container.innerHTML = `<pre
     style="max-height: 300px; white-space: pre-wrap; tab-size: 2; overflow: auto;">
       <code style="display: block; white-space: pre-wrap;">${data}</code>
     </pre>`;
@@ -77,7 +75,7 @@ if (module.hot) {
 
   if (typeof data.size === 'number') {
     // map or set
-    return data.size; 
+    return data.size;
   }
 
   if (typeof data.numRows === 'function') {
@@ -109,11 +107,20 @@ function addStyles(document: HTMLDocument): HTMLStyleElement {
   thead th {
     box-shadow: 0 1px 0 var(--vscode-panel-border) !important;
   }
-  
+
+  th, td {
+    border: 1px solid var(--vscode-panel-border) !important;
+  }
+
+  th:first-child,
+  td:first-child {
+    border-left: none !important;
+  }
+
   th {
-    text-align: left !important;
+    border-top: none !important;
   }
   `;
-  
+
   return styles;
 }
