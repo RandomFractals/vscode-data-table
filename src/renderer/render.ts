@@ -106,9 +106,14 @@ function addStyles(document: HTMLDocument): HTMLStyleElement {
     background-color: var(--vscode-editor-background) !important;
   }
 
+  thead th {
+    box-shadow: 0 1px 0 var(--vscode-panel-border) !important;
+  }
+  
   th {
     text-align: left !important;
   }
   `;
+  
   return styles;
 }
