@@ -1,9 +1,7 @@
 import type {
-  RendererContext,
-  OutputItem 
-} 
-from 'vscode-notebook-renderer';
-import {OutputLoader} from './outputLoader';
+  OutputItem, RendererContext
+} from 'vscode-notebook-renderer';
+import { OutputLoader } from './outputLoader';
 const aq = require('arquero');
 const inputs = require('@observablehq/inputs');
 
@@ -51,7 +49,7 @@ export function render(output: IRenderInfo) {
   }
   else {
     // output text in pre/code tags
-   output.container.innerHTML = `<pre 
+   output.container.innerHTML = `<pre
     style="max-height: 300px; white-space: pre-wrap; tab-size: 2; overflow: auto;">
       <code style="display: block; white-space: pre-wrap;">${data}</code>
     </pre>`;
@@ -77,7 +75,7 @@ if (module.hot) {
 
   if (typeof data.size === 'number') {
     // map or set
-    return data.size; 
+    return data.size;
   }
 
   if (typeof data.numRows === 'function') {
@@ -102,6 +100,14 @@ function addStyles(document: HTMLDocument): HTMLStyleElement {
     margin: 0px !important;
   }
 
+  tbody tr:hover {
+    box-shadow: inset 0 0 1500px 100px rgba(255, 255, 255, 0.1);
+  }
+
+  .vscode-light tbody tr:hover {
+    box-shadow: inset 0 0 1500px 100px rgba(0, 0, 0, 0.1);
+  }
+
   .data-table form table thead th {
     background-color: var(--vscode-editor-background) !important;
   }
@@ -109,11 +115,11 @@ function addStyles(document: HTMLDocument): HTMLStyleElement {
   thead th {
     box-shadow: 0 1px 0 var(--vscode-panel-border) !important;
   }
-  
+
   th {
     text-align: left !important;
   }
   `;
-  
+
   return styles;
 }
