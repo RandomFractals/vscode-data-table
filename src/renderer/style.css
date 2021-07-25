@@ -20,11 +20,11 @@ tbody tr:hover {
   background-color: var(--vscode-editor-background) !important;
 }
 
-th {
-  text-align: left !important;
-}
-
 thead th {
   box-shadow: 0 1px 0 var(--vscode-panel-border) !important;
+}
+
+th {
+  text-align: left !important;
 }
 
