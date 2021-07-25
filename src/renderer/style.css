@@ -20,6 +20,12 @@ tbody tr:hover {
   background-color: var(--vscode-editor-background) !important;
 }
 
+thead th span {
+  /* Sorting triangle symbol in table header */
+  margin-left: 0 !important;
+  padding-right: 0.4rem;
+}
+
 thead th {
   box-shadow: 0 1px 0 var(--vscode-panel-border) !important;
 }
