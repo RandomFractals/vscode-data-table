@@ -32,5 +32,6 @@ thead th {
 
 th {
   text-align: left !important;
+  cursor: pointer !important;
 }
 
