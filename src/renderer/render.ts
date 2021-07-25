@@ -4,6 +4,7 @@ import type {
 import { OutputLoader } from './outputLoader';
 const aq = require('arquero');
 const inputs = require('@observablehq/inputs');
+import './style.css';
 
 /**
  * Notebook cell output render info.
@@ -31,9 +32,6 @@ export function render(output: IRenderInfo) {
       data = outputLoader.getData();
       break;
   }
-
-  // add data table view styles
-  addStyles(document);
 
   if (Array.isArray(data)) {
     // create data table view
@@ -84,42 +82,4 @@ if (module.hot) {
   }
 
   return 0;
-}
-
-function addStyles(document: HTMLDocument): HTMLStyleElement {
-  const styles: HTMLStyleElement = document.createElement('style');
-  document.head.appendChild(styles);
-  styles.textContent = `
-  .data-table {
-    max-width: 100%;
-    background-color: var(--vscode-editor-background);
-    border: 1px solid var(--vscode-panel-border);
-  }
-
-  .data-table form {
-    margin: 0px !important;
-  }
-
-  tbody tr:hover {
-    box-shadow: inset 0 0 1500px 100px rgba(255, 255, 255, 0.1);
-  }
-
-  .vscode-light tbody tr:hover {
-    box-shadow: inset 0 0 1500px 100px rgba(0, 0, 0, 0.1);
-  }
-
-  .data-table form table thead th {
-    background-color: var(--vscode-editor-background) !important;
-  }
-
-  thead th {
-    box-shadow: 0 1px 0 var(--vscode-panel-border) !important;
-  }
-
-  th {
-    text-align: left !important;
-  }
-  `;
-
-  return styles;
 }
