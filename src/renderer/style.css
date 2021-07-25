@@ -20,6 +20,3 @@ thead th {
   box-shadow: 0 1px 0 var(--vscode-panel-border) !important;
 }
 
-th, td {
-  border: 1px solid var(--vscode-panel-border) !important;
-}
