@@ -43,13 +43,7 @@ module.exports = (env, argv) => ({
         test: /\.css$/,
         use: [
           'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-              modules: true,
-            },
-          },
+          'css-loader',
         ],
       },
     ],
@@ -57,7 +51,7 @@ module.exports = (env, argv) => ({
   devServer: {
     port: devServerPort,
     hot: true,
-    // disable host check, otherwise the bundle running in vscode 
+    // disable host check, otherwise the bundle running in vscode
     // won't be able to connect to the dev server
     disableHostCheck: true,
     writeToDisk: true,
