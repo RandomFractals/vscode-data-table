@@ -2,6 +2,24 @@
 
 See [releases](https://github.com/RandomFractals/vscode-data-table/releases) for source code and `vscode-data-table.vsix` extension package download.
 
+## v1.5.0 - [2021-07-25]
+- [#52](https://github.com/RandomFractals/vscode-data-table/issues/52)
+Use vscode panel border color for table header box shadow
+- [#57](https://github.com/RandomFractals/vscode-data-table/pull/57)
+Import styles from css file
+- [#58](https://github.com/RandomFractals/vscode-data-table/pull/58)
+Highlight row on hover
+- [#60](https://github.com/RandomFractals/vscode-data-table/pull/60)
+Use cursor:pointer for header instead of resize
+- [#61](https://github.com/RandomFractals/vscode-data-table/pull/61)
+Fix header sorting symbol being too close to the text
+- [#62](https://github.com/RandomFractals/vscode-data-table/issues/62)
+Enable incremental table row creation and data loading on table scroll
+- [#63](https://github.com/RandomFractals/vscode-data-table/issues/63)
+Update vscode and notebooks api dependencies to latest
+- [#65](https://github.com/RandomFractals/vscode-data-table/issues/65)
+Package and publish v1.5.0 release with table UI enhancements 
+
 ## v1.4.0 - [2021-07-23]
 - [#43](https://github.com/RandomFractals/vscode-data-table/issues/43)
 Apply vscode editor scrollbar styles to plain text display
