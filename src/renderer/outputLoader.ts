@@ -13,8 +13,6 @@ export class OutputLoader {
    * Gets data output.
    */
   getData(): any {
-    // console.log('data.table:output', outputData);
-    
     // try getting JSON data first
     const objectData = this.getJsonData(this.outputData);
     if (objectData !== undefined) {
@@ -39,18 +37,19 @@ export class OutputLoader {
         // parse CSV data
         return csvParse(textData);
       }
-      else {
+      else if (textData !== '{}' && !textData.startsWith('<Buffer ')) { // empty object or binary data
         return textData;
       }
     }
 
     // TODO: try loading binary Apache Arrow data
-    /*
-    const dataArray = this.outputData.data();
-    if (dataArray.length() > 0 ) {
+    // console.log('data.table:output', this.outputData);
+    const dataArray: Uint8Array = this.outputData.data();
+    console.log(dataArray);
+    if (dataArray.length > 0 ) {
       console.log(`data.table:dataType: ${dataArray.constructor}`);
       return aq.fromArrow(dataArray);
-    }*/
+    }
     
     return this.outputData;
   }
