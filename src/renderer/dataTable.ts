@@ -1,18 +1,9 @@
 import type {
   ActivationFunction,
   OutputItem 
-} 
-from 'vscode-notebook-renderer';
+} from 'vscode-notebook-renderer';
 import errorOverlay from 'vscode-notebook-error-overlay';
-import {render} from './render';
-
-// eslint-disable-next-line @typescript-eslint/naming-convention
-declare const __webpack_relative_entrypoint_to_root__: string;
-declare const scriptUrl: string;
-
-// fix public path for async imports to work
-__webpack_public_path__ = new URL(scriptUrl.replace(/[^/]+$/, '') + 
-  __webpack_relative_entrypoint_to_root__).toString();
+import {render} from './dataTableRenderer';
 
 export const activate: ActivationFunction = context => {
   return {
