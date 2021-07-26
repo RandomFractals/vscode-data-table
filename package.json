@@ -2,7 +2,7 @@
   "name": "vscode-data-table",
   "displayName": "Data Table",
   "description": "Data Table 🈸 renderer for Notebook 📓 cell ⌗ data outputs.",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "engines": {
     "node": ">14.5.0",
     "vscode": "^1.58.1"
@@ -47,7 +47,9 @@
     "output",
     "renderer"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onRenderer:vscode-data-table"
+  ],
   "main": "./out/extension/extension.js",
   "contributes": {
     "notebookRenderer": [
