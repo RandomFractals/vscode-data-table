@@ -48,15 +48,29 @@
     "renderer"
   ],
   "activationEvents": [
-    "onRenderer:vscode-data-table"
+    "onRenderer:vscode-data-table",
+    "onRenderer:vscode-data-summary"
   ],
   "main": "./out/extension/extension.js",
   "contributes": {
     "notebookRenderer": [
       {
         "id": "vscode-data-table",
-        "entrypoint": "./out/renderer/index.js",
+        "entrypoint": "./out/renderer/dataTable.js",
         "displayName": "Data Table",
+        "mimeTypes": [
+          "application/json",
+          "application/geo+json",
+          "application/octet-stream",
+          "application/vnd.code.notebook.stdout",
+          "text/csv",
+          "text/plain"
+        ]
+      },
+      {
+        "id": "vscode-data-summary",
+        "entrypoint": "./out/renderer/dataSummary.js",
+        "displayName": "Data Summary",
         "mimeTypes": [
           "application/json",
           "application/geo+json",
@@ -94,7 +108,6 @@
     "concurrently": "^6.2.0",
     "css-loader": "^6.2.0",
     "eslint": "^7.31.0",
-    "fork-ts-checker-webpack-plugin": "^6.2.13",
     "glob": "^7.1.7",
     "mocha": "^9.0.2",
     "style-loader": "^3.2.1",
