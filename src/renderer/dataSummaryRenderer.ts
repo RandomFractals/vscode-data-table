@@ -6,6 +6,7 @@ import {OutputLoader} from './outputLoader';
 import './style.css';
 const htl = require('htl');
 const inputs = require('@observablehq/inputs');
+const dataSummary = require('./dataSummaryView.js');
 
 /**
  * Notebook cell output render info.
@@ -35,12 +36,8 @@ export function render(output: IRenderInfo) {
   }
 
   if (Array.isArray(data)) {
-    // create data table view
-    const table = inputs.table(data, {
-      layout: 'auto',
-      width: 'auto',
-      height: 360,
-    });
+    // create data summary view
+    const table = dataSummary.summaryTable(data);
 
     // add table to cell data output container
     output.container.appendChild(table);
