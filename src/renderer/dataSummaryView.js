@@ -1,6 +1,7 @@
 // Loosely based on: https://observablehq.com/@observablehq/summary-table
 /* eslint-disable curly */
-import {Plot, d3} from '@observablehq/plot';
+import * as Plot from '@observablehq/plot';
+import * as d3 from 'd3';
 
 const htl = require('htl');
 const html = htl.html;
@@ -30,7 +31,18 @@ const BLACK = 'black';
 
 const percentFormat = d3.format('.1%');
 
-getType = (data, column) => {
+// bars color map
+const colorMap = new Map([
+  [ORDINAL, 'rgba(78, 121, 167, 1)'],
+  [CONTINUOUS, 'rgba(242, 142, 44, 1)'],
+  [DATE, 'rgba(225,87,89, 1)']
+].map(d => {
+  const color = d3.color(d[1]);
+  const colorCopy = color.copy({opacity: 0.6});
+  return [d[0], {color: color.formatRgb(), brighter: colorCopy.formatRgb()}];
+}));
+
+function getType(data, column) {
   for (const d of data) {
     const value = d[column];
     if (value === null) continue;
@@ -41,18 +53,6 @@ getType = (data, column) => {
   // if all are null, return ordinal
   return ORDINAL;
 };
-
-// bars color map
-const colorMap = new Map([
-  [ORDINAL, 'rgba(78, 121, 167, 1)'],
-  [CONTINUOUS, 'rgba(242, 142, 44, 1)'],
-  [DATE, 'rgba(225,87,89, 1)']
-].map(d => {
-  const color = d3.color(d[1]);
-  const colorCopy = Object.assign({}, color); //_.clone(color);
-  colorCopy.opacity = .6;
-  return [d[0], {color: color.formatRgb(), brighter: colorCopy.formatRgb()}];
-}));
 
 /**
  * Creates summary table document fragment for display.
@@ -200,7 +200,7 @@ Histogram = (data, col, type = CONTINUOUS) => {
   
   // formatter for the mean
   const extent = d3.extent(data, d => d[col]);
-  const format = type === DATE ? getDateFormat(extent):d3.format(',.0f');
+  const format = type === DATE ? getDateFormat(extent) : d3.format(',.0f');
   const rules = [{label: MEAN, value: mean}];
 
   return addTooltips(
@@ -224,7 +224,7 @@ Histogram = (data, col, type = CONTINUOUS) => {
             title: (elems) => {
               // compute range for the elements
               const barExtent = d3.extent(elems, d => d[col]);
-              const barFormat = type === DATE ? getDateFormat(barExtent):d3.format(',.0f');
+              const barFormat = type === DATE ? getDateFormat(barExtent) : d3.format(',.0f');
               return `${elems.length} rows\n[${barFormat(barExtent[0])} to ${barFormat(barExtent[1])}]`;
             }
           }, 
