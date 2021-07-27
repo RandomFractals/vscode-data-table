@@ -2,9 +2,9 @@ import type {
   OutputItem, 
   RendererContext
 } from 'vscode-notebook-renderer';
-import { OutputLoader } from './outputLoader';
+import {OutputLoader} from './outputLoader';
 import './style.css';
-const aq = require('arquero');
+const htl = require('htl');
 const inputs = require('@observablehq/inputs');
 
 /**
@@ -47,10 +47,10 @@ export function render(output: IRenderInfo) {
   }
   else {
     // output text in pre/code tags
-   output.container.innerHTML = `<pre
-    style="max-height: 300px; white-space: pre-wrap; tab-size: 2; overflow: auto;">
-      <code style="display: block; white-space: pre-wrap;">${data}</code>
-    </pre>`;
+    output.container.appendChild(htl.html`<pre
+      style="max-height: 300px; white-space: pre-wrap; tab-size: 2; overflow: auto;">
+        <code style="display: block; white-space: pre-wrap;">${data}</code>
+      </pre>`);
   }
 }
 

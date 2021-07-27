@@ -16,7 +16,7 @@ export const activate: ActivationFunction = context => {
           container: cellOutputContainer,
           mimeType: outputItem.mime,
           value: outputItem,
-          context 
+          context
         });
       });
     },
