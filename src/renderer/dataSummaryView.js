@@ -25,6 +25,7 @@ const NONE = 'none';
 const CATEGORY = ' category';
 const CATEGORIES = ' categories';
 
+const BLUE = 'blue';
 const BLUES = 'blues';
 const DARK_BLUE = 'darkblue';
 const BLACK = 'black';
@@ -63,7 +64,7 @@ export function summaryTable(data, {label = SUMMARY} = {}) {
   let value = [];
 
   // create summary card and track data shape
-  const summaryCard = SummaryCard(data, label);
+  const summaryCard = summaryCard(data, label);
   value.rowCount = summaryCard.value.rowCount;
   value.columnCount = summaryCard.value.columnCount;
   value.columns = columns;
@@ -81,7 +82,7 @@ export function summaryTable(data, {label = SUMMARY} = {}) {
           <th>SD</th>
         </thead>
       ${columns.map(d => {
-        const columnElement = SummarizeColumn(data, d);
+        const columnElement = summarizeColumn(data, d);
         // get the value from the element
         value.push(columnElement.value);
         return columnElement;
@@ -93,9 +94,9 @@ export function summaryTable(data, {label = SUMMARY} = {}) {
 };
 
 /**
- * Data summary card.
+ * Creates data summary card table view.
  */
-SummaryCard = (data, label = SUMMARY) => {  
+function summaryCard(data, label = SUMMARY) {
   // compute column data values
   const sample = data[0] || {};
   const columns = data.columns || Object.keys(sample);
@@ -158,9 +159,127 @@ SummaryCard = (data, label = SUMMARY) => {
   
   summaryCardElement.value = {rowCount, columnCount};
   return summaryCardElement;
-};
+}
 
-SmallStack = (categoryData, col) => {
+/**
+ * Creates summary view for a single data column.
+ * @param {*} data 
+ * @param {*} col 
+ * @returns 
+ */
+function summarizeColumn(data, col) {  
+  let content, value, format, el, chart, missingLabel, percentMissing, min, max, median, mean, sd;
+  
+  // construct content based on column data type
+  const type = getType(data, col);  
+  const col1 = htl.html`<td 
+    style="white-space: nowrap; vertical-align: middle; padding-right: 5px; padding-left: 3px;">
+    ${icons[type]()}
+    <strong style="vertical-align: middle;">${col === "" ? "unlabeled" : col}</strong></td>`;
+  switch(type) {
+    case ORDINAL: // categorial columns
+      format = d3.format(',.0f');
+      // calculate category percent and count
+      const categories = d3.rollups(data, 
+          v => ({count: v.length, percent: v.length / data.length || 1}), 
+          d => d[col]
+        )
+        .sort((a, b) => b[1].count - a[1].count)
+        .map(d => {
+          let obj = {};
+          obj[col] = (d[0] === null || d[0] === '') ? '(missing)' : d[0];
+          obj.count = d[1].count;
+          obj.percent = d[1].percent;
+          return obj;
+      });
+      
+      // calculate percent missing
+      percentMissing = data.filter(d => d[col] === null).length / data.length;
+      
+      // create horizontal columnn stack chart
+      const stackChart = smallStack(categories, col);
+      
+      // create column data summary table row
+      el = htl.html`<tr style="font-family: sans-serif; font-size: 13px;">
+        ${col1}          
+        <td><div style="position: relative;">${stackChart}</div></td>
+        <td>${percentFormat(percentMissing)}</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>`;
+      
+      value = {
+        column: col, type, 
+        min: null, max: null, 
+        mean: null, median: null, sd: null, 
+        missing: percentMissing, 
+        categories: categories.length
+      };
+      break;
+    case DATE: 
+      // calculate and format start/end times
+      const start = d3.min(data, d => +d[col]);
+      const end = d3.max(data, d => +d[col]);
+      mean = d3.mean(data, d => +d[col]);
+      median = d3.median(data, d => +d[col]);
+      sd = d3.deviation(data, d => +d[col]);
+      
+      // calculate percent missing
+      percentMissing = data.filter(d => d[col] === null).length / data.length;
+      chart = histogram(data, col, type);
+      
+      // create column data summary table row
+      el = htl.html`<tr style="font-family: sans-serif; font-size: 13px;">
+          ${col1}
+          <td><div style="position: relative;">${chart}</div></td>
+          <td>${percentFormat(percentMissing)}</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>`;
+      value = {
+        column: col, type, 
+        min:start, max: end, 
+        mean: null, median: null, sd: null, 
+        missing: percentMissing, 
+        categories:null 
+      };
+      break;
+    default:  // continuous columns
+      // compute values 
+      format = d3.format(',.0f');
+      min = d3.min(data, d => +d[col]);
+      max = d3.max(data, d => +d[col]);
+      mean = d3.mean(data, d => +d[col]);
+      median = d3.median(data, d => +d[col]);
+      sd = d3.deviation(data, d => +d[col]);
+      percentMissing = data.filter(d => d[col] === null).length / data.length;      
+      chart = histogram(data, col, type);
+      // create column data summary table row
+      el = htl.html`<tr style="font-family: sans-serif; font-size: 13px;">
+        ${col1}
+        <td><div style="position: relative; top: 3px;">${chart}</div></td>
+        <td>${percentFormat(percentMissing)}</td>
+        <td>${format(mean)}</td>
+        <td>${format(median)}</td>
+        <td>${format(sd)}</td>
+      </tr>`;      
+      value = {
+        column: col, type, 
+        min, max, mean, median, sd, 
+        missing: percentMissing, 
+        categories: null
+      };
+      break;
+  }  
+  el.value = value;
+  el.appendChild(html`<style>td {vertical-align:middle;} </style>`);
+  return el;
+}
+
+
+function smallStack(categoryData, col) {
   // horizontal stacked bar
   const label = categoryData.length === 1 ? CATEGORY : CATEGORIES;
   return addTooltips(
@@ -190,10 +309,9 @@ SmallStack = (categoryData, col) => {
       }, 
       }
     ), {fill: DARK_BLUE});
-};
+}
 
-
-Histogram = (data, col, type = CONTINUOUS) => {
+function histogram(data, col, type = CONTINUOUS) {
   // compute color + mean
   const barColor = colorMap.get(type).brighter;
   const mean = d3.mean(data, d => d[col]);
@@ -239,11 +357,150 @@ Histogram = (data, col, type = CONTINUOUS) => {
         overflow: VISIBLE
       }
     }), {opacity: 1, fill: colorMap.get(type).color});
+}
+
+/**
+ * Adds chart toolitps.
+ * @param {*} chart 
+ * @param {*} hoverStyles 
+ * @returns 
+ */
+function addTooltips(chart, hoverStyles = {fill: BLUE, opacity: 0.5 }) {
+  // add the hover group
+  // workaround if it's in a figure
+  const type = d3.select(chart).node().tagName;
+  const wrapper =  (type === 'FIGURE') ? d3.select(chart).select('svg') : d3.select(chart);
+  wrapper.style('overflow', VISIBLE); // to avoid clipping at the edges
+  wrapper.selectAll('path').style('pointer-events', 'visibleStroke'); // only trigger hover for lines in visible area
+
+  const tip = wrapper
+    .selectAll('.hover-tip')
+    .data([''])
+    .join('g')
+    .attr('class', 'hover')
+    .style('pointer-events', NONE)
+    .style('text-anchor', 'middle');
+
+  // add a unique id to the chart for styling
+  const id = idGenerator();
+
+  // Add the event listeners
+  d3.select(chart)
+    .classed(id, true) // using a class selector so that it doesn't overwrite the ID
+    .selectAll('title')
+    .each(function () {
+      // get the text out of the title, set it as an attribute on the parent, and remove it
+      const title = d3.select(this); // title element that we want to remove
+      const parent = d3.select(this.parentNode); // visual mark on the screen
+      const t = title.text();
+      if (t) {
+        parent.attr('__title', t).classed('has-title', true);
+        title.remove();
+      }
+
+      // add mouse events
+      parent
+        .on('mousemove', function (event) {
+          const text = d3.select(this).attr('__title');
+          const pointer = d3.pointer(event, wrapper.node());
+          if (text) tip.call(hover, pointer, text.split('\n'));
+          else tip.selectAll('*').remove();
+
+          // keep within the parent horizontally
+          const tipSize = tip.node().getBBox();
+          if (pointer[0] + tipSize.x < 0)
+            tip.attr(
+              'transform',
+              `translate(${tipSize.width / 2}, ${pointer[1] + 7})`
+            );
+          else if (pointer[0] + tipSize.width / 2 > wrapper.attr('width'))
+            tip.attr(
+              'transform',
+              `translate(${wrapper.attr("width") - tipSize.width / 2}, ${
+                pointer[1] + 7
+              })`
+            );
+        })
+        .on('mouseout', (event) => {
+          tip.selectAll('*').remove();
+        });
+    });
+
+  // remove tooltip when user taps on the wrapper on mobile devices
+  wrapper.on('touchstart', () => tip.selectAll('*').remove());
+  // add styles
+  const styleString = Object.keys(hoverStyles)
+    .map((d) => {
+      return `${d}: ${hoverStyles[d]};`;
+    })
+    .join('');
+
+  // Define the styles
+  const style = html`<style>
+    .${id} .has-title {
+       cursor: pointer; 
+       pointer-events: all;
+    }
+    .${id} .has-title:hover {
+      ${styleString}
+    }
+  </style>`;
+  chart.appendChild(style);
+  return chart;
+}
+
+/**
+ * Positions tooltip display.
+ * @param {*} tip 
+ * @param {*} pos 
+ * @param {*} text 
+ */
+function hover(tip, pos, text) {
+  const sidePadding = 10;
+  const verticalPadding = 5;
+  const verticalOffset = 15;
+
+  // clear tooltip
+  tip.selectAll('*').remove();
+
+  // add text
+  tip.style('text-anchor', 'middle')
+    .style('pointer-events', NONE)
+    .attr('transform', `translate(${pos[0]}, ${pos[1] + 7})`)
+    .selectAll('text')
+    .data(text)
+    .join('text')
+    .style('dominant-baseline', 'ideographic')
+    .text((d) => d)
+    .attr('y', (d, i) => (i - (text.length - 1)) * 15 - verticalOffset)
+    .style('font-weight', (d, i) => (i === 0 ? 'bold' : 'normal'));
+
+  const bbox = tip.node().getBBox();
+
+  // add background rectangle
+  tip.append('rect')
+    .attr('y', bbox.y - verticalPadding)
+    .attr('x', bbox.x - sidePadding)
+    .attr('width', bbox.width + sidePadding * 2)
+    .attr('height', bbox.height + verticalPadding * 2)
+    .style('fill', 'white')
+    .style('stroke', '#d3d3d3')
+    .lower();
+}
+
+const idGenerator = () => {
+  var S4 = function () {
+    return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+  };
+  return "a" + S4() + S4();
 };
 
-
-// use UTC date format extent offset
-getDateFormat = (extent) => {
+/**
+ * Gets UTC date format with offset.
+ * @param extent Time offset.
+ * @returns 
+ */
+function getDateFormat(extent) {
   const formatMillisecond = d3.utcFormat('.%L'),
       formatSecond = d3.utcFormat(':%S'),
       formatMinute = d3.utcFormat('%I:%M'),
@@ -263,7 +520,7 @@ getDateFormat = (extent) => {
     extent[1] > d3.utcSecond.offset(extent[0], 1) ? formatSecond :
     extent[1] > d3.utcMillisecond.offset(extent[0], 1) ? formatMillisecond :
     formatDay;
-};
+}
 
 function dateFormat(date) {
   const formatMillisecond = d3.timeFormat('.%L'),
