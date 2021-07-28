@@ -43,14 +43,17 @@ const colorMap = new Map([
   return [d[0], {color: color.formatRgb(), brighter: colorCopy.formatRgb()}];
 }));
 
+/**
+ * Gets data value type.
+ * @param {*} data Data object.
+ * @param {*} column Column/property name.
+ * @returns 
+ */
 function getType(data, column) {
-  for (const d of data) {
-    const value = d[column];
-    if (value === null) continue;
-    if (typeof value === NUMBER) return CONTINUOUS;
-    if (value instanceof Date) return DATE;
-    return ORDINAL;
-  }
+  const value = data[column];
+  if (value === null) return ORDINAL;
+  if (typeof value === NUMBER) return CONTINUOUS;
+  if (value instanceof Date) return DATE;    
   // if all are null, return ordinal
   return ORDINAL;
 };
@@ -58,19 +61,23 @@ function getType(data, column) {
 /**
  * Creates summary table document fragment for display.
  */
-export function summaryTable(data, {label = SUMMARY} = {}) {
-  const sample = data[0] || {};
-  const columns = data.columns || Object.keys(sample);
-  let value = [];
+export function summaryTable(data) {
+  const dataSample = data[0] || {};
+  const columns = data.columns || Object.keys(dataSample);
 
   // create summary card and track data shape
-  const summaryCard = summaryCard(data, label);
-  value.rowCount = summaryCard.value.rowCount;
-  value.columnCount = summaryCard.value.columnCount;
-  value.columns = columns;
+  const dataSummaryCard = summaryCard(data);
+  const dataSummary = {
+    rowCount: dataSummaryCard.value.rowCount,
+    columnCount: dataSummaryCard.value.columnCount,
+    columns: columns
+  };
+  const columnValues = [];
 
   // compose summary table fragment
-  const dataSummaryElement = htl.html`<div style="display: inline-block; vertical-align: top;">${summaryCard}</div>
+  const width = 900;
+  let dataSummaryElement = htl.html`<div 
+    style="display: inline-block; vertical-align: top;">${dataSummaryCard}</div>
       <div style="display: inline-block;">
         <table style="vertical-align: middle; display: block; overflow-x: auto; max-width: ${width}px;">
           <thead style="z-index: -999;">
@@ -81,29 +88,29 @@ export function summaryTable(data, {label = SUMMARY} = {}) {
           <th>Median</th>
           <th>SD</th>
         </thead>
-      ${columns.map(d => {
-        const columnElement = summarizeColumn(data, d);
-        // get the value from the element
-        value.push(columnElement.value);
+      ${columns.map(column => {
+        const columnElement = summarizeColumn(data, column);
+        // add column values
+        columnValues.push(columnElement.value);
         return columnElement;
       })}
     </table>
   </div>`;
-  dataSummaryElement.value = value;
+  dataSummaryElement.value = dataSummary;
   return dataSummaryElement;
-};
+}
 
 /**
  * Creates data summary card table view.
  */
-function summaryCard(data, label = SUMMARY) {
+export function summaryCard(data) {
   // compute column data values
-  const sample = data[0] || {};
-  const columns = data.columns || Object.keys(sample);
-  const columnData = columns.map(d => {
+  const dataSample = data[0] || {};
+  const columns = data.columns || Object.keys(dataSample);
+  const columnData = columns.map(columnName => {
     return {
-      label: d === '' ? UNLABELED : d, 
-      type: getType(data, d)
+      label: (columnName === '') ? UNLABELED : columnName,
+      type: getType(data, columnName)
     };
   });
   const columnCount = columnData.length;
@@ -111,33 +118,47 @@ function summaryCard(data, label = SUMMARY) {
   
   // create header row plot
   const headerRowPlot = addTooltips(
-    Plot.cellX(columnData,
-      {fill:d => colorMap.get(d.type).color, title: d => `${d.label}\n(${d.type})`}
-    ).plot({
-       x: {axis: null},
-       width: 100,
-       height: 10,
-       color: {
-         domain:[...colorMap.values()].map(d => d.color)
-       }, 
-       style: {
-         overflow: VISIBLE
-       }
-    }), 
-    {stroke: BLACK, "stroke-width": '3px'}
+    Plot.cellX(columnData, {
+      fill: d => colorMap.get(d.type).color,
+      title: d => `${d.label}\n(${d.type})`
+    })
+    .plot({
+      x: {axis: null},
+      width: 100,
+      height: 10,
+      color: {
+        domain: [...colorMap.values()].map(d => d.color)
+      }, 
+      style: {
+        overflow: VISIBLE,
+        width: '100px'
+      }
+    }),
+    {
+      stroke: BLACK, 
+      "stroke-width": '3px'
+    }
   );
   
   // crate columns plot
-  const columnsPlot = Plot.cellX(columnData, {fill: d => colorMap.get(d.type).color, fillOpacity: .3}).plot({
-    x:{axis: null},
-    width: 100,
-    height: 80,
-    color: {
-       domain:[...colorMap.values()].map(d => d.color)
-    }}
-  );
+  const columnsPlot = Plot.cellX(columnData, {
+      fill: d => colorMap.get(d.type).color, 
+      fillOpacity: .3
+    })
+    .plot({
+      x:{axis: null},
+      width: 100,
+      height: 80,
+      color: {
+        domain: [...colorMap.values()].map(d => d.color)
+      },
+      style: {
+        overflow: VISIBLE,
+        width: '100px'
+      }
+    });
   
-  const arrowStyles = {
+  const arrowDownStyles = {
     display: INLINE_BLOCK,
     verticalAlign: TOP,
     transformOrigin: '0 0',
@@ -147,14 +168,15 @@ function summaryCard(data, label = SUMMARY) {
     left: '114px',
     top: '54px'
   };
-  
-  const summaryCardElement = htl.html`<div style="font-family: sans-serif; font-size: 13px; margin-right: 10px;">
-      <span style="font-size: 1.3em">${label}</span>
+  const label = SUMMARY;
+  const summaryCardElement = htl.html`<div 
+      style="font-family: sans-serif; font-size: 12px; margin-right: 10px;">
+      <span>${label}</span>
       <div>${d3.format(',.0f')(columnCount)} ⟶</div>
       ${headerRowPlot}
       <span style="display: inline-block">${columnsPlot}</span>
       <span style="display: inline-block; vertical-align: top;">${d3.format(',.0f')(rowCount)}<br/></span>
-      <span style=${arrowStyles}>⟶</span>
+      <span style=${arrowDownStyles}>⟶</span>
     </div>`;
   
   summaryCardElement.value = {rowCount, columnCount};
@@ -351,7 +373,7 @@ function histogram(data, col, type = CONTINUOUS) {
         Plot.ruleY([0]), 
         Plot.ruleX(rules, {x: 'value', strokeWidth: 2, title:d => `${d.label} ${col}: ${format(d.value)}`})
       ], 
-      style:{
+      style: {
         marginLeft: -17,
         background: NONE,
         overflow: VISIBLE
