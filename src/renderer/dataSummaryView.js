@@ -305,32 +305,45 @@ function smallStack(categoryData, col) {
   // horizontal stacked bar
   const label = categoryData.length === 1 ? CATEGORY : CATEGORIES;
   return addTooltips(
-    Plot.barX(categoryData, {x: COUNT, fill: col, y: 0, 
-      title: d => d[col] + '\n' + percentFormat(d.pct)}).plot({
-      color: {scheme: BLUES},
+    Plot.barX(categoryData, {
+      x: COUNT,
+      fill: col,
+      y: 0,
+      title: d => d[col] + '\n' + percentFormat(d.pct)
+    })
+    .plot({
+      color: {
+        scheme: BLUES
+      },
       marks:[
-        Plot.text([0,0], {x: 0, dy: 13, text:d => d3.format(',.0f')(categoryData.length) + `${label}`})
+        Plot.text([0,0], {
+          x: 0, 
+          dy: 13, 
+          text:d => d3.format(',.0f')(categoryData.length) + `${label}`
+        })
       ], 
+      width: 205,
+      height: 30,
       style: {
         paddingTop: '0px',
         paddingBottom: '15px',
         textAnchor: START,
-        overflow: VISIBLE
+        overflow: VISIBLE,
+        width: '205px'
       }, 
-      x: {axis: null},
       color: {
         domain: categoryData.map(d => d[col]), 
         scheme: BLUES, 
         reverse: true
       },
-      height: 30,
-      width: 205,
+      x: {axis: null},
       y: {
         axis: null, 
         range: [30, 3]
       }, 
-      }
-    ), {fill: DARK_BLUE});
+    }), {
+      fill: DARK_BLUE
+    });
 }
 
 function histogram(data, col, type = CONTINUOUS) {
@@ -341,14 +354,18 @@ function histogram(data, col, type = CONTINUOUS) {
   // formatter for the mean
   const extent = d3.extent(data, d => d[col]);
   const format = type === DATE ? getDateFormat(extent) : d3.format(',.0f');
-  const rules = [{label: MEAN, value: mean}];
+  const rules = [{
+    label: MEAN, 
+    value: mean
+  }];
 
   return addTooltips(
     Plot.plot({
-      height: 55,
       width: 240,
+      height: 55,
       style: {
-        display: INLINE_BLOCK
+        display: INLINE_BLOCK,
+        width: '240px'
       },
       x: {
         label: '',
@@ -360,26 +377,37 @@ function histogram(data, col, type = CONTINUOUS) {
       },     
       marks: [
         Plot.rectY(data, 
-          Plot.binX({y: COUNT, 
-            title: (elems) => {
-              // compute range for the elements
-              const barExtent = d3.extent(elems, d => d[col]);
-              const barFormat = type === DATE ? getDateFormat(barExtent) : d3.format(',.0f');
-              return `${elems.length} rows\n[${barFormat(barExtent[0])} to ${barFormat(barExtent[1])}]`;
-            }
-          }, 
-          {x: col, fill: barColor})
+          Plot.binX({
+              y: COUNT, 
+              title: (elems) => {
+                // compute range for the elements
+                const barExtent = d3.extent(elems, d => d[col]);
+                const barFormat = type === DATE ? getDateFormat(barExtent) : d3.format(',.0f');
+                return `${elems.length} rows\n[${barFormat(barExtent[0])} to ${barFormat(barExtent[1])}]`;
+              }
+            }, {
+              x: col, 
+              fill: barColor
+            })
         ), 
         Plot.ruleY([0]), 
-        Plot.ruleX(rules, {x: 'value', strokeWidth: 2, title:d => `${d.label} ${col}: ${format(d.value)}`})
+        Plot.ruleX(rules, {
+          x: 'value', 
+          strokeWidth: 2, 
+          title: d => `${d.label} ${col}: ${format(d.value)}`
+        })
       ], 
       style: {
         marginLeft: -17,
         background: NONE,
         overflow: VISIBLE
       }
-    }), {opacity: 1, fill: colorMap.get(type).color});
+    }), {
+      opacity: 1, 
+      fill: colorMap.get(type).color
+    });
 }
+
 
 /**
  * Adds chart toolitps.
