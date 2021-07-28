@@ -56,7 +56,7 @@ function getType(data, column) {
   if (value instanceof Date) return DATE;    
   // if all are null, return ordinal
   return ORDINAL;
-};
+}
 
 /**
  * Creates summary table document fragment for display.
@@ -222,7 +222,7 @@ function summarizeColumn(data, col) {
       const stackChart = smallStack(categories, col);
       
       // create column data summary table row
-      el = htl.html`<tr style="font-family: sans-serif; font-size: 13px;">
+      el = htl.html`<tr style="font-family: sans-serif; font-size: 12px;">
         ${col1}          
         <td><div style="position: relative;">${stackChart}</div></td>
         <td>${percentFormat(percentMissing)}</td>
@@ -252,7 +252,7 @@ function summarizeColumn(data, col) {
       chart = histogram(data, col, type);
       
       // create column data summary table row
-      el = htl.html`<tr style="font-family: sans-serif; font-size: 13px;">
+      el = htl.html`<tr style="font-family: sans-serif; font-size: 12px;">
           ${col1}
           <td><div style="position: relative;">${chart}</div></td>
           <td>${percentFormat(percentMissing)}</td>
@@ -279,7 +279,7 @@ function summarizeColumn(data, col) {
       percentMissing = data.filter(d => d[col] === null).length / data.length;      
       chart = histogram(data, col, type);
       // create column data summary table row
-      el = htl.html`<tr style="font-family: sans-serif; font-size: 13px;">
+      el = htl.html`<tr style="font-family: sans-serif; font-size: 12px;">
         ${col1}
         <td><div style="position: relative; top: 3px;">${chart}</div></td>
         <td>${percentFormat(percentMissing)}</td>
@@ -296,7 +296,11 @@ function summarizeColumn(data, col) {
       break;
   }  
   el.value = value;
-  el.appendChild(html`<style>td {vertical-align:middle;} </style>`);
+  el.appendChild(html`<style>
+    td {
+      vertical-align: middle;
+    }
+  </style>`);
   return el;
 }
 
