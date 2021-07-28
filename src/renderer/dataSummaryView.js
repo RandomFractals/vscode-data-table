@@ -81,11 +81,11 @@ export function summaryTable(data) {
       <div style="display: inline-block;">
         <table style="vertical-align: middle; display: block; overflow-x: auto; max-width: ${width}px;">
           <thead style="z-index: -999;">
-          <th>Column</th>
-          <th style="min-width: 250px">Snapshot</th>
-          <th>Missing</th>
-          <th>Mean</th>
-          <th>Median</th>
+          <th>column</th>
+          <th style="min-width: 250px">snapshot</th>
+          <th>missing</th>
+          <th>mean</th>
+          <th>median</th>
           <th>SD</th>
         </thead>
       ${columns.map(column => {
