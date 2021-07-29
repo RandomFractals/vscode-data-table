@@ -63,8 +63,10 @@
           "application/geo+json",
           "application/octet-stream",
           "application/vnd.code.notebook.stdout",
+          "application/xml",
           "text/csv",
-          "text/plain"
+          "text/plain",
+          "text/xml"
         ]
       },
       {
@@ -76,8 +78,10 @@
           "application/geo+json",
           "application/octet-stream",
           "application/vnd.code.notebook.stdout",
+          "application/xml",
           "text/csv",
-          "text/plain"
+          "text/plain",
+          "text/xml"
         ]
       }
     ]
@@ -125,6 +129,7 @@
     "arquero": "^4.8.4",
     "d3": "^7.0.0",
     "d3-dsv": "^3.0.1",
-    "htl": "^0.3.0"
+    "htl": "^0.3.0",
+    "fast-xml-parser": "^3.19.0"
   }
 }
