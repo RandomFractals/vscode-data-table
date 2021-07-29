@@ -1,6 +1,7 @@
 import type {OutputItem} from 'vscode-notebook-renderer';
 import {csvParse} from 'd3-dsv';
 const aq = require('arquero');
+const xmlParser = require('fast-xml-parser');
 
 export class OutputLoader {
 
@@ -32,6 +33,9 @@ export class OutputLoader {
       const jsonData = this.getJsonData(textData);
       if (jsonData !== undefined) {
         return jsonData;
+      }
+      else if (textData.startsWith('<?xml version="1.0"')) {
+        return this.xmlParse(textData);
       }
       else if (this.isCsv(textData)) {
         // parse CSV data
@@ -91,10 +95,15 @@ export class OutputLoader {
         return jsonData;
       }
 
-      if (typeof jsonData === 'string' && this.isCsv(jsonData)) {
-        // parse CSV data for JSON response from REST Book
-        // see: https://github.com/tanhakabir/rest-book/issues/114
-        return csvParse(jsonData);
+      if (typeof jsonData === 'string') {
+        if (this.isCsv(jsonData)) {
+          // parse CSV data for JSON response from REST Book
+          // see: https://github.com/tanhakabir/rest-book/issues/114
+          return csvParse(jsonData);
+        }
+        else if (jsonData.startsWith('<?xml version="1.0"')) {
+          return this.xmlParse(jsonData);
+        }    
       }
     }
     catch (error) {
@@ -192,4 +201,41 @@ export class OutputLoader {
     return false;
   }
 
+  /**
+   * Parses xml data.
+   * @param xml Xml data string.
+   */
+  xmlParse(xml: string): any {
+    let jsonData = {};
+    const xmlParserOptions = {
+      attributeNamePrefix : '',
+      textNodeName : 'value',
+      ignoreAttributes : false,
+      ignoreNameSpace : true,
+      allowBooleanAttributes : true,
+      parseNodeValue : true,
+      parseAttributeValue : true,
+      trimValues: true,
+      // parseTrueNumberOnly: false,
+      // arrayMode: false, //"strict"
+    };
+    try {
+      jsonData = xmlParser.parse(xml, xmlParserOptions); // , true); // validate xml
+      console.log('data.table:format: XML');
+      // console.log(JSON.stringify(jsonData, null, 2));
+      for (let propertyValue of Object.values(jsonData)) {
+        const child: any = propertyValue;
+        for (let childPropertyValue of Object.values(child)) {
+          if (Array.isArray(childPropertyValue)) {
+            // return the first array property for now
+            return childPropertyValue;
+          }
+        }
+      }
+    }
+    catch(error) {
+      console.log('data.table: XML parse error:\n', error.message);
+    }
+    return jsonData;
+  }
 }
