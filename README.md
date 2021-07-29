@@ -80,6 +80,17 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 ![World 🌐 Rivers Geo Data REST Book 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-geo-view.png?raw=true 
  "World 🌐 Rivers Geo Data REST Book 📓")
 
+## XML Data Table 🈸 View
+
+1. Load [World 🌐 GDP](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/world-gdp.restbook) REST Book 📓
+
+2. Run All cells ⌗
+
+3. Click on `...` in the gutter of `GET` data output and change it to Data Table 🈸 for XML data table view:
+
+![World 🌐 GDP Data REST Book 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-world-gdp.png?raw=true 
+ "World 🌐 GDP Data REST Book 📓")
+
 # Recommended Extensions
 
 Other recommended extensions for working with Interactive Notebooks 📚 data 🈸 charts 📈 and geo 🗺️ data formats in [VSCode](https://code.visualstudio.com/):
