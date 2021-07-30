@@ -22,8 +22,6 @@ Data Table 🈸 uses [Observable Inputs Table](https://github.com/observablehq/i
 ![Data Table 🈸 Renderer View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-renderer.png?raw=true 
  "Data Table 🈸 Renderer View")
 
-You can also use our generic [Data Table Viewer](https://observablehq.com/@randomfractals/data-table-viewer) 📓 notebook to preview public datasets in browser.
-
 ## 🈸 Features
 
 - View `CSV`, [`GeoJSON`](https://www.rfc-editor.org/rfc/rfc7946.html) and `JSON` **array** data notebook cell output in HTML table with column sort, number and date formatting
@@ -31,6 +29,13 @@ You can also use our generic [Data Table Viewer](https://observablehq.com/@rando
 - Notebook cell text output display in a scrollable container with [`pre-wrap`](https://www.w3docs.com/snippets/css/how-to-wrap-text-in-a-pre-tag-with-css.html)
 - [REST Book](https://marketplace.visualstudio.com/items?itemName=tanhakabir.rest-book) 📓 [TypeScript Notebooks](https://marketplace.visualstudio.com/items?itemName=donjayamanne.typescript-notebook) 📚 and [Pyolite](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyolite) 🐍 examples
 - [Geo 🌐 Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#geo--data-table--view)
+
+## Observable Data Table 🈸 Viewer 📓
+
+You can also use our generic [Data Table Viewer](https://observablehq.com/@randomfractals/data-table-viewer) 📓 notebook to preview public datasets in browser.
+
+![Observable Data Table 🈸 Viewer 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/observable-data-table-viewer.png?raw=true 
+ "Observable Data Table 🈸 Viewer 📓")
 
 ## 🈸 Examples
 
