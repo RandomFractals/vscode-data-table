@@ -17,6 +17,8 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 
 ## Data Table 🈸 Renderer View
 
+Data Table 🈸 use [Observable Inputs Table](https://github.com/observablehq/inputs#Table) component for fast incremental data display and scrolling.
+
 ![Data Table 🈸 Renderer View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-renderer.png?raw=true 
  "Data Table 🈸 Renderer View")
 
