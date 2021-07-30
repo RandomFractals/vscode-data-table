@@ -22,7 +22,7 @@ Data Table 🈸 uses [Observable Inputs Table](https://github.com/observablehq/i
 ![Data Table 🈸 Renderer View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-renderer.png?raw=true 
  "Data Table 🈸 Renderer View")
 
-You can also use our generic [Data Table Viewer](https://observablehq.com/@randomfractals/data-table-viewer?dataUrl=https://raw.githubusercontent.com/RandomFractals/vscode-data-table/main/data/world-rivers.geojson) 📓 notebook to preview public datasets in browser.
+You can also use our generic [Data Table Viewer](https://observablehq.com/@randomfractals/data-table-viewer) 📓 notebook to preview public datasets in browser.
 
 ## 🈸 Features
 
