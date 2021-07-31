@@ -65,6 +65,19 @@ You can also use our generic [Data Table Viewer](https://observablehq.com/@rando
 ![USA Airports Data TypeScript Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-usa-airports.png?raw=true 
  "USA Airports Data TypeScript Notebook 📓")
 
+## .NET Interactive Notebook Example
+
+1. Install [.NET Install Tool for Extension Authors](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.vscode-dotnet-runtime) vscode extension
+
+2. Install [.NET Interactive Notebooks](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode) 📚 vscode extension
+
+3. Load [Chicago Speed Cameras](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/chicago-speed-cameras.ipynb) .NET Interactive Notebook 📓
+
+4. Run All cells ⌗:
+
+![Chicago Speed Cameras .NET Interactive Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-net-interactive.png?raw=true 
+ "Chicago Speed Cameras .NET Interactive Notebook 📓")
+
 ## Pyolite Notebook Example
 
 1. Install [Pyolite](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyolite) 🐍 vscode extension
