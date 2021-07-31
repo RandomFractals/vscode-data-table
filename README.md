@@ -27,7 +27,7 @@ Data Table 🈸 uses [Observable Inputs Table](https://github.com/observablehq/i
 - View `CSV`, [`GeoJSON`](https://www.rfc-editor.org/rfc/rfc7946.html) and `JSON` **array** data notebook cell output in HTML table with column sort, number and date formatting
 - Incremental rows creation on table scroll for faster display of larger datasets
 - Notebook cell text output display in a scrollable container with [`pre-wrap`](https://www.w3docs.com/snippets/css/how-to-wrap-text-in-a-pre-tag-with-css.html)
-- [REST Book](https://marketplace.visualstudio.com/items?itemName=tanhakabir.rest-book) 📓 [TypeScript Notebooks](https://marketplace.visualstudio.com/items?itemName=donjayamanne.typescript-notebook) 📚 and [Pyolite](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyolite) 🐍 examples
+- [REST Book](https://marketplace.visualstudio.com/items?itemName=tanhakabir.rest-book) 📓 [TypeScript Notebooks](https://marketplace.visualstudio.com/items?itemName=donjayamanne.typescript-notebook) 📚 [.NET Interactive Notebooks](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode) 📚 and [Pyolite](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyolite) 🐍 examples
 - [Geo 🌐 Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#geo--data-table--view)
 
 ## Observable Data Table 🈸 Viewer 📓
