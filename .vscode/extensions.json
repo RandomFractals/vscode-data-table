@@ -6,6 +6,8 @@
     "eamodio.tsl-problem-matcher",
     "tanhakabir.rest-book",
     "donjayamanne.typescript-notebook",
+    "ms-dotnettools.vscode-dotnet-runtime",
+    "ms-dotnettools.dotnet-interactive-vscode",
     "joyceerhl.vscode-pyolite"
   ]
 }
