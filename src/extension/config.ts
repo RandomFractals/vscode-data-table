@@ -40,4 +40,9 @@ export const notebookExamples: Array<any> = [
     file: './notebooks/world-gdp.restbook',
     description: 'World GDP REST Book',
   },
+  {
+    name: 'Data Table Viewer',
+    file: './notebooks/data-table-viewer.ojs',
+    description: 'Data Table Viewer Observable JS Notebook',
+  },
 ];
