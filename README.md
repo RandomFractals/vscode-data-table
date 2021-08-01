@@ -58,6 +58,11 @@ This general purpose Data Table 🈸 Viewer extension also includes Data Summary
 
 ## 🈸 Examples
 
+Data Table 🈸 for Notebooks 📚 extension v1.6.0 and up ships with built-in Notebook examples. You can acess the Notebook Examples listed below via `Data Table: Notebook Examples` command from `View -> Command Palette...`
+
+![Data Table 🈸 Notebook Examples](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-notebook-examples.png?raw=true 
+ "Data Summary Data Table 🈸 Notebook Examples")
+
 ### REST Book Example
 
 1. Install [REST Book](https://marketplace.visualstudio.com/items?itemName=tanhakabir.rest-book) 📓 vscode extension
