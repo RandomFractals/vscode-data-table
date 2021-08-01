@@ -2,12 +2,16 @@ import {
   ExtensionContext
 } 
 from 'vscode';
-
+import {registerCommands} from './commands';
+import * as constants from './constants';
 
 export function activate(context: ExtensionContext) {
-  console.log('data.table: actived');
+  console.log(`${constants.ExtensionId}: actived`);
+
+  // register data table notebook commands
+	registerCommands(context);
 }
 
 export function deactivate() {
-  console.log('data.table: deactivated');
+  console.log(`${constants.ExtensionId}: deactivated`);
 }
