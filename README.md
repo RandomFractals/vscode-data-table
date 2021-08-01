@@ -48,6 +48,12 @@ Or load Data Table 🈸 Viewer 📓 with [Observable JS](https://marketplace.vis
 ![Observable JS Data Table 🈸 Viewer 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-viewer-ojs.png?raw=true 
  "Observable JS Data Table 🈸 Viewer 📓")
 
+## Data Summary 📊 Renderer View
+
+This general purpose Data Table 🈸 Viewer extension also includes Data Summary 📊 Renderer based on modifield [Observable Summary Table](https://observablehq.com/@observablehq/summary-table) component for a quick overview of datasets loaded in [VSCode Notebooks](https://code.visualstudio.com/api/extension-guides/notebook) 📚.
+
+![Data Summary 📊 Renderer View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-summary-renderer.png?raw=true 
+ "Data Summary 📊 Renderer View")
 
 ## 🈸 Examples
 
