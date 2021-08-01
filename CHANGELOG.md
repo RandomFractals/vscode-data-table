@@ -21,6 +21,8 @@ Add XPath Notebook example and info to Recommended Extensions section in docs
 Add XML data table display
 - [#73](https://github.com/RandomFractals/vscode-data-table/issues/73)
 Add Data Table Viewer Observable notebook info to docs
+- [#75](https://github.com/RandomFractals/vscode-data-table/issues/75)
+Add data.table.notebook.examples extension command
 - [#76](https://github.com/RandomFractals/vscode-data-table/issues/76)
 Add .NET Interactive Notebooks extension to Recommended extensions
 - [#77](https://github.com/RandomFractals/vscode-data-table/issues/77)
