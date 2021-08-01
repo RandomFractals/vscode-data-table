@@ -7,6 +7,8 @@ See [releases](https://github.com/RandomFractals/vscode-data-table/releases) for
 Add summary table data view renderer
 - [#26](https://github.com/RandomFractals/vscode-data-table/issues/26)
 Add .net interactive .ipynb example
+- [#48](https://github.com/RandomFractals/vscode-data-table/issues/48)
+Add Observable Inputs library link and Table info to docs
 - [#66](https://github.com/RandomFractals/vscode-data-table/issues/66)
 Add data table renderer to activation events
 - [#67](https://github.com/RandomFractals/vscode-data-table/issues/67)
