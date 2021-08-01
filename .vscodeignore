@@ -2,7 +2,6 @@
 .vscode-test/**
 out/test/**
 src/**
-data/**
 notebooks/test/**
 docs/images/**
 
@@ -17,3 +16,11 @@ node_modules
 **/*.ts
 **/*.tsbuildinfo
 **/tsconfig.json
+
+data/superstore.arrow
+data/superstore.schema.json
+data/world-cities.geojson
+data/world-gdp.csv
+data/world-gdp.xml
+data/world-lakes.geojson
+data/world-rivers.geojson
