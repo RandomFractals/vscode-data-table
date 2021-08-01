@@ -25,10 +25,10 @@ Data Table 🈸 Notebook 📓 cell ⌗ output renderer uses [Observable Inputs T
 ## 🈸 Features
 
 - View `CSV`, semi-flat `XML`, [`GeoJSON`](https://www.rfc-editor.org/rfc/rfc7946.html) and `JSON` **array** data Notebook 📓 cell ⌗ output in HTML table with column sort, number and date formatting
-- Incremental rows creation on table scroll for faster display of larger datasets
+- Incremental data table rows creation on table scroll for faster display of larger datasets
 - Notebook cell text output display in a scrollable container with [`pre-wrap`](https://www.w3docs.com/snippets/css/how-to-wrap-text-in-a-pre-tag-with-css.html)
 - [Data Summary 📊 Renderer View](https://github.com/RandomFractals/vscode-data-table#data-summary--renderer-view) for a quick overview of loaded dataset
-- [REST Book](https://github.com/RandomFractals/vscode-data-table#rest-book-example) 📓 [TypeScript Notebooks](https://github.com/RandomFractals/vscode-data-table#typescript-notebook-example) 📚 [.NET Interactive Notebooks](https://github.com/RandomFractals/vscode-data-table#net-interactive-notebook-example) 📚 and [Pyolite](https://github.com/RandomFractals/vscode-data-table#pyolite-notebook-example) 🐍 examples
+- Built-in [REST Book](https://github.com/RandomFractals/vscode-data-table#rest-book-example) 📓 [TypeScript Notebooks](https://github.com/RandomFractals/vscode-data-table#typescript-notebook-example) 📚 [.NET Interactive Notebooks](https://github.com/RandomFractals/vscode-data-table#net-interactive-notebook-example) 📚 and [Pyolite](https://github.com/RandomFractals/vscode-data-table#pyolite-notebook-example) 🐍 [Notebook Examples](https://github.com/RandomFractals/vscode-data-table#-examples)
 - [Geo 🌐 Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#geo--data-table--view)
 - Experimental [XML Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#xml-data-table--view)
 
