@@ -2,6 +2,36 @@
 
 See [releases](https://github.com/RandomFractals/vscode-data-table/releases) for source code and `vscode-data-table.vsix` extension package download.
 
+## v1.6.0 - [2021-08-01]
+- [#14](https://github.com/RandomFractals/vscode-data-table/issues/14)
+Add summary table data view renderer
+- [#26](https://github.com/RandomFractals/vscode-data-table/issues/26)
+Add .net interactive .ipynb example
+- [#66](https://github.com/RandomFractals/vscode-data-table/issues/66)
+Add data table renderer to activation events
+- [#67](https://github.com/RandomFractals/vscode-data-table/issues/67)
+Rename renderer entry point to data table renderer
+- [#68](https://github.com/RandomFractals/vscode-data-table/issues/68)
+Add Observable htl library for implementating data summary and other alternative view/save data UX
+- [#69](https://github.com/RandomFractals/vscode-data-table/issues/69)
+Add XPath Notebook example and info to Recommended Extensions section in docs 
+- [#71](https://github.com/RandomFractals/vscode-data-table/issues/71)
+Add XML data table display
+- [#73](https://github.com/RandomFractals/vscode-data-table/issues/73)
+Add Data Table Viewer Observable notebook info to docs
+- [#76](https://github.com/RandomFractals/vscode-data-table/issues/76)
+Add .NET Interactive Notebooks extension to Recommended extensions
+- [#77](https://github.com/RandomFractals/vscode-data-table/issues/77)
+Link notebook examples in Features section to notebook type example sections in doc
+- [#78](https://github.com/RandomFractals/vscode-data-table/issues/78)
+Add Observable Data Table Viewer JS notebook to /notebooks
+- [#79](https://github.com/RandomFractals/vscode-data-table/issues/79)
+Add Observable Data Table Viewer OJS and OJS Inspector previews to docs
+- [#80](https://github.com/RandomFractals/vscode-data-table/issues/80)
+Add new Data Summary view info to docs 
+- [#81](https://github.com/RandomFractals/vscode-data-table/issues/81)
+Package and publish v1.6.0 release with new Data Summary view and updated notebook examples
+
 ## v1.5.0 - [2021-07-25]
 - [#52](https://github.com/RandomFractals/vscode-data-table/issues/52)
 Use vscode panel border color for table header box shadow
