@@ -38,6 +38,17 @@ You can also use our generic [Data Table Viewer](https://observablehq.com/@rando
 ![Observable Data Table 🈸 Viewer 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/observable-data-table-viewer.png?raw=true 
  "Observable Data Table 🈸 Viewer 📓")
 
+Or use it in vscode with [Observable JS Notebook 📓 Inspector](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.js-notebook-inspector) 🕵️:
+
+![Observable JS Data Table 🈸 Viewer 📓 Inspector 🕵️](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-viewer-notebook.png?raw=true 
+ "Observable JS Data Table 🈸 Viewer 📓 Inspector 🕵️")
+
+Or load Data Table 🈸 Viewer 📓 with [Observable JS](https://marketplace.visualstudio.com/items?itemName=GordonSmith.observable-js) vscode extension:
+
+![Observable JS Data Table 🈸 Viewer 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-viewer-ojs.png?raw=true 
+ "Observable JS Data Table 🈸 Viewer 📓")
+
+
 ## 🈸 Examples
 
 ### REST Book Example
