@@ -6,11 +6,6 @@ export const notebookExamples: Array<any> = [
     description: 'Current Chicago Traffic Tracker REST Book',
   },
   {
-    name: 'USA Airports',
-    file: './notebooks/usa-airports.ipynb',
-    description: 'USA Airports TypeScript Notebook',
-  },
-  {
     name: 'Chicago Speed Cameras',
     file: './notebooks/chicago-speed-cameras.ipynb',
     description: 'Chicago Speed Cameras .NET Interactive Notebook',
@@ -19,6 +14,11 @@ export const notebookExamples: Array<any> = [
     name: 'Chicago Red Light Cameras',
     file: './notebooks/chicago-red-light-cameras.ipynb',
     description: 'Chicago Red Light Cameras Pyolite Notebook',
+  },
+  {
+    name: 'USA Airports',
+    file: './notebooks/usa-airports.ipynb',
+    description: 'USA Airports TypeScript Notebook',
   },
   {
     name: 'World Cities',
