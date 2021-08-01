@@ -3,7 +3,7 @@
 out/test/**
 src/**
 data/**
-notebooks/**
+notebooks/test/**
 docs/images/**
 
 .gitignore
