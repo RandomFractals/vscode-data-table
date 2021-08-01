@@ -35,10 +35,13 @@
   ],
   "keywords": [
     "data",
+    "data summary",
+    "data viewer",
     "geo data",
     "GeoJSON",
     "JSON",
     "CSV",
+    "XML",
     "table",
     "view",
     "notebook",
