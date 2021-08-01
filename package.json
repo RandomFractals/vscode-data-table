@@ -48,14 +48,24 @@
     "cell",
     "text",
     "output",
-    "renderer"
+    "renderer",
+    "examples"
   ],
   "activationEvents": [
+    "onCommand:data.table.notebook.examples",
     "onRenderer:vscode-data-table",
     "onRenderer:vscode-data-summary"
   ],
   "main": "./out/extension/extension.js",
   "contributes": {
+    "commands": [
+      {
+        "command": "data.table.notebook.examples",
+        "title": "Notebook Examples",
+        "category": "Data Table",
+        "icon": "$(notebook)"
+      }
+    ],
     "notebookRenderer": [
       {
         "id": "vscode-data-table",
