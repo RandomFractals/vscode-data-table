@@ -12,7 +12,7 @@
   margin-right: 10px;
 }
 
-.data-table {
+.data-table, .data-summary .text-output {
   max-width: 100%;
   background-color: var(--vscode-editor-background);
   border: 1px solid var(--vscode-panel-border);
