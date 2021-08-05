@@ -25,12 +25,12 @@ Data Table 🈸 Notebook 📓 cell ⌗ output renderer uses [Observable Inputs T
 ## 🈸 Features
 
 - View `CSV`, semi-flat `XML`, [`GeoJSON`](https://www.rfc-editor.org/rfc/rfc7946.html) and `JSON` **array** data Notebook 📓 cell ⌗ output in HTML table with column sort, number and date formatting
-- Incremental data table rows creation on table scroll for faster display of larger datasets
-- Notebook cell text output display in a scrollable container with [`pre-wrap`](https://www.w3docs.com/snippets/css/how-to-wrap-text-in-a-pre-tag-with-css.html)
+- Incremental Data Table 🈸 rows creation on table scroll for faster display of larger datasets
 - [Data Summary 📊 Renderer View](https://github.com/RandomFractals/vscode-data-table#data-summary--renderer-view) for a quick overview of loaded dataset
 - Built-in [REST Book](https://github.com/RandomFractals/vscode-data-table#rest-book-example) 📓 [TypeScript Notebooks](https://github.com/RandomFractals/vscode-data-table#typescript-notebook-example) 📚 [.NET Interactive Notebooks](https://github.com/RandomFractals/vscode-data-table#net-interactive-notebook-example) 📚 and [Pyolite](https://github.com/RandomFractals/vscode-data-table#pyolite-notebook-example) 🐍 [Notebook Examples](https://github.com/RandomFractals/vscode-data-table#-examples)
 - [Geo 🌐 Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#geo--data-table--view)
 - Experimental [XML Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#xml-data-table--view)
+- Notebook 📓 cell ⌗ [Text Output View](https://github.com/RandomFractals/vscode-data-table#text-oputput-view) with a scrollable [`pre-wrap`](https://www.w3docs.com/snippets/css/how-to-wrap-text-in-a-pre-tag-with-css.html) container
 
 ## Observable Data Table 🈸 Viewer 📓
 
@@ -139,7 +139,7 @@ Data Table 🈸 for Notebooks 📚 extension v1.6.0 and up ships with built-in N
 
 ## Text Oputput View
 
-Data Table 🈸 renderer displays data that is not in `CSV`, or `JSON` **array** format in a scrollable text container for now:
+Data Table 🈸 renderer displays data that is not in `CSV` or `JSON` **array** data format in a scrollable text container for now:
 
 ![Text Output Notebook 📓 View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-text-output.png?raw=true 
  "Text Output Notebook 📓 View")
