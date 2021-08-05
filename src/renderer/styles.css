@@ -5,6 +5,13 @@
   white-space: pre-wrap;
 }
 
+.data-summary-card {
+  max-width: 100px;
+  font-family: sans-serif;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
 .data-table {
   max-width: 100%;
   background-color: var(--vscode-editor-background);

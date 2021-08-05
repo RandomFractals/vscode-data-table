@@ -168,8 +168,7 @@ export function summaryCard(data) {
     top: '54px'
   };
   const label = SUMMARY;
-  const summaryCardElement = htl.html`<div 
-      style="font-family: sans-serif; font-size: 12px; margin-right: 10px;">
+  const summaryCardElement = htl.html`<div class="data-summary-card">
       <span style="font-size:1.2em">${label}</span>
       <div>${d3.format(',.0f')(columnCount)} ⟶</div>
       ${headerRowPlot}
