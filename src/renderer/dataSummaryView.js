@@ -321,7 +321,7 @@ function smallStack(categoryData, col) {
         Plot.text([0,0], {
           x: 0, 
           dy: 13, 
-          text:d => d3.format(',.0f')(categoryData.length) + `${label}`
+          text: d => d3.format(',.0f')(categoryData.length) + `${label}`
         })
       ], 
       width: 205,
@@ -431,7 +431,8 @@ function addTooltips(chart, hoverStyles = {fill: BLUE, opacity: 0.5 }) {
     .join('g')
     .attr('class', 'hover')
     .style('pointer-events', NONE)
-    .style('text-anchor', 'middle');
+    .style('text-anchor', 'middle')
+    .style('fill', '#333');
 
   // add a unique id to the chart for styling
   const id = idGenerator();
