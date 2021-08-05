@@ -2,6 +2,26 @@
 
 See [releases](https://github.com/RandomFractals/vscode-data-table/releases) for source code and `vscode-data-table.vsix` extension package download.
 
+## v1.7.0 - [2021-08-05]
+- [#82](https://github.com/RandomFractals/vscode-data-table/issues/82)
+Refine Data Summary renderer card and tooltips
+- [#83](https://github.com/RandomFractals/vscode-data-table/issues/83)
+Stringify nested JSON objects for display in text output
+- [#84](https://github.com/RandomFractals/vscode-data-table/issues/84)
+Update vscode engine and dependencies to v1.58.2
+- [#85](https://github.com/RandomFractals/vscode-data-table/issues/85)
+Move default renderer stylesheet to styles.css
+- [#86](https://github.com/RandomFractals/vscode-data-table/issues/86)
+Move Text output styles for pre/code wrap to styles.css
+- [#88](https://github.com/RandomFractals/vscode-data-table/issues/88)
+Add a note about nested objects text view to docs
+- [#89](https://github.com/RandomFractals/vscode-data-table/issues/89)
+Hide data table row selector colum
+- [#90](https://github.com/RandomFractals/vscode-data-table/issues/90)
+Set panel styles for data summary text output
+- [#91](https://github.com/RandomFractals/vscode-data-table/issues/91)
+Package and publish data summary and text ouput UI enhancements release v1.7.0
+
 ## v1.6.0 - [2021-08-01]
 - [#14](https://github.com/RandomFractals/vscode-data-table/issues/14)
 Add summary table data view renderer
