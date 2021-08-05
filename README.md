@@ -137,6 +137,13 @@ Data Table 🈸 for Notebooks 📚 extension v1.6.0 and up ships with built-in N
 ![World 🌐 GDP Data REST Book 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-world-gdp.png?raw=true 
  "World 🌐 GDP Data REST Book 📓")
 
+## Text Oputput View
+
+Data Table 🈸 renderer displays data that is not in `CSV`, or `JSON` **array** format in a scrollable text container for now:
+
+![Text Output Notebook 📓 View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-text-output.png?raw=true 
+ "Text Output Notebook 📓 View")
+
 # Recommended Extensions
 
 Recommended extensions for working with Interactive Notebooks 📚 data 🈸 charts 📈 and geo 🗺️ data formats in [VSCode](https://code.visualstudio.com/):
