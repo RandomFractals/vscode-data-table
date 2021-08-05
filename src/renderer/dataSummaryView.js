@@ -431,13 +431,12 @@ function addTooltips(chart, hoverStyles = {fill: BLUE, opacity: 0.5 }) {
     .join('g')
     .attr('class', 'hover')
     .style('pointer-events', NONE)
-    .style('text-anchor', 'middle')
-    .style('fill', '#333');
+    .style('text-anchor', 'middle');
 
-  // add a unique id to the chart for styling
+  // create a unique id for the chart for styling
   const id = idGenerator();
 
-  // Add the event listeners
+  // add chart event listeners to display tooltips
   d3.select(chart)
     .classed(id, true) // using a class selector so that it doesn't overwrite the ID
     .selectAll('title')
@@ -536,8 +535,8 @@ function hover(tip, pos, text) {
     .attr('x', bbox.x - sidePadding)
     .attr('width', bbox.width + sidePadding * 2)
     .attr('height', bbox.height + verticalPadding * 2)
-    .style('fill', 'white')
-    .style('stroke', '#d3d3d3')
+    .style('fill', 'var(--vscode-editor-background)')
+    .style('stroke', 'var(--vscode-panel-border)')
     .lower();
 }
 
