@@ -3,7 +3,7 @@ import type {
   RendererContext
 } from 'vscode-notebook-renderer';
 import { OutputLoader } from './outputLoader';
-import './style.css';
+import './styles.css';
 const htl = require('htl');
 const inputs = require('@observablehq/inputs');
 
@@ -48,10 +48,7 @@ export function render(output: IRenderInfo) {
   }
   else {
     // output text in pre/code tags
-    output.container.appendChild(htl.html`<pre
-      style="max-height: 300px; white-space: pre-wrap; tab-size: 2; overflow: auto;">
-        <code style="display: block; white-space: pre-wrap;">${data}</code>
-      </pre>`);
+    output.container.appendChild(htl.html`<pre class="text-output"><code>${data}</code></pre>`);
   }
 }
 

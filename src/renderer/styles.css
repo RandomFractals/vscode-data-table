@@ -1,3 +1,10 @@
+.text-output {
+  max-height: 360px;
+  overflow: auto;
+  tab-size: 2;
+  white-space: pre-wrap;
+}
+
 .data-table {
   max-width: 100%;
   background-color: var(--vscode-editor-background);
