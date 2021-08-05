@@ -34,18 +34,25 @@ tbody tr:hover {
   background-color: var(--vscode-editor-background) !important;
 }
 
+/* data table row selector column */
+.data-table form table thead th:first-child, 
+.data-table form table tr td:first-child {
+  display: none;
+} 
+
+/* apply spacing to sort symbol in table header */
 thead th span {
-  /* Sorting triangle symbol in table header */
   margin-left: 0 !important;
   padding-right: 0.4rem;
 }
 
+/* table column header bottom border */
 thead th {
   box-shadow: 0 1px 0 var(--vscode-panel-border) !important;
 }
 
+/* table column header text align and cursor */
 th {
   text-align: left !important;
   cursor: pointer !important;
 }
-
