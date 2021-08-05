@@ -173,7 +173,7 @@ export function summaryCard(data) {
       <div>${d3.format(',.0f')(columnCount)} ⟶</div>
       ${headerRowPlot}
       <span style="display: inline-block">${columnsPlot}</span>
-      <span style="display: inline-block; vertical-align: top;">${d3.format(',.0f')(rowCount)}<br/></span>
+      <span style="display: inline-block; vertical-align: top; padding: 5px;">${d3.format(',.0f')(rowCount)}<br/></span>
       <span style=${arrowDownStyles}>⟶</span>
     </div>`;
   
