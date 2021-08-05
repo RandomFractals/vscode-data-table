@@ -76,8 +76,7 @@ export function summaryTable(data) {
 
   // compose summary table fragment
   const width = 900;
-  let dataSummaryElement = htl.html`<div 
-    style="display: inline-block; vertical-align: top;">${dataSummaryCard}</div>
+  let dataSummaryElement = htl.html`<div style="display: inline-block; vertical-align: top;">${dataSummaryCard}</div>
       <div style="display: inline-block;">
         <table style="vertical-align: middle; display: block; overflow-x: auto; max-width: ${width}px;">
           <thead style="z-index: -999;">
@@ -171,7 +170,7 @@ export function summaryCard(data) {
   const label = SUMMARY;
   const summaryCardElement = htl.html`<div 
       style="font-family: sans-serif; font-size: 12px; margin-right: 10px;">
-      <span>${label}</span>
+      <span style="font-size:1.2em">${label}</span>
       <div>${d3.format(',.0f')(columnCount)} ⟶</div>
       ${headerRowPlot}
       <span style="display: inline-block">${columnsPlot}</span>
@@ -313,7 +312,7 @@ function smallStack(categoryData, col) {
       x: COUNT,
       fill: col,
       y: 0,
-      title: d => d[col] + '\n' + percentFormat(d.pct)
+      title: d => d[col] + '\n' + percentFormat(d.percent)
     })
     .plot({
       color: {
