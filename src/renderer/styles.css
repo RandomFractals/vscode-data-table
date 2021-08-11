@@ -1,8 +1,23 @@
+.data-table, .data-summary {
+  max-width: 100%;
+  background-color: var(--vscode-editor-background);
+  border: 1px solid var(--vscode-panel-border);
+}
+
 .text-output {
+  background-color: var(--vscode-editor-background);
+  font-family: var(--vscode-editor-font-family);
+  font-size: var(--vscode-editor-font-size);
+  margin-top: 0px;
   max-height: 360px;
   overflow: auto;
   tab-size: 2;
   white-space: pre-wrap;
+  padding: 10px;
+}
+
+.text-output code {
+  color: var(--vscode-editor-foreground) !important;
 }
 
 .data-summary-card {
@@ -10,12 +25,6 @@
   font-family: sans-serif;
   font-size: 12px;
   margin-right: 10px;
-}
-
-.data-table, .data-summary .text-output {
-  max-width: 100%;
-  background-color: var(--vscode-editor-background);
-  border: 1px solid var(--vscode-panel-border);
 }
 
 .data-table form {
