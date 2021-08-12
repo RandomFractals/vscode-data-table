@@ -21,6 +21,16 @@ export const notebookExamples: Array<any> = [
     description: 'USA Airports TypeScript Notebook',
   },
   {
+    name: 'USA Airports .NET',
+    file: './notebooks/usa-airports-net.ipynb',
+    description: 'USA Airports .NET Interactive Notebook',
+  },
+  {
+    name: 'USA State Capitals',
+    file: './notebooks/usa-state-capitals-typescript.ipynb',
+    description: 'USA State Capitals TypeScript Notebook',
+  },
+  {
     name: 'World Cities',
     file: './notebooks/world-cities.restbook',
     description: 'Major World Cities REST Book',
