@@ -34,7 +34,7 @@ function registerCommand(commandName: string, callback: (...args: any[]) => any,
   const notebookQuickPickItems: Array<QuickPickItem> = [];
   config.notebookExamples.forEach(notebook => notebookQuickPickItems.push({
 		label: `$(notebook) ${notebook.name}`,
-		description: notebook.description,
+		description: notebook.type,
 		detail: notebook.file
 	}));
 	const selectedNotebook: QuickPickItem | undefined = 
