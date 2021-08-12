@@ -1,0 +1,855 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Alabama",
+        "ST": "AL",
+        "Capital": "Montgomery",
+        "Longitude": "-86.300280684889",
+        "Latitude": "32.3778448300578"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.300281,
+          32.377845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Alaska",
+        "ST": "AK",
+        "Capital": "Juneau",
+        "Longitude": "-134.419720089079",
+        "Latitude": "58.3019435628538"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -134.41972,
+          58.301944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Arizona",
+        "ST": "AZ",
+        "Capital": "Phoenix",
+        "Longitude": "-112.097002114648",
+        "Latitude": "33.448056962118"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.097002,
+          33.448057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Arkansas",
+        "ST": "AR",
+        "Capital": "Little Rock",
+        "Longitude": "-92.2891966155731",
+        "Latitude": "34.74671389912"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.289197,
+          34.746714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "California",
+        "ST": "CA",
+        "Capital": "Sacramento",
+        "Longitude": "-121.493173407028",
+        "Latitude": "38.5766379822497"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.493173,
+          38.576638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Colorado",
+        "ST": "CO",
+        "Capital": "Denver",
+        "Longitude": "-104.984882535635",
+        "Latitude": "39.7393011782883"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.984883,
+          39.739301
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Connecticut",
+        "ST": "CT",
+        "Capital": "Hartford",
+        "Longitude": "-72.682265685282",
+        "Latitude": "41.7640478075494"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.682266,
+          41.764048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Delaware",
+        "ST": "DE",
+        "Capital": "Dover",
+        "Longitude": "-75.521440669349",
+        "Latitude": "39.1598182563424"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.521441,
+          39.159818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Florida",
+        "ST": "FL",
+        "Capital": "Tallahassee",
+        "Longitude": "-84.2814103124204",
+        "Latitude": "30.4379800379088"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.28141,
+          30.43798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Georgia",
+        "ST": "GA",
+        "Capital": "Atlanta",
+        "Longitude": "-84.3882728102467",
+        "Latitude": "33.7491105069311"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.388273,
+          33.749111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Hawaii",
+        "ST": "HI",
+        "Capital": "Honolulu",
+        "Longitude": "-157.857644685749",
+        "Latitude": "21.3071891251897"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -157.857645,
+          21.307189
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Idaho",
+        "ST": "ID",
+        "Capital": "Boise",
+        "Longitude": "-116.200071549668",
+        "Latitude": "43.6173976205726"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -116.200072,
+          43.617398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Illinois",
+        "ST": "IL",
+        "Capital": "Springfield",
+        "Longitude": "-89.6838561293087",
+        "Latitude": "39.7992266437577"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.683856,
+          39.799227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Indiana",
+        "ST": "IN",
+        "Capital": "Indianapolis",
+        "Longitude": "-86.1619162318749",
+        "Latitude": "39.7682876590079"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.161916,
+          39.768288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Iowa",
+        "ST": "IA",
+        "Capital": "Des Moines",
+        "Longitude": "-93.6038299676467",
+        "Latitude": "41.591203450586"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.60383,
+          41.591203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Kansas",
+        "ST": "KS",
+        "Capital": "Topeka",
+        "Longitude": "-95.6781165783569",
+        "Latitude": "39.0481868390344"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -95.678117,
+          39.048187
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Kentucky",
+        "ST": "KY",
+        "Capital": "Frankfort",
+        "Longitude": "-84.8752029177421",
+        "Latitude": "38.1868295579102"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.875203,
+          38.18683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Louisiana",
+        "ST": "LA",
+        "Capital": "Baton Rouge",
+        "Longitude": "-91.1873435440524",
+        "Latitude": "30.4561959742174"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.187344,
+          30.456196
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Maine",
+        "ST": "ME",
+        "Capital": "Augusta",
+        "Longitude": "-69.7824740545278",
+        "Latitude": "44.3068311917176"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.782474,
+          44.306831
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Maryland",
+        "ST": "MD",
+        "Capital": "Annapolis",
+        "Longitude": "-76.490730353326",
+        "Latitude": "38.9788809750953"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.49073,
+          38.978881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Massachusetts",
+        "ST": "MA",
+        "Capital": "Boston",
+        "Longitude": "-71.0635920009677",
+        "Latitude": "42.3585156598684"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.063592,
+          42.358516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Michigan",
+        "ST": "MI",
+        "Capital": "Lansing",
+        "Longitude": "-84.5554894724477",
+        "Latitude": "42.7337559214066"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.555489,
+          42.733756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Minnesota",
+        "ST": "MN",
+        "Capital": "St. Paul",
+        "Longitude": "-93.1023668129999",
+        "Latitude": "44.9544483754758"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.102367,
+          44.954448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Mississippi",
+        "ST": "MS",
+        "Capital": "Jackson",
+        "Longitude": "-90.1821570985857",
+        "Latitude": "32.3038596464079"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.182157,
+          32.30386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Missouri",
+        "ST": "MO",
+        "Capital": "Jefferson City",
+        "Longitude": "-92.1729471612446",
+        "Latitude": "38.5792342520804"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.172947,
+          38.579234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Montana",
+        "ST": "MT",
+        "Capital": "Helena",
+        "Longitude": "-112.017030200267",
+        "Latitude": "46.5844748792441"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.01703,
+          46.584475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Nebraska",
+        "ST": "NE",
+        "Capital": "Lincoln",
+        "Longitude": "-96.6997323196763",
+        "Latitude": "40.8080846893224"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.699732,
+          40.808085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Nevada",
+        "ST": "NV",
+        "Capital": "Carson City",
+        "Longitude": "-119.765996538968",
+        "Latitude": "39.1639658818133"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.765997,
+          39.163966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "New Hampshire",
+        "ST": "NH",
+        "Capital": "Concord",
+        "Longitude": "-71.5360412913525",
+        "Latitude": "43.2077286653951"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.536041,
+          43.207729
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "New Jersey",
+        "ST": "NJ",
+        "Capital": "Trenton",
+        "Longitude": "-74.7701082395055",
+        "Latitude": "40.2205925416604"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.770108,
+          40.220593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "New Mexico",
+        "ST": "NM",
+        "Capital": "Santa Fe",
+        "Longitude": "-105.939263846866",
+        "Latitude": "35.682385674315"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -105.939264,
+          35.682386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "New York",
+        "ST": "NY",
+        "Capital": "Albany",
+        "Longitude": "-73.7584566763079",
+        "Latitude": "42.6531923942429"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.758457,
+          42.653192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "North Carolina",
+        "ST": "NC",
+        "Capital": "Raleigh",
+        "Longitude": "-78.6390536727153",
+        "Latitude": "35.7808620976202"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.639054,
+          35.780862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "North Dakota",
+        "ST": "ND",
+        "Capital": "Bismarck",
+        "Longitude": "-100.782425301832",
+        "Latitude": "46.8204800624107"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.782425,
+          46.82048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Ohio",
+        "ST": "OH",
+        "Capital": "Columbus",
+        "Longitude": "-83.000216483074",
+        "Latitude": "39.9611972655304"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.000216,
+          39.961197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Oklahoma",
+        "ST": "OK",
+        "Capital": "Oklahoma City",
+        "Longitude": "-97.5033086417702",
+        "Latitude": "35.4930913156566"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.503309,
+          35.493091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Oregon",
+        "ST": "OR",
+        "Capital": "Salem",
+        "Longitude": "-123.030608818409",
+        "Latitude": "44.9383658965847"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.030609,
+          44.938366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Pennsylvania",
+        "ST": "PA",
+        "Capital": "Harrisburg",
+        "Longitude": "-76.8841110484574",
+        "Latitude": "40.2651554758888"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.884111,
+          40.265155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Rhode Island",
+        "ST": "RI",
+        "Capital": "Providence",
+        "Longitude": "-71.4150694021695",
+        "Latitude": "41.8304368543275"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.415069,
+          41.830437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "South Carolina",
+        "ST": "SC",
+        "Capital": "Columbia",
+        "Longitude": "-81.033361075349",
+        "Latitude": "34.0006222412432"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.033361,
+          34.000622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "South Dakota",
+        "ST": "SD",
+        "Capital": "Pierre",
+        "Longitude": "-100.345546329203",
+        "Latitude": "44.3671499721808"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -100.345546,
+          44.36715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Tennessee",
+        "ST": "TN",
+        "Capital": "Nashville",
+        "Longitude": "-86.7844011981955",
+        "Latitude": "36.1658136639888"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.784401,
+          36.165814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Texas",
+        "ST": "TX",
+        "Capital": "Austin",
+        "Longitude": "-97.7403787162921",
+        "Latitude": "30.2746490151032"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.740379,
+          30.274649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Utah",
+        "ST": "UT",
+        "Capital": "Salt Lake City",
+        "Longitude": "-111.888143519988",
+        "Latitude": "40.7765189566751"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.888144,
+          40.776519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Vermont",
+        "ST": "VT",
+        "Capital": "Montpelier",
+        "Longitude": "-72.5804431413164",
+        "Latitude": "44.2619812631813"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.580443,
+          44.261981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Virginia",
+        "ST": "VA",
+        "Capital": "Richmond",
+        "Longitude": "-77.4334960632491",
+        "Latitude": "37.5387725441582"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.433496,
+          37.538773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Washington",
+        "ST": "WA",
+        "Capital": "Olympia",
+        "Longitude": "-122.904762637417",
+        "Latitude": "47.0362418589047"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.904763,
+          47.036242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "West Virginia",
+        "ST": "WV",
+        "Capital": "Charleston",
+        "Longitude": "-81.6126542355569",
+        "Latitude": "38.3363786775331"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.612654,
+          38.336379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Wisconsin",
+        "ST": "WI",
+        "Capital": "Madison",
+        "Longitude": "-89.384196048713",
+        "Latitude": "43.0752429469311"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.384196,
+          43.075243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "State": "Wyoming",
+        "ST": "WY",
+        "Capital": "Cheyenne",
+        "Longitude": "-104.820410067003",
+        "Latitude": "41.1407764260928"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -104.82041,
+          41.140776
+        ]
+      }
+    }
+  ]
+}
