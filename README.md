@@ -17,7 +17,7 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 
 ## Data Table 🈸 Renderer View
 
-Data Table 🈸 Notebook 📓 cell ⌗ output renderer uses [Observable Inputs Table](https://github.com/observablehq/inputs#Table) component for fast incremental data display and scrolling of datasets loaded in [VSCode Notebooks](https://code.visualstudio.com/api/extension-guides/notebook) 📚.
+Data Table 🈸 Notebook 📓 cell ⌗ output renderer uses [Observable Inputs Table](https://github.com/observablehq/inputs#Table) component for fast incremental data display and scrolling of datasets loaded in [VSCode Notebooks](https://code.visualstudio.com/api/extension-guides/notebook) 📚
 
 ![Data Table 🈸 Renderer View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-renderer.png?raw=true 
  "Data Table 🈸 Renderer View")
@@ -27,7 +27,7 @@ Data Table 🈸 Notebook 📓 cell ⌗ output renderer uses [Observable Inputs T
 - View `CSV`, semi-flat `XML`, [`GeoJSON`](https://www.rfc-editor.org/rfc/rfc7946.html) and `JSON` **array** data Notebook 📓 cell ⌗ output in HTML table with column sort, number and date formatting
 - Incremental Data Table 🈸 rows creation on table scroll for faster display of larger datasets
 - [Data Summary 📊 Renderer View](https://github.com/RandomFractals/vscode-data-table#data-summary--renderer-view) for a quick overview of loaded dataset
-- Built-in [REST Book](https://github.com/RandomFractals/vscode-data-table#rest-book-example) 📓 [TypeScript Notebooks](https://github.com/RandomFractals/vscode-data-table#typescript-notebook-example) 📚 [.NET Interactive Notebooks](https://github.com/RandomFractals/vscode-data-table#net-interactive-notebook-example) 📚 and [Pyolite](https://github.com/RandomFractals/vscode-data-table#pyolite-notebook-example) 🐍 [Notebook Examples](https://github.com/RandomFractals/vscode-data-table#-examples)
+- Built-in [REST Book](https://github.com/RandomFractals/vscode-data-table#rest-book-example) 📓 [TypeScript Notebook](https://github.com/RandomFractals/vscode-data-table#typescript-notebook-example) 📓 [.NET Interactive Notebook](https://github.com/RandomFractals/vscode-data-table#net-interactive-notebook-example) 📓 and [Pyolite](https://github.com/RandomFractals/vscode-data-table#pyolite-notebook-example) 🐍 [Notebook Examples](https://github.com/RandomFractals/vscode-data-table#-examples) 📚
 - [Geo 🌐 Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#geo--data-table--view)
 - Experimental [XML Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#xml-data-table--view)
 - Notebook 📓 cell ⌗ [Text Output View](https://github.com/RandomFractals/vscode-data-table#text-oputput-view) with a scrollable [`pre-wrap`](https://www.w3docs.com/snippets/css/how-to-wrap-text-in-a-pre-tag-with-css.html) container
@@ -51,7 +51,7 @@ Or load Data Table 🈸 Viewer 📓 with [Observable JS](https://marketplace.vis
 
 ## Data Summary 📊 Renderer View
 
-This general purpose Data Table 🈸 Viewer extension also includes Data Summary 📊 Renderer based on modifield [Observable Summary Table](https://observablehq.com/@observablehq/summary-table) component for a quick overview of datasets loaded in [VSCode Notebooks](https://code.visualstudio.com/api/extension-guides/notebook) 📚.
+This general purpose Data Table 🈸 Renderer extension also includes Data Summary 📊 Renderer based on modifield [Observable Summary Table](https://observablehq.com/@observablehq/summary-table) component for a quick overview of datasets loaded in [VSCode Notebooks](https://code.visualstudio.com/api/extension-guides/notebook) 📚
 
 ![Data Summary 📊 Renderer View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-summary-renderer.png?raw=true 
  "Data Summary 📊 Renderer View")
