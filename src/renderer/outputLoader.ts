@@ -83,7 +83,13 @@ export class OutputLoader {
       if (typeof data === 'string') {
         // try parsing JSON string
         const textData: string = this.patchJson(data);
-        const objectData: any = JSON.parse(textData);
+        let objectData: any = JSON.parse(textData);
+        
+        if (objectData.data) {
+          // use data object from REST response
+          objectData = objectData.data;
+        }
+
         if (Array.isArray(objectData)) {
           console.log('data.table:format: JSON array');
           return objectData;
@@ -105,6 +111,9 @@ export class OutputLoader {
       if (Array.isArray(jsonData)) {
         console.log('data.table:format: JSON array');
         return jsonData;
+      }
+      else {
+        console.log('data.table:format: JSON');
       }
 
       if (typeof jsonData === 'string') {
