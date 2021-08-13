@@ -34,9 +34,7 @@ export class OutputLoader {
     // try parsing text data
     let textData: string = this.outputData.text();
     if (textData.length > 0) {
-      console.log('data.table:text:', 
-        textData.substring(0, Math.min(80, textData.length)), '...');
-
+      // console.log('data.table:text:', textData.substring(0, Math.min(80, textData.length)), '...');
       // see if text data is in json data format
       const jsonData = this.getJsonData(textData);
       if (jsonData !== undefined) {
@@ -198,7 +196,7 @@ export class OutputLoader {
     const minRows: number = Math.min(lines.length, maxLines);
 
     if (lines.length > 0) {
-      console.log('data.table:lines:', lines);
+      // console.log('data.table:lines:', lines);
       const columns: string[] = lines[0].split(',');
       const columnCount = columns.length;
 
