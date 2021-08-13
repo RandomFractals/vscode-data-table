@@ -34,7 +34,8 @@ export class OutputLoader {
     // try parsing text data
     let textData: string = this.outputData.text();
     if (textData.length > 0) {
-      console.log('data.table:text:', textData.substring(0, Math.min(300, textData.length)), '...');
+      console.log('data.table:text:', 
+        textData.substring(0, Math.min(80, textData.length)), '...');
 
       // see if text data is in json data format
       const jsonData = this.getJsonData(textData);
