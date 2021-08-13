@@ -2,6 +2,28 @@
 
 See [releases](https://github.com/RandomFractals/vscode-data-table/releases) for source code and `vscode-data-table.vsix` extension package download.
 
+## v1.8.0 - [2021-08-12]
+- [#92](https://github.com/RandomFractals/vscode-data-table/issues/92)
+Update dev dependencies and vscode engine to v1.59.0
+- [#93](https://github.com/RandomFractals/vscode-data-table/issues/93)
+Apply vscode editor styles to Text data output display
+- [#94](https://github.com/RandomFractals/vscode-data-table/issues/94)
+Clean up json data checks, parsing, and debug log
+- [#95](https://github.com/RandomFractals/vscode-data-table/issues/95)
+Add new Leaflet Map renderer info to docs
+- [#96](https://github.com/RandomFractals/vscode-data-table/issues/96)
+Add new Geo data notebook examples from Leaflet Map renderer to built-in Data Table Notebook Examples
+- [#97](https://github.com/RandomFractals/vscode-data-table/issues/97)
+Update Text Output info and pic in docs
+- [#98](https://github.com/RandomFractals/vscode-data-table/issues/98)
+Activate Data Table renderer extension for workspaces with .ipynb, .restbook and .xbook
+- [#99](https://github.com/RandomFractals/vscode-data-table/issues/99)
+Add consistent notebook Language type suffixes to built-in .ipynb Notebook Examples
+- [#100](https://github.com/RandomFractals/vscode-data-table/issues/100)
+Add Random Fractals Inc. data, geo and notebook extensions to recommendations in .vscode/settings.json
+- [#101](https://github.com/RandomFractals/vscode-data-table/issues/101)
+Package and publish v1.8.0 built-in Notebook Examples and Text Output update release 
+
 ## v1.7.0 - [2021-08-05]
 - [#82](https://github.com/RandomFractals/vscode-data-table/issues/82)
 Refine Data Summary renderer card and tooltips
