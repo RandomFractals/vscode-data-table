@@ -30,7 +30,7 @@ Data Table 🈸 Notebook 📓 cell ⌗ output renderer uses [Observable Inputs T
 - Built-in [REST Book](https://github.com/RandomFractals/vscode-data-table#rest-book-example) 📓 [TypeScript Notebook](https://github.com/RandomFractals/vscode-data-table#typescript-notebook-example) 📓 [.NET Interactive Notebook](https://github.com/RandomFractals/vscode-data-table#net-interactive-notebook-example) 📓 and [Pyolite](https://github.com/RandomFractals/vscode-data-table#pyolite-notebook-example) 🐍 [Notebook Examples](https://github.com/RandomFractals/vscode-data-table#-examples) 📚
 - [Geo 🌐 Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#geo--data-table--view)
 - Experimental [XML Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#xml-data-table--view)
-- Notebook 📓 cell ⌗ [Text Output View](https://github.com/RandomFractals/vscode-data-table#text-oputput-view) with a scrollable [`pre-wrap`](https://www.w3docs.com/snippets/css/how-to-wrap-text-in-a-pre-tag-with-css.html) container
+- Notebook 📓 cell ⌗ [Text Output](https://github.com/RandomFractals/vscode-data-table#text-oputput-view) scrollable container with [code pre-wrap](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code) for quick copy/paste to other places
 
 ## Observable Data Table 🈸 Viewer 📓
 
@@ -139,7 +139,7 @@ Data Table 🈸 for Notebooks 📚 extension v1.6.0 and up ships with built-in N
 
 ## Text Oputput View
 
-Data Table 🈸 renderer displays data that is not in `CSV` or `JSON` **array** data format in a scrollable text container for now:
+Data Table 🈸 renderer displays data that is not in `CSV`, [`GeoJSON`](https://www.rfc-editor.org/rfc/rfc7946.html) or `JSON` **array** data format in a scrollable text container:
 
 ![Text Output Notebook 📓 View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-text-output.png?raw=true 
  "Text Output Notebook 📓 View")
