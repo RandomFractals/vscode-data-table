@@ -4,8 +4,6 @@ import type {
 } from 'vscode-notebook-renderer';
 import {OutputLoader} from './outputLoader';
 import './styles.css';
-const htl = require('htl');
-const inputs = require('@observablehq/inputs');
 const dataSummary = require('./dataSummaryView.js');
 
 /**
