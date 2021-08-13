@@ -3,10 +3,17 @@ import {csvParse} from 'd3-dsv';
 const aq = require('arquero');
 const xmlParser = require('fast-xml-parser');
 
+/**
+ * OutputLoader loads data from notebook cell output item.
+ */
 export class OutputLoader {
 
+  /**
+   * Creates new OutputLoader instance.
+   * @param outputData Notebook cell output item.
+   * @param mimeType Notebook cell output mime type.
+   */
   constructor (private outputData: OutputItem, private mimeType: string) {
-
   }
 
     
@@ -17,24 +24,29 @@ export class OutputLoader {
     // try getting JSON data first
     const objectData = this.getJsonData(this.outputData);
     if (objectData !== undefined) {
+      if (objectData.features) {
+        console.log('data.table:format: GeoJSON');
+        return this.flattenGeoData(objectData);
+      }
       return objectData;
     }
 
     // try parsing text data
     let textData: string = this.outputData.text();
     if (textData.length > 0) {
-      if (textData.startsWith("'") && textData.endsWith("'")) {
-        // strip out start/end single quotes from notebook cell output
-        textData = textData.substr(1, textData.length-2);
-      }
       console.log('data.table:text:', textData.substring(0, Math.min(300, textData.length)), '...');
 
       // see if text data is in json data format
       const jsonData = this.getJsonData(textData);
       if (jsonData !== undefined) {
+        if (jsonData.features) {
+          console.log('data.table:format: GeoJSON');
+          return this.flattenGeoData(jsonData);
+        }  
         return jsonData;
       }
       else if (textData.startsWith('<?xml version="1.0"')) {
+        // parse XML data
         return this.xmlParse(textData);
       }
       else if (this.isCsv(textData)) {
@@ -75,6 +87,10 @@ export class OutputLoader {
           console.log('data.table:format: JSON array');
           return objectData;
         }
+        else {
+          console.log('data.table:format: JSON');
+          return objectData;
+        }
       }
 
       // try getting json data object
@@ -83,11 +99,6 @@ export class OutputLoader {
       if (jsonData.data) {
         // use data object from REST response
         jsonData = jsonData.data;
-      }
-
-      if (jsonData.features) {
-        console.log('data.table:format: GeoJSON');
-        jsonData = this.flattenGeoData(jsonData);
       }
 
       if (Array.isArray(jsonData)) {
@@ -102,11 +113,12 @@ export class OutputLoader {
           return csvParse(jsonData);
         }
         else if (jsonData.startsWith('<?xml version="1.0"')) {
+          // try to parse XML data as the last resort
           return this.xmlParse(jsonData);
         }    
       }
     }
-    catch (error) {
+    catch (error: any) {
       console.log('data.table: JSON.parse error:\n', error.message);
     }
     return undefined;
@@ -129,6 +141,10 @@ export class OutputLoader {
     textData = textData.replace(objectEndRegEx, '}');
     textData = textData.replace(xRegEx, ' ');
     textData = textData.replace(newLineRegEx, '');
+    if (textData.startsWith("'") && textData.endsWith("'")) {
+      // strip out start/end single quotes from notebook cell output
+      textData = textData.substr(1, textData.length-2);
+    }
     // console.log('data.table:text:', textData.substring(0, Math.min(500, textData.length)), '...');
     return textData;
   }
@@ -233,7 +249,7 @@ export class OutputLoader {
         }
       }
     }
-    catch(error) {
+    catch(error: any) {
       console.log('data.table: XML parse error:\n', error.message);
     }
     return jsonData;
