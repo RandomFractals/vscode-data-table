@@ -2,7 +2,7 @@
 
 See [releases](https://github.com/RandomFractals/vscode-data-table/releases) for source code and `vscode-data-table.vsix` extension package download.
 
-## v1.8.0 - [2021-08-12]
+## v1.8.0 - [2021-08-14]
 - [#92](https://github.com/RandomFractals/vscode-data-table/issues/92)
 Update dev dependencies and vscode engine to v1.59.0
 - [#93](https://github.com/RandomFractals/vscode-data-table/issues/93)
