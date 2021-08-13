@@ -82,7 +82,7 @@ Data Table 🈸 for Notebooks 📚 extension v1.6.0 and up ships with built-in N
 
 2. Download [USA Airports data files](https://github.com/RandomFractals/vscode-data-table/tree/main/data)
 
-3. Load [USA Airports](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/usa-airports.ipynb) TypeScript Notebook 📓
+3. Load [USA Airports](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/usa-airports-ts.ipynb) TypeScript Notebook 📓
 
 4. Run All cells ⌗ to view local `CSV` and `JSON` data outputs with Data Table 🈸:
 
@@ -95,7 +95,7 @@ Data Table 🈸 for Notebooks 📚 extension v1.6.0 and up ships with built-in N
 
 2. Install [.NET Interactive Notebooks](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode) 📚 vscode extension
 
-3. Load [Chicago Speed Cameras](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/chicago-speed-cameras.ipynb) .NET Interactive Notebook 📓
+3. Load [Chicago Speed Cameras](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/chicago-speed-cameras-net.ipynb) .NET Interactive Notebook 📓
 
 4. Run All cells ⌗:
 
