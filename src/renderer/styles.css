@@ -4,6 +4,10 @@
   border: 1px solid var(--vscode-panel-border);
 }
 
+.data-summary {
+  padding: 10px;
+}
+
 .text-output {
   background-color: var(--vscode-editor-background);
   border-width: 0px;
@@ -27,6 +31,7 @@
   font-family: sans-serif;
   font-size: 12px;
   margin-right: 10px;
+  padding-top: 5px;
 }
 
 .data-table form {
@@ -66,4 +71,9 @@ thead th {
 th {
   text-align: left !important;
   cursor: pointer !important;
+}
+
+/* table column header text align and cursor */
+.data-summary td {
+  text-align: left !important;
 }
