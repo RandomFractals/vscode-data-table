@@ -57,6 +57,9 @@
     "examples"
   ],
   "activationEvents": [
+    "workspaceContains:**/*.ipynb",
+    "workspaceContains:**/*.xbook",
+    "workspaceContains:**/*.restbook",
     "onCommand:data.table.notebook.examples",
     "onRenderer:vscode-data-table",
     "onRenderer:vscode-data-summary"
