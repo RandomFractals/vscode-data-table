@@ -8,6 +8,10 @@
     "donjayamanne.typescript-notebook",
     "ms-dotnettools.vscode-dotnet-runtime",
     "ms-dotnettools.dotnet-interactive-vscode",
-    "joyceerhl.vscode-pyolite"
+    "joyceerhl.vscode-pyolite",
+    "RandomFractalsInc.js-notebook-inspector",
+    "RandomFractalsInc.vscode-data-preview",
+    "RandomFractalsInc.geo-data-viewer",
+    "RandomFractalsInc.vscode-leaflet"
   ]
 }
