@@ -41,6 +41,11 @@ export const notebookExamples: Array<any> = [
     type: 'REST Book',
   },
   {
+    name: 'World Countries',
+    file: './notebooks/world-countries.restbook',
+    type: 'REST Book',
+  },
+  {
     name: 'World Rivers',
     file: './notebooks/world-rivers.restbook',
     type: 'REST Book',
