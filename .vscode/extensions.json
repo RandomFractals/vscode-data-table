@@ -3,12 +3,11 @@
   // for the documentation about the extensions.json format
   "recommendations": [
     "dbaeumer.vscode-eslint",
-    "eamodio.tsl-problem-matcher",
     "tanhakabir.rest-book",
     "donjayamanne.typescript-notebook",
     "ms-dotnettools.vscode-dotnet-runtime",
     "ms-dotnettools.dotnet-interactive-vscode",
-    "joyceerhl.vscode-pyolite",
+    "joyceerhl.vscode-pyodide",
     "RandomFractalsInc.js-notebook-inspector",
     "RandomFractalsInc.vscode-data-preview",
     "RandomFractalsInc.geo-data-viewer",
