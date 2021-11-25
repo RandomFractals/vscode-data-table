@@ -61,6 +61,11 @@ export const notebookExamples: Array<any> = [
     type: 'REST Book',
   },
   {
+    name: 'Iris Vega Data',
+    file: './notebooks/iris-vega-data.ipynb',
+    type: 'Python Notebook',
+  },
+  {
     name: 'Data Table Viewer',
     file: './notebooks/data-table-viewer.ojs',
     type: 'Observable JS Notebook',
