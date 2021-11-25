@@ -27,7 +27,7 @@ Data Table 🈸 Notebook 📓 cell ⌗ output renderer uses [Observable Inputs T
 - View `CSV`, semi-flat `XML`, [`GeoJSON`](https://www.rfc-editor.org/rfc/rfc7946.html) and `JSON` **array** data Notebook 📓 cell ⌗ output in HTML table with column sort, number and date formatting
 - Incremental Data Table 🈸 rows creation on table scroll for faster display of larger datasets
 - [Data Summary 📊 Renderer View](https://github.com/RandomFractals/vscode-data-table#data-summary--renderer-view) for a quick overview of loaded dataset
-- Built-in [REST Book](https://github.com/RandomFractals/vscode-data-table#rest-book-example) 📓 [TypeScript Notebook](https://github.com/RandomFractals/vscode-data-table#typescript-notebook-example) 📓 [.NET Interactive Notebook](https://github.com/RandomFractals/vscode-data-table#net-interactive-notebook-example) 📓 and [Pyolite](https://github.com/RandomFractals/vscode-data-table#pyolite-notebook-example) 🐍 [Notebook Examples](https://github.com/RandomFractals/vscode-data-table#-examples) 📚
+- Built-in [REST Book](https://github.com/RandomFractals/vscode-data-table#rest-book-example) 📓 [Python](https://github.com/RandomFractals/vscode-data-table#python-notebook-example) 🐍 [TypeScript Notebook](https://github.com/RandomFractals/vscode-data-table#typescript-notebook-example) 📓 [.NET Interactive Notebook](https://github.com/RandomFractals/vscode-data-table#net-interactive-notebook-example) 📓 and [Pyolite](https://github.com/RandomFractals/vscode-data-table#pyolite-notebook-example) 🐍 [Notebook Examples](https://github.com/RandomFractals/vscode-data-table#-examples) 📚
 - [Geo 🌐 Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#geo--data-table--view)
 - Experimental [XML Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#xml-data-table--view)
 - Notebook 📓 cell ⌗ [Text Output](https://github.com/RandomFractals/vscode-data-table#text-oputput-view) scrollable container with [code pre-wrap](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code) for quick copy/paste to other places
@@ -75,6 +75,33 @@ Data Table 🈸 for Notebooks 📚 extension v1.6.0 and up ships with built-in N
 
 ![Chicago Traffic Data REST Book 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-chicago-traffic.png?raw=true 
  "Chicago Traffic Data REST Book 📓")
+
+### Python Noteook Example
+
+1. Intall [`vega_datasets`](https://github.com/altair-viz/vega_datasets) and [`altair`](https://github.com/altair-viz/altair) Python libraries via [`pip`](https://pypi.org/project/pip/) or [`conda`](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html):
+
+```
+$ pip install altair vega_datasets
+```
+or
+
+```
+$ conda install -c conda-forge altair vega_datasets
+```
+
+2. Load [Iris Vega Data](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/iris-vega-data.ipynb) Python 🐍 Notebook 📓
+
+3. Run All cells ⌗
+
+4. Click on `...` in the gutter of iris data output and change it to Data Table 🈸 renderer:
+
+![Iris Vega Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/iris-data-table.png?raw=true 
+ "Iris Vega Data Table 🈸 View")
+
+or switch it to Data Summary 🈷️ renderer:
+
+![Iris Vega Data Table 🈷️ View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/iris-data-summary.png?raw=true 
+ "Iris Vega Data Table 🈷️ View")
 
 ## TypeScript Notebook Example
 
