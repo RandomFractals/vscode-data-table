@@ -76,7 +76,7 @@ Data Table 🈸 for Notebooks 📚 extension v1.6.0 and up ships with built-in N
 ![Chicago Traffic Data REST Book 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-chicago-traffic.png?raw=true 
  "Chicago Traffic Data REST Book 📓")
 
-### Python Noteook Example
+### Python Notebook Example
 
 1. Intall [`vega_datasets`](https://github.com/altair-viz/vega_datasets) and [`altair`](https://github.com/altair-viz/altair) Python libraries via [`pip`](https://pypi.org/project/pip/) or [`conda`](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html):
 
