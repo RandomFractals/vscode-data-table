@@ -1,5 +1,5 @@
-import type {OutputItem} from 'vscode-notebook-renderer';
-import {csvParse} from 'd3-dsv';
+import type { OutputItem } from 'vscode-notebook-renderer';
+import { csvParse, autoType } from 'd3-dsv';
 const aq = require('arquero');
 const xmlParser = require('fast-xml-parser');
 
@@ -50,7 +50,7 @@ export class OutputLoader {
       }
       else if (this.isCsv(textData)) {
         // parse CSV data
-        return csvParse(textData);
+        return csvParse(textData, autoType);
       }
       else if (textData !== '{}' && !textData.startsWith('<Buffer ')) { // empty object or binary data
         return textData;
@@ -118,7 +118,7 @@ export class OutputLoader {
         if (this.isCsv(jsonData)) {
           // parse CSV data for JSON response from REST Book
           // see: https://github.com/tanhakabir/rest-book/issues/114
-          return csvParse(jsonData);
+          return csvParse(jsonData, autoType);
         }
         else if (jsonData.startsWith('<?xml version="1.0"')) {
           // try to parse XML data as the last resort
