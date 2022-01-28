@@ -148,7 +148,7 @@
     "@observablehq/inputs": "^0.10.3",
     "@observablehq/plot": "^0.1.0",
     "apache-arrow": "^6.0.1",
-    "arquero": "^4.8.7",
+    "arquero": "^4.8.8",
     "d3": "^7.1.1",
     "d3-dsv": "^3.0.1",
     "htl": "^0.3.1",

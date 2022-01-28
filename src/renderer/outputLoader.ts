@@ -15,7 +15,6 @@ export class OutputLoader {
    */
   constructor (private outputData: OutputItem, private mimeType: string) {
   }
-
     
   /**
    * Gets data output.
