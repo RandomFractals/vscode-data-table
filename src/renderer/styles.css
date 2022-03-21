@@ -8,6 +8,14 @@
   padding: 10px;
 }
 
+.flat-data-grid {
+  min-height: 480px;
+}
+
+.github-octo-flat-ui {
+  height: 560px !important;
+}
+
 .text-output {
   background-color: var(--vscode-editor-background);
   border-width: 0px;
@@ -51,10 +59,10 @@ tbody tr:hover {
 }
 
 /* data table row selector column */
-.data-table form table thead th:first-child, 
+.data-table form table thead th:first-child,
 .data-table form table tr td:first-child {
   display: none;
-} 
+}
 
 /* apply spacing to sort symbol in table header */
 thead th span {

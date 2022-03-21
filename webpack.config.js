@@ -8,7 +8,8 @@ module.exports = (env, argv) => ({
   devtool: argv.mode === 'production' ? false : 'inline-source-map',
   entry: {
     dataTable: './src/renderer/dataTable.ts',
-    dataSummary: './src/renderer/dataSummary.ts'
+    dataSummary: './src/renderer/dataSummary.ts',
+    flatDataGrid: '/src/renderer/flatDataGrid.ts'
   },
   output: {
     path: path.join(__dirname, 'out', 'renderer'),
