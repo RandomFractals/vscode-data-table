@@ -85,3 +85,8 @@ th {
 .data-summary td {
   text-align: left !important;
 }
+
+/* transparent data summary svg plots background */
+.data-summary td svg, .data-summary-card svg {
+  background-color: transparent !important;
+}
