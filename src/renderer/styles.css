@@ -10,6 +10,7 @@
 
 .flat-data-grid {
   min-height: 480px;
+  border: 1px solid var(--vscode-panel-border);
 }
 
 .github-octo-flat-ui {
