@@ -46,6 +46,10 @@
 
 .data-table form {
   margin: 0px !important;
+  max-height: 360px;
+  display: block;
+  overflow-y: auto;
+  width: 100%;
 }
 
 tbody tr:hover {
