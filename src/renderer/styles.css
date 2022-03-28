@@ -44,12 +44,17 @@
   padding-top: 5px;
 }
 
+/* data table styles */
 .data-table form {
   margin: 0px !important;
   max-height: 360px;
   display: block;
   overflow-y: auto;
   width: 100%;
+}
+
+.data-table form table {
+  table-layout: fixed !important;
 }
 
 tbody tr:hover {
@@ -62,9 +67,11 @@ tbody tr:hover {
 
 .data-table form table thead th {
   background-color: var(--vscode-editor-background) !important;
+  position: sticky;
+  top: 0;
 }
 
-/* data table row selector column */
+/* hide data table row selector column */
 .data-table form table thead th:first-child,
 .data-table form table tr td:first-child {
   display: none;
@@ -87,12 +94,12 @@ th {
   cursor: pointer !important;
 }
 
-/* table column header text align and cursor */
+/* data summary table column header text align */
 .data-summary td {
   text-align: left !important;
 }
 
-/* transparent data summary svg plots background */
+/* data summary table transparent svg plots background */
 .data-summary td svg, .data-summary-card svg {
   background-color: transparent !important;
 }
