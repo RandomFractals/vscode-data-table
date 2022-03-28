@@ -94,6 +94,18 @@ th {
   cursor: pointer !important;
 }
 
+/* data summary table styles */
+.data-summary table {
+  max-height: 360px;
+}
+
+.data-summary table thead th {
+  background-color: var(--vscode-editor-background) !important;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 /* data summary table column header text align */
 .data-summary td {
   text-align: left !important;
