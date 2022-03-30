@@ -19,7 +19,7 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 
 Data Table 🈸 Notebook 📓 cell ⌗ output renderer uses [Observable Inputs Table](https://github.com/observablehq/inputs#Table) component for fast incremental data display and scrolling of datasets loaded in [VSCode Notebooks](https://code.visualstudio.com/api/extension-guides/notebook) 📚
 
-![Data Table 🈸 Renderer View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-renderer.png?raw=true 
+![Data Table 🈸 Renderer View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-renderer.png?raw=true
  "Data Table 🈸 Renderer View")
 
 ## 🈸 Features
@@ -36,31 +36,31 @@ Data Table 🈸 Notebook 📓 cell ⌗ output renderer uses [Observable Inputs T
 
 You can also use our generic [Data Table Viewer](https://observablehq.com/@randomfractals/data-table-viewer) 📓 notebook to preview public datasets in a browser:
 
-![Observable Data Table 🈸 Viewer 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/observable-data-table-viewer.png?raw=true 
+![Observable Data Table 🈸 Viewer 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/observable-data-table-viewer.png?raw=true
  "Observable Data Table 🈸 Viewer 📓")
 
 Or use it in vscode with [Observable JS Notebook 📓 Inspector](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.js-notebook-inspector) 🕵️:
 
-![Observable JS Data Table 🈸 Viewer 📓 Inspector 🕵️](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-viewer-notebook.png?raw=true 
+![Observable JS Data Table 🈸 Viewer 📓 Inspector 🕵️](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-viewer-notebook.png?raw=true
  "Observable JS Data Table 🈸 Viewer 📓 Inspector 🕵️")
 
 Or load Data Table 🈸 Viewer 📓 with [Observable JS](https://marketplace.visualstudio.com/items?itemName=GordonSmith.observable-js) vscode extension:
 
-![Observable JS Data Table 🈸 Viewer 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-viewer-ojs.png?raw=true 
+![Observable JS Data Table 🈸 Viewer 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-viewer-ojs.png?raw=true
  "Observable JS Data Table 🈸 Viewer 📓")
 
 ## Data Summary 📊 Renderer View
 
 This general purpose Data Table 🈸 Renderer extension also includes Data Summary 📊 Renderer based on modifield [Observable Summary Table](https://observablehq.com/@observablehq/summary-table) component for a quick overview of datasets loaded in [VSCode Notebooks](https://code.visualstudio.com/api/extension-guides/notebook) 📚
 
-![Data Summary 📊 Renderer View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-summary-renderer.png?raw=true 
+![Data Summary 📊 Renderer View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-summary-renderer.png?raw=true
  "Data Summary 📊 Renderer View")
 
 ## 🈸 Examples
 
 Data Table 🈸 for Notebooks 📚 extension v1.6.0 and up ships with built-in Notebook examples. You can access provided Notebook Examples listed below via `Data Table: Notebook Examples` command from `View -> Command Palette...`
 
-![Data Table 🈸 Notebook Examples](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-notebook-examples.png?raw=true 
+![Data Table 🈸 Notebook Examples](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-notebook-examples.png?raw=true
  "Data Summary Data Table 🈸 Notebook Examples")
 
 ### REST Book Example
@@ -73,12 +73,12 @@ Data Table 🈸 for Notebooks 📚 extension v1.6.0 and up ships with built-in N
 
 4. Click on `...` in the gutter of `GET` data output and change it to Data Table 🈸 renderer:
 
-![Chicago Traffic Data REST Book 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-chicago-traffic.png?raw=true 
+![Chicago Traffic Data REST Book 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-chicago-traffic.png?raw=true
  "Chicago Traffic Data REST Book 📓")
 
 ### Python Notebook Example
 
-1. Intall [`vega_datasets`](https://github.com/altair-viz/vega_datasets) and [`altair`](https://github.com/altair-viz/altair) Python libraries via [`pip`](https://pypi.org/project/pip/) or [`conda`](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html):
+1. Install [`vega_datasets`](https://github.com/altair-viz/vega_datasets) and [`altair`](https://github.com/altair-viz/altair) Python libraries via [`pip`](https://pypi.org/project/pip/) or [`conda`](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html):
 
 ```
 $ pip install altair vega_datasets
@@ -95,12 +95,12 @@ $ conda install -c conda-forge altair vega_datasets
 
 4. Click on `...` in the gutter of iris data output and change it to Data Table 🈸 renderer:
 
-![Iris Vega Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/iris-data-table.png?raw=true 
+![Iris Vega Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/iris-data-table.png?raw=true
  "Iris Vega Data Table 🈸 View")
 
 or switch it to Data Summary 🈷️ renderer:
 
-![Iris Vega Data Table 🈷️ View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/iris-data-summary.png?raw=true 
+![Iris Vega Data Table 🈷️ View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/iris-data-summary.png?raw=true
  "Iris Vega Data Table 🈷️ View")
 
 ## TypeScript Notebook Example
@@ -113,7 +113,7 @@ or switch it to Data Summary 🈷️ renderer:
 
 4. Run All cells ⌗ to view local `CSV` and `JSON` data outputs with Data Table 🈸:
 
-![USA Airports Data TypeScript Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-usa-airports.png?raw=true 
+![USA Airports Data TypeScript Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-usa-airports.png?raw=true
  "USA Airports Data TypeScript Notebook 📓")
 
 ## .NET Interactive Notebook Example
@@ -126,7 +126,7 @@ or switch it to Data Summary 🈷️ renderer:
 
 4. Run All cells ⌗:
 
-![Chicago Speed Cameras .NET Interactive Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-net-interactive.png?raw=true 
+![Chicago Speed Cameras .NET Interactive Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-net-interactive.png?raw=true
  "Chicago Speed Cameras .NET Interactive Notebook 📓")
 
 ## Pyolite Notebook Example
@@ -137,7 +137,7 @@ or switch it to Data Summary 🈷️ renderer:
 
 3. Run All cells ⌗:
 
-![Chicago Red Light Cameras Pyolite Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-pyolite-notebook.png?raw=true 
+![Chicago Red Light Cameras Pyolite Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-pyolite-notebook.png?raw=true
  "Chicago Red Light Cameras Pyolite Notebook 📓")
 
 ## Geo 🌐 Data Table 🈸 View
@@ -150,7 +150,7 @@ or switch it to Data Summary 🈷️ renderer:
 
 4. Click on `...` in the gutter of `GET` data output and change it to Data Table 🈸 for geo table view:
 
-![World 🌐 Rivers Geo Data REST Book 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-geo-view.png?raw=true 
+![World 🌐 Rivers Geo Data REST Book 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-geo-view.png?raw=true
  "World 🌐 Rivers Geo Data REST Book 📓")
 
 ## XML Data Table 🈸 View
@@ -161,15 +161,27 @@ or switch it to Data Summary 🈷️ renderer:
 
 3. Click on `...` in the gutter of `GET` data output and change it to Data Table 🈸 for XML data table view:
 
-![World 🌐 GDP Data REST Book 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-world-gdp.png?raw=true 
+![World 🌐 GDP Data REST Book 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-world-gdp.png?raw=true
  "World 🌐 GDP Data REST Book 📓")
 
 ## Text Oputput View
 
 Data Table 🈸 renderer displays data that is not in `CSV`, [`GeoJSON`](https://www.rfc-editor.org/rfc/rfc7946.html) or `JSON` **array** data format in a scrollable text container:
 
-![Text Output Notebook 📓 View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-text-output.png?raw=true 
+![Text Output Notebook 📓 View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-text-output.png?raw=true
  "Text Output Notebook 📓 View")
+
+## Data Table Renderers Extension Dependency
+
+You can add our Data Table 🈸 Notebook 📓 Renderers dependency to your custom VSCode notebook kernels to enable users of your custom notebooks to view data with our Data Table renderers by declaring extension dependency in your VSCode extension `package.json`:
+
+```
+"extensionDependencies": [
+		"RandomFractalsInc.vscode-data-table"
+	],
+```
+
+See VSCode [Extension Manifest](https://code.visualstudio.com/api/references/extension-manifest) doc for more info.
 
 # Recommended Extensions
 
@@ -213,7 +225,7 @@ to generate `VSIX` Data Table extension package with [vsce](https://code.visuals
 
 # Contributions
 
-Any and all test, code or feedback contributions are welcome. 
+Any and all test, code or feedback contributions are welcome.
 
 Open an [issue](https://github.com/RandomFractals/vscode-data-table/issues) or create a pull request to make this Data Table 🈸 extension work better for all.
 
@@ -221,6 +233,6 @@ Open an [issue](https://github.com/RandomFractals/vscode-data-table/issues) or c
 
 <a href='https://ko-fi.com/dataPixy' target='_blank'>
   <img height='36' style='border:0px;height:36px;' border='0'
-    src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=2' 
+    src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=2'
     alt='support me on ko-fi.com' />
 </a>
