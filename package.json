@@ -164,11 +164,12 @@
     "webpack-cli": "^4.9.2"
   },
   "dependencies": {
+    "@babel/core": "^7.0.0",
     "@observablehq/inputs": "^0.10.4",
     "@observablehq/plot": "^0.4.2",
     "apache-arrow": "^7.0.0",
     "arquero": "^4.8.8",
-    "d3": "^7.3.0",
+    "d3": "^6.7.0",
     "d3-dsv": "^3.0.1",
     "htl": "^0.3.1",
     "fast-xml-parser": "^4.0.0",
