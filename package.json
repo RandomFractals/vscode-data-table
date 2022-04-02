@@ -63,7 +63,8 @@
     "workspaceContains:**/*.restbook",
     "onCommand:data.table.notebook.examples",
     "onRenderer:vscode-data-table",
-    "onRenderer:vscode-data-summary"
+    "onRenderer:vscode-data-summary",
+    "onRenderer:flat-data-grid"
   ],
   "main": "./out/extension/extension.js",
   "contributes": {
