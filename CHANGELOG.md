@@ -2,6 +2,50 @@
 
 See [releases](https://github.com/RandomFractals/vscode-data-table/releases) for source code and `vscode-data-table.vsix` extension package download.
 
+## v1.9.0 - [2022-04-02]
+- [#44](https://github.com/RandomFractals/vscode-data-table/issues/44)
+Add Save as CSV or JSON options
+- [#53](https://github.com/RandomFractals/vscode-data-table/issues/53)
+Add data search option
+- [#59](https://github.com/RandomFractals/vscode-data-table/issues/59)
+Add subtle table cell borders
+- [#64](https://github.com/RandomFractals/vscode-data-table/issues/64)
+Add rows/columns count display
+- [#70](https://github.com/RandomFractals/vscode-data-table/issues/70)
+Add binned graphs to column headers
+- [#87](https://github.com/RandomFractals/vscode-data-table/issues/87)
+Align top Data Summary column type svg icon
+- [#102](https://github.com/RandomFractals/vscode-data-table/issues/102)
+Add padding to Data Summary view and patch column type display
+- [#103](https://github.com/RandomFractals/vscode-data-table/issues/103)
+Add World Countries Leaflet Map notebook example to built-in Notebook Examples
+- [#107](https://github.com/RandomFractals/vscode-data-table/issues/107)
+Update vscode, ts, webpack and renderer api dependencies to latest vscode v1.62.0
+- [#108](https://github.com/RandomFractals/vscode-data-table/issues/108)
+Update observable inputs, plot, d3, htl, arquero, apache arrow, and fast xml parser dependencies to latest
+- [#109](https://github.com/RandomFractals/vscode-data-table/issues/109)
+Update recommendations in extensions.json
+- [#110](https://github.com/RandomFractals/vscode-data-table/issues/110)
+Add Iris dataset Python Jupyter notebook example
+- [#113](https://github.com/RandomFractals/vscode-data-table/issues/113)
+Update arquero library to v4.8.8
+- [#114](https://github.com/RandomFractals/vscode-data-table/issues/114)
+Register text/x-json mime type for the REST book examples to work
+- [#115](https://github.com/RandomFractals/vscode-data-table/issues/115)
+Add Flat Data Grid renderer
+- [#116](https://github.com/RandomFractals/vscode-data-table/issues/116)
+Update vscode, libs, and dev dependencies to latest
+- [#117](https://github.com/RandomFractals/vscode-data-table/issues/117)
+Refine Data Summary table rendering
+- [#118](https://github.com/RandomFractals/vscode-data-table/issues/118)
+Installed extension, and still no option to render table with data-table?
+- [#119](https://github.com/RandomFractals/vscode-data-table/issues/119)
+Add instructions for the custom vscode notebook kernel devs to declare data table renderers dependency
+- [#120](https://github.com/RandomFractals/vscode-data-table/issues/120)
+Package and publish new Flat Data Grid renderer release
+- [#121](https://github.com/RandomFractals/vscode-data-table/issues/121)
+Add notebookRenderer keyword for the new Search Marketplace prompt
+
 ## v1.8.0 - [2021-08-13]
 - [#92](https://github.com/RandomFractals/vscode-data-table/issues/92)
 Update dev dependencies and vscode engine to v1.59.0
@@ -22,7 +66,7 @@ Add consistent notebook Language type suffixes to built-in .ipynb Notebook Examp
 - [#100](https://github.com/RandomFractals/vscode-data-table/issues/100)
 Add Random Fractals Inc. data, geo and notebook extensions to recommendations in .vscode/settings.json
 - [#101](https://github.com/RandomFractals/vscode-data-table/issues/101)
-Package and publish v1.8.0 built-in Notebook Examples and Text Output update release 
+Package and publish v1.8.0 built-in Notebook Examples and Text Output update release
 
 ## v1.7.0 - [2021-08-05]
 - [#82](https://github.com/RandomFractals/vscode-data-table/issues/82)
@@ -58,7 +102,7 @@ Rename renderer entry point to data table renderer
 - [#68](https://github.com/RandomFractals/vscode-data-table/issues/68)
 Add Observable htl library for implementating data summary and other alternative view/save data UX
 - [#69](https://github.com/RandomFractals/vscode-data-table/issues/69)
-Add XPath Notebook example and info to Recommended Extensions section in docs 
+Add XPath Notebook example and info to Recommended Extensions section in docs
 - [#71](https://github.com/RandomFractals/vscode-data-table/issues/71)
 Add XML data table display
 - [#73](https://github.com/RandomFractals/vscode-data-table/issues/73)
@@ -74,7 +118,7 @@ Add Observable Data Table Viewer JS notebook to /notebooks
 - [#79](https://github.com/RandomFractals/vscode-data-table/issues/79)
 Add Observable Data Table Viewer OJS and OJS Inspector previews to docs
 - [#80](https://github.com/RandomFractals/vscode-data-table/issues/80)
-Add new Data Summary view info to docs 
+Add new Data Summary view info to docs
 - [#81](https://github.com/RandomFractals/vscode-data-table/issues/81)
 Package and publish v1.6.0 release with new Data Summary view and updated notebook examples
 
@@ -94,7 +138,7 @@ Enable incremental table row creation and data loading on table scroll
 - [#63](https://github.com/RandomFractals/vscode-data-table/issues/63)
 Update vscode and notebooks api dependencies to latest
 - [#65](https://github.com/RandomFractals/vscode-data-table/issues/65)
-Package and publish v1.5.0 release with table UI enhancements 
+Package and publish v1.5.0 release with table UI enhancements
 
 ## v1.4.0 - [2021-07-23]
 - [#43](https://github.com/RandomFractals/vscode-data-table/issues/43)
@@ -184,7 +228,7 @@ Change generated json code renderer to basic html table renderer
 - [#11](https://github.com/RandomFractals/vscode-data-table/issues/11)
 Add placeholder Data Table view renderer pic to docs
 - [#12](https://github.com/RandomFractals/vscode-data-table/issues/12)
-Change basic html table renderer to use Observable Inputs.table for now 
+Change basic html table renderer to use Observable Inputs.table for now
 - [#13](https://github.com/RandomFractals/vscode-data-table/issues/13)
 Add dev log and data table extension build info to docs
 - [#15](https://github.com/RandomFractals/vscode-data-table/issues/15)
