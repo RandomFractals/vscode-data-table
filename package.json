@@ -1,7 +1,7 @@
 {
   "name": "vscode-data-table",
-  "displayName": "Data Table",
-  "description": "Data Table 🈸 & Data Summary 🈷️ Renderer for VSCode Notebook 📓 Cell ⌗ Data Outputs",
+  "displayName": "Data Table Renderers",
+  "description": "Data Table 🈸, Flat Data Grid 中 & Data Summary 🈷️ Renderers for VSCode Notebook 📓 Cell ⌗ Data Outputs",
   "version": "1.9.0",
   "engines": {
     "node": ">14.5.0",
