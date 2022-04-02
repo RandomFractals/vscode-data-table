@@ -140,6 +140,7 @@
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.10",
     "@types/d3-dsv": "^3.0.0",
     "@types/glob": "^7.2.0",
     "@types/mocha": "^9.1.0",
@@ -164,7 +165,6 @@
     "webpack-cli": "^4.9.2"
   },
   "dependencies": {
-    "@babel/core": "^7.0.0",
     "@observablehq/inputs": "^0.10.4",
     "@observablehq/plot": "^0.4.2",
     "apache-arrow": "^7.0.0",
