@@ -19,7 +19,8 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 
 Data Table Renderers is a collection of custom tabular data renderers for vscode notebooks.
 
-TODO: add a pic with simple data table, data summary and new flat data grid renderers in one.
+![Data Table 🈸 Renderers](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-renderers.png?raw=true
+ "Data Table 🈸 Renderers")
 
 ## 🈸 Features
 
