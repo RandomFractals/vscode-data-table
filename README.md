@@ -101,7 +101,7 @@ $ conda install -c conda-forge altair vega_datasets
 or switch it to Data Summary 🈷️ renderer:
 
 ![Iris Vega Data Table 🈷️ View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/iris-data-summary.png?raw=true
- "Iris Vega Data Table 🈷️ View")
+ "Iris Vega Data Summary 🈷️ View")
 
 ## TypeScript Notebook Example
 
@@ -203,7 +203,7 @@ Recommended extensions for working with Interactive Notebooks 📚 data 🈸 cha
 
 # Dev Log
 
-See [#DataTableView 🈸 tag on Twitter](https://twitter.com/hashtag/dataTableView?src=hash&f=live&vertical=default) for the latest and greatest updates on this vscode extension and what's in store next.
+See [#DataTableView 🈸](https://twitter.com/hashtag/DataTableView?src=hashtag_click&f=live) & [#DataTableRenderers](https://twitter.com/hashtag/DataTableRenderers?src=hashtag_click&f=live) tags on our [Twitter](https://twitter.com/TarasNovak) feed for the latest & greatest updates on this vscode extension & what's next in store for new data tools in vscode.
 
 # Dev Build
 
@@ -227,7 +227,7 @@ to generate `VSIX` Data Table extension package with [vsce](https://code.visuals
 
 Any and all test, code or feedback contributions are welcome.
 
-Open an [issue](https://github.com/RandomFractals/vscode-data-table/issues) or create a pull request to make this Data Table 🈸 extension work better for all.
+Open an [issue](https://github.com/RandomFractals/vscode-data-table/issues) or create a pull request to make this Data Table 🈸 Renderers vscode notebooks 📚 extension work better for all.
 
 # Backers
 
