@@ -15,12 +15,11 @@
 
 See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 vscode extension for a generic [Grid Data Viewer](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-preview) with many common data formats support, search, sort, filters, grouping, splits, pivot tables, aggregates and basic charts 📊
 
-## Data Table 🈸 Renderer View
+## Data Table 🈸 Renderers
 
-Data Table 🈸 Notebook 📓 cell ⌗ output renderer uses [Observable Inputs Table](https://github.com/observablehq/inputs#Table) component for fast incremental data display and scrolling of datasets loaded in [VSCode Notebooks](https://code.visualstudio.com/api/extension-guides/notebook) 📚
+Data Table Renderers is a collection of custom tabular data renderers for vscode notebooks.
 
-![Data Table 🈸 Renderer View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-renderer.png?raw=true
- "Data Table 🈸 Renderer View")
+TODO: add a pic with simple data table, data summary and new flat data grid renderers in one.
 
 ## 🈸 Features
 
@@ -31,6 +30,13 @@ Data Table 🈸 Notebook 📓 cell ⌗ output renderer uses [Observable Inputs T
 - [Geo 🌐 Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#geo--data-table--view)
 - Experimental [XML Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#xml-data-table--view)
 - Notebook 📓 cell ⌗ [Text Output](https://github.com/RandomFractals/vscode-data-table#text-oputput-view) scrollable container with [code pre-wrap](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code) for quick copy/paste to other places
+
+## Data Table 🈸 Renderer View
+
+Data Table 🈸 Notebook 📓 cell ⌗ output renderer uses [Observable Inputs Table](https://github.com/observablehq/inputs#Table) component for fast incremental data display and scrolling of datasets loaded in [VSCode Notebooks](https://code.visualstudio.com/api/extension-guides/notebook) 📚
+
+![Data Table 🈸 Renderer View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-renderer.png?raw=true
+ "Data Table 🈸 Renderer View")
 
 ## Observable Data Table 🈸 Viewer 📓
 
@@ -55,6 +61,13 @@ This general purpose Data Table 🈸 Renderer extension also includes Data Summa
 
 ![Data Summary 📊 Renderer View](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-summary-renderer.png?raw=true
  "Data Summary 📊 Renderer View")
+
+## Flat Data 中 Grid Renderer
+
+[Flat Data Grid](https://github.com/RandomFractals/vscode-data-table/issues/115) renderer is the latest addition to this custom tabular data renderers collection vscode extension. It's based on the [Flat UI](https://github.com/githubocto/flat-ui) React data grid component library created by the [GitHub Next](https://twitter.com/GitHubNext) dev team & used in [Flat Data](https://next.github.com/projects/flat-data/) viewer on [flatgithub.com](https://flatgithub.com).
+
+![Flat Data 中 Grid Renderer Example](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/flat-data-grid-renderer.png?raw=true
+ "Flat Data 中 Grid Renderer Example")
 
 ## 🈸 Examples
 
