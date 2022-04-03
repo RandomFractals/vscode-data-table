@@ -10,7 +10,7 @@
 <h1 align="center">
   <img width="128" height="128" src="resources/images/data-table.png" />
   <br />
-  Data Table for Notebook 📓 cell ⌗ data outputs
+  Data Table Renderers for <a href='https://code.visualstudio.com/blogs/2021/11/08/custom-notebooks' target='_blank' title='VSCode Notebooks Intro'>VSCode Notebooks</a> 📚
 </h1>
 
 See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 vscode extension for a generic [Grid Data Viewer](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-preview) with many common data formats support, search, sort, filters, grouping, splits, pivot tables, aggregates and basic charts 📊
