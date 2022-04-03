@@ -58,7 +58,7 @@ This general purpose Data Table 🈸 Renderer extension also includes Data Summa
 
 ## 🈸 Examples
 
-Data Table 🈸 for Notebooks 📚 extension v1.6.0 and up ships with built-in Notebook examples. You can access provided Notebook Examples listed below via `Data Table: Notebook Examples` command from `View -> Command Palette...`
+Data Table 🈸 for Notebooks 📚 extension v1.6.0 and up ships with built-in Notebook examples. You can access provided Notebook Examples listed below via `Data Table: Notebook Examples` command from `View -> Command Palette...` vscode menu:
 
 ![Data Table 🈸 Notebook Examples](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-notebook-examples.png?raw=true
  "Data Summary Data Table 🈸 Notebook Examples")
@@ -69,7 +69,7 @@ Data Table 🈸 for Notebooks 📚 extension v1.6.0 and up ships with built-in N
 
 2. Load [Chicago Traffic Tracker](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/chicago-traffic-tracker.restbook) REST Book 📓
 
-3. Run All cells ⌗
+3. Run All ᐅ cells ⌗
 
 4. Click on `...` in the gutter of `GET` data output and change it to Data Table 🈸 renderer:
 
@@ -91,7 +91,7 @@ $ conda install -c conda-forge altair vega_datasets
 
 2. Load [Iris Vega Data](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/iris-vega-data.ipynb) Python 🐍 Notebook 📓
 
-3. Run All cells ⌗
+3. Run All ᐅ cells ⌗
 
 4. Click on `...` in the gutter of iris data output and change it to Data Table 🈸 renderer:
 
@@ -111,7 +111,7 @@ or switch it to Data Summary 🈷️ renderer:
 
 3. Load [USA Airports](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/usa-airports-ts.ipynb) TypeScript Notebook 📓
 
-4. Run All cells ⌗ to view local `CSV` and `JSON` data outputs with Data Table 🈸:
+4. Run All ᐅ cells ⌗ to view local `CSV` and `JSON` data outputs with Data Table 🈸:
 
 ![USA Airports Data TypeScript Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-usa-airports.png?raw=true
  "USA Airports Data TypeScript Notebook 📓")
@@ -124,7 +124,7 @@ or switch it to Data Summary 🈷️ renderer:
 
 3. Load [Chicago Speed Cameras](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/chicago-speed-cameras-net.ipynb) .NET Interactive Notebook 📓
 
-4. Run All cells ⌗:
+4. Run All ᐅ cells ⌗:
 
 ![Chicago Speed Cameras .NET Interactive Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-net-interactive.png?raw=true
  "Chicago Speed Cameras .NET Interactive Notebook 📓")
@@ -135,7 +135,7 @@ or switch it to Data Summary 🈷️ renderer:
 
 2. Load [Chicago Red Light Cameras](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/chicago-red-light-cameras.ipynb) Pyolite Notebook 📓
 
-3. Run All cells ⌗:
+3. Run All ᐅ cells ⌗:
 
 ![Chicago Red Light Cameras Pyolite Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-pyolite-notebook.png?raw=true
  "Chicago Red Light Cameras Pyolite Notebook 📓")
@@ -146,7 +146,7 @@ or switch it to Data Summary 🈷️ renderer:
 
 2. Load [World 🌐 Rivers](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/world-rivers.restbook) REST Book 📓
 
-3. Run All cells ⌗
+3. Run All ᐅ cells ⌗
 
 4. Click on `...` in the gutter of `GET` data output and change it to Data Table 🈸 for geo table view:
 
@@ -157,7 +157,7 @@ or switch it to Data Summary 🈷️ renderer:
 
 1. Load [World 🌐 GDP](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/world-gdp.restbook) REST Book 📓
 
-2. Run All cells ⌗
+2. Run All ᐅ cells ⌗
 
 3. Click on `...` in the gutter of `GET` data output and change it to Data Table 🈸 for XML data table view:
 
