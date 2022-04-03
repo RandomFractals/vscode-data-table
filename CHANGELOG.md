@@ -2,7 +2,7 @@
 
 See [releases](https://github.com/RandomFractals/vscode-data-table/releases) for source code and `vscode-data-table.vsix` extension package download.
 
-## v1.9.0 - [2022-04-02]
+## v1.9.0 - [2022-04-03]
 - [#44](https://github.com/RandomFractals/vscode-data-table/issues/44)
 Add Save as CSV or JSON options
 - [#53](https://github.com/RandomFractals/vscode-data-table/issues/53)
