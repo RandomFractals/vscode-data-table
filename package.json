@@ -2,7 +2,7 @@
   "name": "vscode-data-table",
   "displayName": "Data Table Renderers",
   "description": "Data Table 🈸, Flat Data Grid 中 & Data Summary 🈷️ Renderers for VSCode Notebook 📓 Cell ⌗ Data Outputs",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "engines": {
     "node": ">14.5.0",
     "vscode": "^1.65.0"
@@ -68,6 +68,7 @@
     "onRenderer:flat-data-grid"
   ],
   "main": "./out/extension/extension.js",
+  "browser": "./out/extension/extension.js",
   "contributes": {
     "commands": [
       {

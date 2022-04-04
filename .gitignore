@@ -3,3 +3,4 @@ out
 notebooks/test
 *.vsix
 .vscode-test
+.vscode-test-web
