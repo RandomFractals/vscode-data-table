@@ -2,6 +2,7 @@ import {
   ExtensionContext
 }
 from 'vscode';
+
 import {registerCommands} from './commands';
 import * as constants from './constants';
 

@@ -2,15 +2,12 @@ import {
   ExtensionContext,
   Disposable,
 	QuickPickItem,
-  ViewColumn,
   Uri,
   commands,
-  window,
-  workspace
+  window
 }
 from 'vscode';
-import * as fs from 'fs';
-import * as path from 'path';
+
 import * as config from './config';
 import * as constants from './constants';
 
@@ -37,15 +34,15 @@ function registerCommand(commandName: string, callback: (...args: any[]) => any,
 		description: notebook.type,
 		detail: notebook.file
 	}));
-	const selectedNotebook: QuickPickItem | undefined = 
+	const selectedNotebook: QuickPickItem | undefined =
 		await window.showQuickPick(notebookQuickPickItems, {canPickMany: false});
 	if (selectedNotebook) {
 		const notebookUrl: string | undefined = selectedNotebook.detail;
-    const extensionPath: string = _context.asAbsolutePath('./');
+    const extensionUri: Uri = _context.extensionUri;
 		if (notebookUrl) {
-			const notebookUri: Uri =  Uri.file(path.join(extensionPath, notebookUrl));
+			const notebookUri: Uri =  Uri.joinPath(extensionUri, notebookUrl);
 			// open data table example notebook
-			commands.executeCommand(constants.VSCodeOpenCommand, notebookUri);	
+			commands.executeCommand(constants.VSCodeOpenCommand, notebookUri);
 		}
 	}
 }
