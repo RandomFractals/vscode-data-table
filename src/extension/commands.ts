@@ -42,6 +42,7 @@ function registerCommand(commandName: string, callback: (...args: any[]) => any,
 		if (notebookUrl) {
 			const notebookUri: Uri =  Uri.joinPath(extensionUri, notebookUrl);
 			// open data table example notebook
+			console.log(`${constants.ExtensionId}: loading notebook example: ${notebookUri.toString(true)}`);
 			commands.executeCommand(constants.VSCodeOpenCommand, notebookUri);
 		}
 	}
