@@ -130,17 +130,21 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "npm run compile && node out/test/checkNoTestProvider.js",
+    "vscode:prepublish": "npm run build && node out/test/checkNoTestProvider.js",
     "compile": "npm run compile:extension && npm run compile:renderer",
-    "compile:extension": "tsc -b",
-    "compile:renderer": "webpack --mode production",
+    "compile:extension": "tsc -p src/extension",
+    "compile:renderer": "webpack --config=./webpack.config.js",
+    "build": "npm run build:renderer && npm run build:extension",
+    "build:renderer": "webpack --config=./webpack.config.js --mode=production",
+    "build:extension": "webpack --config=./webpack.extension.config.js --mode=production",
     "lint": "eslint src --ext ts",
     "watch": "concurrently -r \"npm:watch:*\"",
-    "watch:extension": "tsc -b --watch",
+    "watch:extension": "tsc -watch -p ./",
     "watch:renderer": "webpack --mode development --watch",
     "dev": "concurrently -r npm:watch:extension npm:watch:renderer",
     "pretest": "npm run compile && npm run lint",
-    "test": "node ./out/test/runTest.js"
+    "test": "node ./out/test/runTest.js",
+    "test:web": "npx @vscode/test-web --extensionDevelopmentPath=. --extensionPath=."
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",

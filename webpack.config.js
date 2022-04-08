@@ -21,7 +21,7 @@ module.exports = (env, argv) => ({
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.css'],
   },
   experiments: {
-      outputModule: true,
+    outputModule: true,
   },
   module: {
     rules: [
