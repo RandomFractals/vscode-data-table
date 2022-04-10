@@ -2,6 +2,11 @@
 
 See [releases](https://github.com/RandomFractals/vscode-data-table/releases) for source code and `vscode-data-table.vsix` extension package download.
 
+## v1.10.0 - [2022-04-10]
+
+- [#122](https://github.com/RandomFractals/vscode-data-table/issues/122)
+Enable Data Table Renderers to work on github.dev and in the web version of vscode IDE
+
 ## v1.9.0 - [2022-04-03]
 - [#44](https://github.com/RandomFractals/vscode-data-table/issues/44)
 Add Save as CSV or JSON options
