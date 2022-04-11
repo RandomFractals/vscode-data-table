@@ -10,7 +10,7 @@
         {
             "language": "typescript",
             "source": [
-                "import fs from 'fs';\r\nconst geoJson = fs.readFileSync('../data/usa-state-capitals.geojson', 'utf-8');\r\nconst { display } = require('node-kernel');\r\ndisplay.text(geoJson);"
+                "import * as fetch from 'node-fetch';\r\nconst dataUrl = 'https://raw.githubusercontent.com/RandomFractals/vscode-data-table/main/data/usa-state-capitals.geojson';\r\nconst geoJson = await fetch(dataUrl).then(res => res.text());\r\nconst { display } = require('node-kernel');\r\ndisplay.text(geoJson);"
             ],
             "outputs": []
         }
