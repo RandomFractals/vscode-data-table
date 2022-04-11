@@ -32,7 +32,7 @@ Data Table Renderers is a collection of custom tabular data renderers for vscode
 - [Geo 🌐 Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#geo--data-table--view)
 - Experimental [XML Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#xml-data-table--view)
 - Notebook 📓 cell ⌗ [Text Output](https://github.com/RandomFractals/vscode-data-table#text-oputput-view) scrollable container with [code pre-wrap](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code) for quick copy/paste to other places
-- Use [Data Table](https://github.com/RandomFractals/vscode-data-table#data-table--renderer-view) 🈸, [Flat Data Grid](https://github.com/RandomFractals/vscode-data-table#flat-data-%E4%B8%AD-grid-renderer) 中 & [Data Summary](https://github.com/RandomFractals/vscode-data-table#data-summary--renderer-view) 🈷️ Notebook 📓 cell renderers with [Pyolite](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyodide) 🐍 kernel in [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) Notebooks [VSCode web editor](https://code.visualstudio.com/docs/editor/vscode-web) on [vscode.dev](https://vscode.dev) and [github.dev](https://github.dev/github/dev):
+- Use [Data Table](https://github.com/RandomFractals/vscode-data-table#data-table--renderer-view), [Flat Data Grid](https://github.com/RandomFractals/vscode-data-table#flat-data-%E4%B8%AD-grid-renderer) & [Data Summary](https://github.com/RandomFractals/vscode-data-table#data-summary--renderer-view) Notebook 📓 cell renderers with [Pyolite](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyodide) 🐍 kernel in [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) Notebooks [VSCode web editor](https://code.visualstudio.com/docs/editor/vscode-web) on [vscode.dev](https://vscode.dev) and [github.dev](https://github.dev/github/dev):
 
 ![Flat Data Grid 中 in browser](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/flat-data-grid-in-browser.png?raw=true
  "Flat Data Grid 中 in browser")
@@ -128,9 +128,9 @@ or switch it to Data Summary 🈷️ renderer:
 
 2. Download [USA Airports data files](https://github.com/RandomFractals/vscode-data-table/tree/main/data)
 
-3. Load [USA Airports](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/usa-airports-ts.ipynb) TypeScript Notebook 📓
+3. Load [USA Airports](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/usa-airports-ts.nnb) TypeScript Notebook 📓
 
-4. Run All ᐅ cells ⌗ to view local `CSV` and `JSON` data outputs with Data Table 🈸:
+4. Run All ᐅ cells ⌗ to view local `CSV` and `JSON` text data outputs with Data Table 🈸:
 
 ![USA Airports Data TypeScript Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-usa-airports.png?raw=true
  "USA Airports Data TypeScript Notebook 📓")
