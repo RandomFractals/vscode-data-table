@@ -132,8 +132,8 @@ or switch it to Data Summary 🈷️ renderer:
 
 4. Run All ᐅ cells ⌗ to view local `CSV` and `JSON` text data outputs with Data Table 🈸:
 
-![USA Airports Data TypeScript Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-usa-airports.png?raw=true
- "USA Airports Data TypeScript Notebook 📓")
+![USA Airports TypeScript Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/usa-airports-ts-notebook.png?raw=true
+ "USA Airports TypeScript Notebook 📓")
 
 Also, try new [USA State Capitals](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/usa-state-capitals-ts.nnb) TypesScript Notebook 📓 with `GeoJSON` [node-fetch](https://github.com/node-fetch/node-fetch) and [Flat Data Grid](https://github.com/RandomFractals/vscode-data-table#flat-data-%E4%B8%AD-grid-renderer) renderer from built-in [Notebook Examples](https://github.com/RandomFractals/vscode-data-table#-examples):
 
