@@ -1,0 +1,18 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# USA State Capitals TypeScript Notebook"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "import fs from 'fs';\r\nconst geoJson = fs.readFileSync('../data/usa-state-capitals.geojson', 'utf-8');\r\nconst { display } = require('node-kernel');\r\ndisplay.text(geoJson);"
+            ],
+            "outputs": []
+        }
+    ]
+}
