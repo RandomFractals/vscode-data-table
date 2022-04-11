@@ -135,6 +135,11 @@ or switch it to Data Summary 🈷️ renderer:
 ![USA Airports Data TypeScript Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-usa-airports.png?raw=true
  "USA Airports Data TypeScript Notebook 📓")
 
+Also, try new [USA State Capitals](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/usa-state-capitals-ts.nnb) TypesScript Notebook 📓 with `GeoJSON` [node-fetch](https://github.com/node-fetch/node-fetch) and [Flat Data Grid](https://github.com/RandomFractals/vscode-data-table#flat-data-%E4%B8%AD-grid-renderer) renderer from built-in [Notebook Examples](https://github.com/RandomFractals/vscode-data-table#-examples):
+
+![USA State Capitals TypeScript Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/usa-state-capitals-ts-notebook.png?raw=true
+ "USA State Captitals TypeScript Notebook 📓")
+
 ## .NET Interactive Notebook Example
 
 1. Install [.NET Install Tool for Extension Authors](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.vscode-dotnet-runtime) vscode extension
