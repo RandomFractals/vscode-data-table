@@ -10,14 +10,14 @@
         {
             "language": "typescript",
             "source": [
-                "import fs from 'fs';\r\nconst csvString = fs.readFileSync('../data/usa-airports.csv', 'utf-8');\r\ncsvString"
+                "import fs from 'fs';\r\nconst csvString = fs.readFileSync('../data/usa-airports.csv', 'utf-8');\r\nconst { display } = require('node-kernel');\r\ndisplay.text(csvString)"
             ],
             "outputs": []
         },
         {
             "language": "typescript",
             "source": [
-                "import fs from 'fs';\r\nconst jsonString = fs.readFileSync('../data/usa-airports.json', 'utf-8');\r\njsonString"
+                "import fs from 'fs';\r\nconst jsonString = fs.readFileSync('../data/usa-airports.json', 'utf-8');\r\nconst { display } = require('node-kernel');\r\ndisplay.text(jsonString)"
             ],
             "outputs": []
         }
