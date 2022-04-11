@@ -32,7 +32,7 @@ export const notebookExamples: Array<any> = [
   },
   {
     name: 'USA State Capitals',
-    file: './notebooks/usa-state-capitals-ts.ipynb',
+    file: './notebooks/usa-state-capitals-ts.nnb',
     type: 'TypeScript Notebook',
   },
   {
