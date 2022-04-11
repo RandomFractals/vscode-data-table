@@ -22,7 +22,7 @@ export const notebookExamples: Array<any> = [
   },
   {
     name: 'USA Airports',
-    file: './notebooks/usa-airports-ts.ipynb',
+    file: './notebooks/usa-airports-ts.nnb',
     type: 'TypeScript Notebook',
   },
   {
