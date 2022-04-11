@@ -2,6 +2,10 @@
 
 See [releases](https://github.com/RandomFractals/vscode-data-table/releases) for source code and `vscode-data-table.vsix` extension package download.
 
+## v1.11.0 - [2022-04-11]
+- [#124](https://github.com/RandomFractals/vscode-data-table/issues/124)
+Update built-in TypeScript notebook examples
+
 ## v1.10.0 - [2022-04-10]
 
 - [#122](https://github.com/RandomFractals/vscode-data-table/issues/122)
