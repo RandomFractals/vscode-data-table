@@ -1,0 +1,25 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# USA Airports TypeScript Notebook"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "import fs from 'fs';\r\nconst csvString = fs.readFileSync('../data/usa-airports.csv', 'utf-8');\r\ncsvString"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "import fs from 'fs';\r\nconst jsonString = fs.readFileSync('../data/usa-airports.json', 'utf-8');\r\njsonString"
+            ],
+            "outputs": []
+        }
+    ]
+}
