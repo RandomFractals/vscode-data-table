@@ -3,9 +3,10 @@
   // for the documentation about the extensions.json format
   "recommendations": [
     "dbaeumer.vscode-eslint",
-    // "RandomFractalsInc.js-notebook-inspector",
     "RandomFractalsInc.vscode-data-preview",
     "RandomFractalsInc.geo-data-viewer",
-    "RandomFractalsInc.vscode-leaflet"
+    "RandomFractalsInc.vscode-vega-viewer",
+    "RandomFractalsInc.vscode-leaflet",
+    // "RandomFractalsInc.js-notebook-inspector",
   ]
 }
