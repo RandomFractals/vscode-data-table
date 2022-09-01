@@ -22,6 +22,9 @@
   },
   "bugs": "https://github.com/RandomFractals/vscode-data-table/issues",
   "homepage": "https://github.com/RandomFractals/vscode-data-table/README.md",
+  "sponsor": {
+    "url": "https://github.com/sponsors/RandomFractals"
+  },
   "galleryBanner": {
     "color": "#333",
     "theme": "dark"
