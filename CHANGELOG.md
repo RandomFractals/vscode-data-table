@@ -37,7 +37,8 @@ Refine Pyolite/Pyodide info in docs
 Update webpack, webpack-env types, webpack-cli, and ts-loader to latest
 - [#143](https://github.com/RandomFractals/vscode-data-table/issues/143)
 Update dev dependencies to latest
-
+- [#144](https://github.com/RandomFractals/vscode-data-table/issues/144)
+Update apache-arrow, arquero and fast-xml-parser dependencies to latest
 ## v1.11.0 - [2022-04-11]
 - [#124](https://github.com/RandomFractals/vscode-data-table/issues/124)
 Update built-in TypeScript notebook examples

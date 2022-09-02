@@ -180,12 +180,12 @@
   "dependencies": {
     "@observablehq/inputs": "^0.10.4",
     "@observablehq/plot": "^0.4.3",
-    "apache-arrow": "^7.0.0",
-    "arquero": "^4.8.8",
+    "apache-arrow": "^9.0.0",
+    "arquero": "^5.1.0",
     "d3": "^7.6.1",
     "d3-dsv": "^3.0.1",
     "htl": "^0.3.1",
-    "fast-xml-parser": "^4.0.0",
+    "fast-xml-parser": "^4.0.9",
     "@githubocto/flat-ui": "^0.14.1",
     "react": "^17.0.02",
     "react-dom": "^17.0.02"
