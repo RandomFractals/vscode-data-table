@@ -179,7 +179,7 @@
   },
   "dependencies": {
     "@observablehq/inputs": "^0.10.4",
-    "@observablehq/plot": "^0.4.2",
+    "@observablehq/plot": "^0.4.3",
     "apache-arrow": "^7.0.0",
     "arquero": "^4.8.8",
     "d3": "^7.6.1",
