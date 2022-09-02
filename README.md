@@ -35,11 +35,11 @@ Data Table Renderers is a collection of custom tabular data renderers for vscode
 - Incremental Data Table 🈸 rows creation on table scroll for faster display of larger datasets
 - [Data Summary 📊 Renderer View](https://github.com/RandomFractals/vscode-data-table#data-summary--renderer-view) for a quick overview of loaded dataset
 - [Flat Data 中 Grid Renderer](https://github.com/RandomFractals/vscode-data-table#flat-data-%E4%B8%AD-grid-renderer) with column summary headers, filtering, and `CSV` save options
-- Built-in [REST Book](https://github.com/RandomFractals/vscode-data-table#rest-book-example) 📓 [Python](https://github.com/RandomFractals/vscode-data-table#python-notebook-example) 🐍 [TypeScript Notebook](https://github.com/RandomFractals/vscode-data-table#typescript-notebook-example) 📓 [.NET Interactive Notebook](https://github.com/RandomFractals/vscode-data-table#net-interactive-notebook-example) 📓 and [Pyolite](https://github.com/RandomFractals/vscode-data-table#pyolite-notebook-example) 🐍 [Notebook Examples](https://github.com/RandomFractals/vscode-data-table#-examples) 📚
+- Built-in [REST Book](https://github.com/RandomFractals/vscode-data-table#rest-book-example) 📓, [Python](https://github.com/RandomFractals/vscode-data-table#python-notebook-example) 🐍, [TypeScript Notebook](https://github.com/RandomFractals/vscode-data-table#typescript-notebook-example) 📓, [.NET Interactive Notebook](https://github.com/RandomFractals/vscode-data-table#net-interactive-notebook-example) 📓, and [Pyolite/Pyodide](https://github.com/RandomFractals/vscode-data-table#pyolite-notebook-example) 🐍 [Notebook Examples](https://github.com/RandomFractals/vscode-data-table#-examples) 📚
 - [Geo 🌐 Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#geo--data-table--view)
 - Experimental [XML Data Table 🈸 View](https://github.com/RandomFractals/vscode-data-table#xml-data-table--view)
 - Notebook 📓 cell ⌗ [Text Output](https://github.com/RandomFractals/vscode-data-table#text-oputput-view) scrollable container with [code pre-wrap](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code) for quick copy/paste to other places
-- Use [Data Table](https://github.com/RandomFractals/vscode-data-table#data-table--renderer-view), [Flat Data Grid](https://github.com/RandomFractals/vscode-data-table#flat-data-%E4%B8%AD-grid-renderer) & [Data Summary](https://github.com/RandomFractals/vscode-data-table#data-summary--renderer-view) Notebook 📓 cell renderers with [Pyolite](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyodide) 🐍 kernel in [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) Notebooks [VSCode web editor](https://code.visualstudio.com/docs/editor/vscode-web) on [vscode.dev](https://vscode.dev) and [github.dev](https://github.dev/github/dev):
+- Use [Data Table](https://github.com/RandomFractals/vscode-data-table#data-table--renderer-view), [Flat Data Grid](https://github.com/RandomFractals/vscode-data-table#flat-data-%E4%B8%AD-grid-renderer) & [Data Summary](https://github.com/RandomFractals/vscode-data-table#data-summary--renderer-view) Notebook 📓 cell renderers with [Pyolite/Pyodide](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyodide) 🐍 kernel in [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) Notebooks [VSCode web editor](https://code.visualstudio.com/docs/editor/vscode-web) on [vscode.dev](https://vscode.dev) and [github.dev](https://github.dev/github/dev):
 
 ![Flat Data Grid 中 in browser](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/flat-data-grid-in-browser.png?raw=true
  "Flat Data Grid 中 in browser")
@@ -162,7 +162,7 @@ Also, try new [USA State Capitals](https://github.com/RandomFractals/vscode-data
 
 ## Pyolite Notebook Example
 
-1. Install [Pyolite](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyolite) 🐍 vscode extension
+1. Install [Pyodide](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyodide) 🐍 vscode extension
 
 2. Load [Chicago Red Light Cameras](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/chicago-red-light-cameras.ipynb) Pyolite Notebook 📓
 
