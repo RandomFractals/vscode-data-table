@@ -17,7 +17,9 @@ See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 v
 
 # Support
 
-These [Data Table Renderers](https://github.com/RandomFractals/vscode-data-table) were created to enhance raw data views in Jupyter and custom VSCode Notebooks. Please consider becoming a [Fan](https://github.com/sponsors/RandomFractals/sponsorships?tier_id=18883&preview=false) and sponsoring our dev efforts on this and other [Random Fractals, Inc.](https://twitter.com/search?q=%23RandomFractalsInc&src=typed_query&f=live) code and [data viz extensions](https://marketplace.visualstudio.com/publishers/RandomFractalsInc) if you find them useful, educational, or enhancing your daily dataViz/dev code workflows and exploratory data analysis:
+These [Data Table Renderers](https://github.com/RandomFractals/vscode-data-table) were created to enhance raw data views in Jupyter and custom [VSCode Notebooks](https://code.visualstudio.com/blogs/2021/11/08/custom-notebooks) 📚.
+
+Please consider becoming a [Fan](https://github.com/sponsors/RandomFractals/sponsorships?tier_id=18883&preview=false) and sponsoring our dev efforts on this and other [Random Fractals, Inc.](https://twitter.com/search?q=%23RandomFractalsInc&src=typed_query&f=live) code and [data viz extensions](https://marketplace.visualstudio.com/publishers/RandomFractalsInc) if you find them useful, educational, or enhancing your daily dataViz/dev code workflows and exploratory data analysis:
 
 ☕️ https://ko-fi.com/dataPixy
 💖 https://github.com/sponsors/RandomFractals
