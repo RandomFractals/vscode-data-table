@@ -39,6 +39,8 @@ Update webpack, webpack-env types, webpack-cli, and ts-loader to latest
 Update dev dependencies to latest
 - [#144](https://github.com/RandomFractals/vscode-data-table/issues/144)
 Update apache-arrow, arquero and fast-xml-parser dependencies to latest
+- [#145](https://github.com/RandomFractals/vscode-data-table/issues/145)
+Add browserslist dev dependency
 ## v1.11.0 - [2022-04-11]
 - [#124](https://github.com/RandomFractals/vscode-data-table/issues/124)
 Update built-in TypeScript notebook examples
