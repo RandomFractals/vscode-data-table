@@ -2,6 +2,38 @@
 
 See [releases](https://github.com/RandomFractals/vscode-data-table/releases) for source code and `vscode-data-table.vsix` extension package download.
 
+## v1.12.0 - [2022-09-02]
+- [#126](https://github.com/RandomFractals/vscode-data-table/issues/126)
+VSCode-data-table not in VSCode gallery
+- [#127](https://github.com/RandomFractals/vscode-data-table/issues/127)
+Add extension sponsoring config and republish it
+- [#128](https://github.com/RandomFractals/vscode-data-table/issues/128)
+Use JS Notebook Inspector extension public github repository link in docs
+- [#129](https://github.com/RandomFractals/vscode-data-table/issues/129)
+Comment out JS Notebook Inspector ext. in .vscode/extensions.json recommendations
+- [#130](https://github.com/RandomFractals/vscode-data-table/issues/130)
+Remove all Microsoft notebooks extensions from our .vscode/extensions.json recommendations
+- [#131](https://github.com/RandomFractals/vscode-data-table/issues/131)
+Remove all Microsoft notebook extensions from our Recommendations in docs
+- [#132](https://github.com/RandomFractals/vscode-data-table/issues/132)
+Add our Vega Viewer extension to recommendations in .vscode/extensions.json
+- [#133](https://github.com/RandomFractals/vscode-data-table/issues/133)
+Remove Microsoft ESLint extension from recommendation in .vscode/extensions.json
+- [#134](https://github.com/RandomFractals/vscode-data-table/issues/134)
+Add more prominent Support section with Sponsor links to docs
+- [#135](https://github.com/RandomFractals/vscode-data-table/issues/135)
+Add dataViz keyword to Data Table Renderers manifest
+- [#136](https://github.com/RandomFractals/vscode-data-table/issues/136)
+Update flat-ui to v0.14.1
+- [#137](https://github.com/RandomFractals/vscode-data-table/issues/137)
+Update Observable dependencies to latest
+- [#139](https://github.com/RandomFractals/vscode-data-table/issues/139)
+Reorder Recommended extensions in docs
+- [#140](https://github.com/RandomFractals/vscode-data-table/issues/140)
+Update Observable JS extension description in docs
+- [#141](https://github.com/RandomFractals/vscode-data-table/issues/141)
+Refine Pyolite/Pyodide info in docs
+
 ## v1.11.0 - [2022-04-11]
 - [#124](https://github.com/RandomFractals/vscode-data-table/issues/124)
 Update built-in TypeScript notebook examples
