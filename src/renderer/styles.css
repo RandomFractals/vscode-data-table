@@ -120,3 +120,15 @@ th {
 .data-summary td svg {
   transform: translateY(0px) !important;
 }
+
+/* flat grid row/cell styles */
+/* TODO: see issue #138 related to reducing data row height
+
+.github-octo-flat-ui {
+  line-height: 0.8 !important;
+}
+
+.cell {
+  height: 24px !important;
+}
+*/
