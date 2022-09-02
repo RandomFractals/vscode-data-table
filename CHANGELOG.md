@@ -35,6 +35,8 @@ Update Observable JS extension description in docs
 Refine Pyolite/Pyodide info in docs
 - [#142](https://github.com/RandomFractals/vscode-data-table/issues/142)
 Update webpack, webpack-env types, webpack-cli, and ts-loader to latest
+- [#143](https://github.com/RandomFractals/vscode-data-table/issues/143)
+Update dev dependencies to latest
 
 ## v1.11.0 - [2022-04-11]
 - [#124](https://github.com/RandomFractals/vscode-data-table/issues/124)
