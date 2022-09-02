@@ -33,6 +33,8 @@ Reorder Recommended extensions in docs
 Update Observable JS extension description in docs
 - [#141](https://github.com/RandomFractals/vscode-data-table/issues/141)
 Refine Pyolite/Pyodide info in docs
+- [#142](https://github.com/RandomFractals/vscode-data-table/issues/142)
+Update webpack, webpack-env types, webpack-cli, and ts-loader to latest
 
 ## v1.11.0 - [2022-04-11]
 - [#124](https://github.com/RandomFractals/vscode-data-table/issues/124)
