@@ -13,16 +13,23 @@
   Data Table Renderers for <a href='https://code.visualstudio.com/blogs/2021/11/08/custom-notebooks' target='_blank' title='VSCode Notebooks Intro'>VSCode Notebooks</a> 📚
 </h1>
 
-See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 vscode extension for a generic [Grid Data Viewer](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-preview) with many common data formats support, search, sort, filters, grouping, splits, pivot tables, aggregates and basic charts 📊
+See [Data Preview](https://github.com/RandomFractals/vscode-data-preview) 🈸 vscode extension for a generic [Grid Data Viewer](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-preview) with many common data formats support, search, sort, filters, grouping, splits, pivot tables, aggregates and basic charts 📊.
 
-## Data Table 🈸 Renderers
+# Support
+
+These [Data Table Renderers](https://github.com/RandomFractals/vscode-data-table) were created to enhance raw data views in Jupyter and custom VSCode Notebooks. Please consider becoming a [Fan](https://github.com/sponsors/RandomFractals/sponsorships?tier_id=18883&preview=false) and sponsoring our dev efforts on this and other [Random Fractals, Inc.](https://twitter.com/search?q=%23RandomFractalsInc&src=typed_query&f=live) code and [data viz extensions](https://marketplace.visualstudio.com/publishers/RandomFractalsInc) if you find them useful, educational, or enhancing your daily dataViz/dev code workflows and exploratory data analysis:
+
+☕️ https://ko-fi.com/dataPixy
+💖 https://github.com/sponsors/RandomFractals
+
+# Data Table 🈸 Renderers
 
 Data Table Renderers is a collection of custom tabular data renderers for vscode notebooks.
 
 ![Data Table 🈸 Renderers](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-renderers.png?raw=true
  "Data Table 🈸 Renderers")
 
-## 🈸 Features
+# 🈸 Features
 
 - View `CSV`, semi-flat `XML`, [`GeoJSON`](https://www.rfc-editor.org/rfc/rfc7946.html) and `JSON` **array** data Notebook 📓 cell ⌗ output in HTML table with column sort, number and date formatting
 - Incremental Data Table 🈸 rows creation on table scroll for faster display of larger datasets
