@@ -91,6 +91,21 @@ Data Table 🈸 for Notebooks 📚 extension v1.6.0 and up ships with built-in N
 ![Data Table 🈸 Notebook Examples](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-notebook-examples.png?raw=true
  "Data Summary Data Table 🈸 Notebook Examples")
 
+### Runme Notebook Example
+
+1. Install [Runme](https://marketplace.visualstudio.com/items?itemName=stateful.runme) vscode extension
+
+2. Load [notebooks/world-lakes.md](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/world-lakes.md) document
+
+3. Click on ▶️ in the markdown text editor context menu to `Open markdown as Runme` 📓.
+
+4. Run All ᐅ cells ⌗
+
+5. Click on `...` in the gutter of the `curl` command cell and `Change Presentation` to one of the Data Table 🈸 renderers or [Leaflet 🍃 Map 🗺️](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-leaflet) renderer:
+
+![World Lakes Runme Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/world-lakes-runbook.gif?raw=true
+ "World Lakes Runme Notebook 📓")
+
 ### REST Book Example
 
 1. Install [REST Book](https://marketplace.visualstudio.com/items?itemName=tanhakabir.rest-book) 📓 vscode extension
