@@ -1,0 +1,5 @@
+# World Lakes Runbook 📓
+
+```sh { category=curl custom=[object Object] interactive=false mimeType=application/geo+json }
+curl -s "https://raw.githubusercontent.com/RandomFractals/vscode-data-table/main/data/world-lakes.geojson"
+```
