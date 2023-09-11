@@ -91,7 +91,7 @@ Data Table 🈸 for Notebooks 📚 extension v1.6.0 and up ships with built-in N
 ![Data Table 🈸 Notebook Examples](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-notebook-examples.png?raw=true
  "Data Summary Data Table 🈸 Notebook Examples")
 
-### Runme Notebook Example
+## Runme Notebook Example
 
 1. Install [Runme](https://marketplace.visualstudio.com/items?itemName=stateful.runme) vscode extension
 
@@ -106,7 +106,7 @@ Data Table 🈸 for Notebooks 📚 extension v1.6.0 and up ships with built-in N
 ![World Lakes Runme Notebook 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/world-lakes-runbook.gif?raw=true
  "World Lakes Runme Notebook 📓")
 
-### REST Book Example
+## REST Book Example
 
 1. Install [REST Book](https://marketplace.visualstudio.com/items?itemName=tanhakabir.rest-book) 📓 vscode extension
 
@@ -119,7 +119,7 @@ Data Table 🈸 for Notebooks 📚 extension v1.6.0 and up ships with built-in N
 ![Chicago Traffic Data REST Book 📓](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-chicago-traffic.png?raw=true
  "Chicago Traffic Data REST Book 📓")
 
-### Python Notebook Example
+## Python Notebook Example
 
 1. Install [`vega_datasets`](https://github.com/altair-viz/vega_datasets) and [`altair`](https://github.com/altair-viz/altair) Python libraries via [`pip`](https://pypi.org/project/pip/) or [`conda`](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html):
 
