@@ -243,6 +243,7 @@ Recommended extensions for working with Interactive Notebooks 📚, data 🈸, c
 | [Leaflet 🍃 Map 🗺️](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-leaflet) | Leaflet 🍃 Map 🗺️ for Notebook 📓 cell ⌗ data outputs |
 | [JS Notebook 📓 Inspector 🕵️](https://github.com/RandomFractals/js-notebook-inspector) | Provides Interactive Preview of [Observable JS Notebooks](https://observablehq.com/documentation#notebook-fundamentals) 📚, Notebook 📓 nodes ⎇ & cells ⌗ source code |
 | [Observable JS](https://marketplace.visualstudio.com/items?itemName=GordonSmith.observable-js) | Observable Notebooks 📚 Interpreter with VSCode Notebook view support, [Observable](https://observablehq.com/@observablehq/observable-for-jupyter-users?collection=@observablehq/observable-for-jupyter-users) `js` and `md` code outlines and previews |
+| [Runme ▶️](https://marketplace.visualstudio.com/items?itemName=stateful.runme) | Runme executes commands and code blocks from markdown documents, and provides direct CLI integration and multi-language support in Visual Studio Code markdown text editor and markdown-based notebooks. |
 | [DeltaXML XPath Notebook](https://marketplace.visualstudio.com/items?itemName=deltaxml.xpath-notebook) | XPath 3.1 Notebook 📓 for Visual Studio Code |
 # Dev Log
 
