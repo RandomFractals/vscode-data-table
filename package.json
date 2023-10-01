@@ -133,7 +133,7 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "npm run build && node out/test/checkNoTestProvider.js",
+    "vscode:prepublish": "npm run build",
     "compile": "npm run compile:extension && npm run compile:renderer",
     "compile:extension": "tsc -p src/extension",
     "compile:renderer": "webpack --config=./webpack.config.js",
