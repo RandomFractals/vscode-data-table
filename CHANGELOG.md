@@ -2,6 +2,19 @@
 
 See [releases](https://github.com/RandomFractals/vscode-data-table/releases) for source code and `vscode-data-table.vsix` extension package download.
 
+## v1.13.0 - [2023-10-01]
+
+- [#151](https://github.com/RandomFractals/vscode-data-table/issues/151)
+Use shields.io for version, installs, and downloads badges in docs
+- [#153](https://github.com/RandomFractals/vscode-data-table/issues/153)
+Extension displays multiple stdout stream outputs in polyglot notebooks
+- [#154](https://github.com/RandomFractals/vscode-data-table/issues/154)
+Add new world lakes Runme markdown doc and notebook data rendering example to Examples section in docs
+- [#155](https://github.com/RandomFractals/vscode-data-table/issues/155)
+Add Runme to the Recommended Extensions list in docs
+- [#156](https://github.com/RandomFractals/vscode-data-table/issues/156)
+Package and publish updated extension badges, stdout patch, and new Runme notebooks support release
+
 ## v1.12.0 - [2022-09-02]
 - [#126](https://github.com/RandomFractals/vscode-data-table/issues/126)
 VSCode-data-table not in VSCode gallery
@@ -41,6 +54,7 @@ Update dev dependencies to latest
 Update apache-arrow, arquero and fast-xml-parser dependencies to latest
 - [#145](https://github.com/RandomFractals/vscode-data-table/issues/145)
 Add browserslist dev dependency
+
 ## v1.11.0 - [2022-04-11]
 - [#124](https://github.com/RandomFractals/vscode-data-table/issues/124)
 Update built-in TypeScript notebook examples
