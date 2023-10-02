@@ -6,7 +6,9 @@ import { OutputLoader } from './outputLoader';
 import './styles.css';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Grid } from '@githubocto/flat-ui';
+
+// eslint-disable-next-line @typescript-eslint/naming-convention
+const flatUi = require('./flat-ui.js');
 
 /**
  * Notebook cell output render info.
@@ -32,7 +34,7 @@ export function render(output: IRenderInfo) {
   if (Array.isArray(data)) {
     // render flat data grid
     ReactDOM.render(
-      React.createElement(Grid, {data: data}, null),
+      React.createElement(flatUi.Grid, {data: data}, null),
       output.container
     );
   }
