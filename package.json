@@ -2,7 +2,7 @@
   "name": "vscode-data-table",
   "displayName": "Data Table Renderers",
   "description": "Data Table 🈸, Flat Data Grid 中 & Data Summary 🈷️ Renderers for VSCode Notebook 📓 Cell ⌗ Data Outputs",
-  "version": "1.13.0",
+  "version": "1.14.0",
   "engines": {
     "node": ">16.5.0",
     "vscode": "^1.68.0"
@@ -178,16 +178,26 @@
     "webpack-cli": "^4.10.0"
   },
   "dependencies": {
+    "@emotion/react": "^11.4.0",
     "@observablehq/inputs": "^0.10.4",
     "@observablehq/plot": "^0.4.3",
+    "@primer/octicons-react": "^12.1.0",
     "apache-arrow": "^9.0.0",
     "arquero": "^5.1.0",
     "d3": "^7.6.1",
     "d3-dsv": "^3.0.1",
+    "dompurify": "^2.2.9",
+    "downshift": "^6.1.1",
     "htl": "^0.3.1",
+    "immer": "^9.0.12",
+    "linkify-it": "^3.0.3",
+    "match-sorter": "^6.3.0",
     "fast-xml-parser": "^4.0.9",
-    "@githubocto/flat-ui": "^0.14.1",
     "react": "^17.0.02",
-    "react-dom": "^17.0.02"
+    "react-dom": "^17.0.02",
+    "react-range": "^1.8.7",
+    "react-virtualized-auto-sizer": "^1.0.5",
+    "react-window": "^1.8.6",
+    "zustand": "^3.6.9"
   }
 }
