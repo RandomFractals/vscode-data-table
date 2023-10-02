@@ -2,6 +2,11 @@
 
 See [releases](https://github.com/RandomFractals/vscode-data-table/releases) for source code and `vscode-data-table.vsix` extension package download.
 
+## v1.14.0 - [2023-10-02]
+
+- [#138](https://github.com/RandomFractals/vscode-data-table/issues/138)
+Reduce Flat Data Grid row height to display more data rows
+
 ## v1.13.0 - [2023-10-01]
 
 - [#151](https://github.com/RandomFractals/vscode-data-table/issues/151)
